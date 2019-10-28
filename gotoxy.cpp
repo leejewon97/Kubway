@@ -9,8 +9,8 @@ int main() {
 
 	gotoxy(22,10);
 	cout << "Kubway";
-	gotoxy(18, 15);
-	cout << "> 메뉴 선택";
+	gotoxy(13, 15);
+	cout << "> select menu";
 
 	gotoxy(0, 20);
 	cout << "--------------------------------------------------";
