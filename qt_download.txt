@@ -1,0 +1,1 @@
+http://download.qt.io/official_releases/qt/5.13/5.13.0/
