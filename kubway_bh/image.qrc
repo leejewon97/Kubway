@@ -79,5 +79,7 @@
         <file>image/topping_page/click_on/t_6.png</file>
         <file>image/topping_page/click_on/t_7.png</file>
         <file>image/topping_page/click_on/t_8.png</file>
+        <file>image/button/Forward Arrow.png</file>
+        <file>image/button/go_back_btn.png</file>
     </qresource>
 </RCC>

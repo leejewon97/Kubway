@@ -250,6 +250,56 @@
      </property>
     </widget>
    </widget>
+   <widget class="QPushButton" name="pushButton_9">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>1230</y>
+      <width>229</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>229</width>
+      <height>100</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/image/button/Forward Arrow.png);</string>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_10">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>130</y>
+      <width>85</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>85</width>
+      <height>80</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/image/button/go_back_btn.png);</string>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
   </widget>
  </widget>
  <resources/>
