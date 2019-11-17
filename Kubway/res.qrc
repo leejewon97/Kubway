@@ -1,18 +1,5 @@
 <RCC>
     <qresource prefix="/">
-        <file>bread_page/click_off/bread_1.png</file>
-        <file>bread_page/click_off/bread_2.png</file>
-        <file>bread_page/click_off/bread_3.png</file>
-        <file>bread_page/click_off/bread_4.png</file>
-        <file>bread_page/click_off/bread_5.png</file>
-        <file>bread_page/click_off/bread_6.png</file>
-        <file>bread_page/click_on/bread_1.png</file>
-        <file>bread_page/click_on/bread_2.png</file>
-        <file>bread_page/click_on/bread_3.png</file>
-        <file>bread_page/click_on/bread_4.png</file>
-        <file>bread_page/click_on/bread_5.png</file>
-        <file>bread_page/click_on/bread_6.png</file>
-        <file>bread_page/bread_page_back.png</file>
         <file>image/bread_page/click_off/bread_1.png</file>
         <file>image/bread_page/click_off/bread_2.png</file>
         <file>image/bread_page/click_off/bread_3.png</file>
@@ -98,6 +85,5 @@
         <file>image/KakaoTalk_Photo_2019-11-11-18-32-24-4.jpeg</file>
         <file>image/subway_prototype.xd</file>
         <file>image/takeout.png</file>
-        <file>transparent.png</file>
     </qresource>
 </RCC>
