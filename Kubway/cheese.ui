@@ -203,7 +203,7 @@
              </size>
             </property>
             <property name="styleSheet">
-             <string notr="true">background-image: url(:/image/cheese_page/click_on/cheese_2.png);</string>
+             <string notr="true">background-image: url(:/image/cheese_page/click_off/cheese_2.png);</string>
             </property>
             <property name="text">
              <string/>

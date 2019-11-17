@@ -153,6 +153,12 @@
           <property name="orientation">
            <enum>Qt::Vertical</enum>
           </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
          </spacer>
         </item>
         <item>
@@ -197,7 +203,7 @@
              </size>
             </property>
             <property name="styleSheet">
-             <string notr="true">background-image: url(:/image/bread_page/click_on/bread_2.png);</string>
+             <string notr="true">background-image: url(:/image/bread_page/click_off/bread_2.png);</string>
             </property>
             <property name="text">
              <string/>
@@ -245,7 +251,7 @@
           <property name="sizeHint" stdset="0">
            <size>
             <width>20</width>
-            <height>0</height>
+            <height>40</height>
            </size>
           </property>
          </spacer>
@@ -267,7 +273,7 @@
              </size>
             </property>
             <property name="styleSheet">
-             <string notr="true">background-image: url(:/image/bread_page/click_on/bread_4.png);</string>
+             <string notr="true">background-image: url(:/image/bread_page/click_off/bread_4.png);</string>
             </property>
             <property name="text">
              <string/>
@@ -317,7 +323,7 @@
              </size>
             </property>
             <property name="styleSheet">
-             <string notr="true">background-image: url(:/image/bread_page/click_on/bread_6.png);</string>
+             <string notr="true">background-image: url(:/image/bread_page/click_off/bread_6.png);</string>
             </property>
             <property name="text">
              <string/>
