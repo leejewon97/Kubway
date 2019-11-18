@@ -25,17 +25,23 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
+        bread.cpp \
         cheese.cpp \
         main.cpp \
-        widget.cpp
+        mainwindow.cpp \
+        topping.cpp
 
 HEADERS += \
+        bread.h \
         cheese.h \
-        widget.h
+        mainwindow.h \
+        topping.h
 
 FORMS += \
+        bread.ui \
         cheese.ui \
-        widget.ui
+        mainwindow.ui \
+        topping.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
