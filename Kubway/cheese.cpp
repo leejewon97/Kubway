@@ -1,5 +1,7 @@
 #include "cheese.h"
 #include "ui_cheese.h"
+#include "topping.h"
+
 
 cheese::cheese(QWidget *parent) :
     QWidget(parent),
@@ -29,4 +31,14 @@ void cheese::on_pushButton_3_clicked()
 {
     ui->label->setText("모짜렐라 치즈");
     ui->pushButton_3->setStyleSheet("background-image: url(:/image/cheese_page/click_on/cheese_3.png);");
+}
+
+void cheese::on_pushButton_next_clicked()
+{
+    t.show();
+}
+
+void cheese::on_pushButton_back_clicked()
+{
+    this->hide();
 }

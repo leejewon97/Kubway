@@ -1,5 +1,6 @@
 #include "bread.h"
 #include "ui_bread.h"
+#include "cheese.h"
 
 bread::bread(QWidget *parent) :
     QWidget(parent),
@@ -47,4 +48,14 @@ void bread::on_pushButton_6_clicked()
 {
     ui->label->setText("플랫브레드");
     ui->pushButton_6->setStyleSheet("background-image: url(:/image/bread_page/click_on/bread_6.png);");
+}
+
+void bread::on_pushButton_next_clicked()
+{
+    c.show();
+}
+
+void bread::on_pushButton_back_clicked()
+{
+    this->hide();
 }

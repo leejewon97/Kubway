@@ -2,6 +2,7 @@
 #define CHEESE_H
 
 #include <QWidget>
+#include "topping.h"
 
 namespace Ui {
 class cheese;
@@ -22,8 +23,13 @@ private slots:
 
     void on_pushButton_3_clicked();
 
+    void on_pushButton_next_clicked();
+
+    void on_pushButton_back_clicked();
+
 private:
     Ui::cheese *ui;
+    topping t;
 };
 
 #endif // CHEESE_H
