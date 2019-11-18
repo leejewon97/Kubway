@@ -60,3 +60,8 @@ void topping::on_pushButton_8_clicked()
     ui->label->setText("베이컨 비츠");
     ui->pushButton_8->setStyleSheet("background-image: url(:/image/topping_page/click_on/t_8.png);");
 }
+
+void topping::on_pushButton_back_clicked()
+{
+    this->hide();
+}

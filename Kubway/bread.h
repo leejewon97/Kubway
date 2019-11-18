@@ -2,6 +2,7 @@
 #define BREAD_H
 
 #include <QWidget>
+#include "cheese.h"
 
 namespace Ui {
 class bread;
@@ -28,8 +29,13 @@ private slots:
 
     void on_pushButton_6_clicked();
 
+    void on_pushButton_next_clicked();
+
+    void on_pushButton_back_clicked();
+
 private:
     Ui::bread *ui;
+    cheese c;
 };
 
 #endif // BREAD_H

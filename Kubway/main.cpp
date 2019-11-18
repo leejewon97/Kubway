@@ -11,10 +11,7 @@ int main(int argc, char *argv[])
     cheese c;
     mainwindow m;
     topping t;
-    t.show();
-//    b.show();
-//    c.show();
-//    m.show();
+    m.show();
 
     return a.exec();
 }

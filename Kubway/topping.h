@@ -32,6 +32,8 @@ private slots:
 
     void on_pushButton_8_clicked();
 
+    void on_pushButton_back_clicked();
+
 private:
     Ui::topping *ui;
 };
