@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/">
+        <file>bread_page/click_off/bread_1.png</file>
+        <file>bread_page/click_off/bread_2.png</file>
+        <file>bread_page/click_off/bread_3.png</file>
+        <file>bread_page/click_off/bread_4.png</file>
+        <file>bread_page/click_off/bread_5.png</file>
+        <file>bread_page/click_off/bread_6.png</file>
+        <file>bread_page/click_on/bread_1.png</file>
+        <file>bread_page/click_on/bread_2.png</file>
+        <file>bread_page/click_on/bread_3.png</file>
+        <file>bread_page/click_on/bread_4.png</file>
+        <file>bread_page/click_on/bread_5.png</file>
+        <file>bread_page/click_on/bread_6.png</file>
+        <file>bread_page/bread_page_back.png</file>
+        <file>transparent.png</file>
+    </qresource>
+</RCC>
