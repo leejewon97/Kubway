@@ -9,14 +9,10 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
     MainWindow w;
-    cheese c;
-    vegetable v;
-    topping t;
+
     bread b;
-    w.show();
+    cheese c;
+
     c.show();
-    v.show();
-    t.show();
-    b.show();
     return a.exec();
 }

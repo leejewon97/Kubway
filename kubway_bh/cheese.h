@@ -2,6 +2,7 @@
 #define CHEESE_H
 
 #include <QWidget>
+#include "bread.h"
 
 namespace Ui {
 class cheese;
@@ -15,8 +16,12 @@ public:
     explicit cheese(QWidget *parent = nullptr);
     ~cheese();
 
+private slots:
+    void on_pushButton_10_clicked();
+
 private:
     Ui::cheese *ui;
+    bread b;
 };
 
 #endif // CHEESE_H

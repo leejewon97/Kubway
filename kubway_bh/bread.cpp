@@ -1,4 +1,6 @@
 #include "bread.h"
+#include "cheese.h"
+#include "mainwindow.h"
 #include "ui_bread.h"
 
 bread::bread(QWidget *parent) :
@@ -11,4 +13,12 @@ bread::bread(QWidget *parent) :
 bread::~bread()
 {
     delete ui;
+}
+
+void bread::on_pushButton_9_clicked()
+{
+}
+
+void bread::on_pushButton_10_clicked()
+{
 }
