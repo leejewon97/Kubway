@@ -1,6 +1,5 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include "bread.h"
 
 mainwindow::mainwindow(QWidget *parent) :
     QWidget(parent),

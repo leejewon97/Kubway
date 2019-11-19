@@ -29,19 +29,22 @@ SOURCES += \
         cheese.cpp \
         main.cpp \
         mainwindow.cpp \
-        topping.cpp
+        topping.cpp \
+        vegetable.cpp
 
 HEADERS += \
         bread.h \
         cheese.h \
         mainwindow.h \
-        topping.h
+        topping.h \
+        vegetable.h
 
 FORMS += \
         bread.ui \
         cheese.ui \
         mainwindow.ui \
-        topping.ui
+        topping.ui \
+        vegetable.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

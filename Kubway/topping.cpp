@@ -61,6 +61,11 @@ void topping::on_pushButton_8_clicked()
     ui->pushButton_8->setStyleSheet("background-image: url(:/image/topping_page/click_on/t_8.png);");
 }
 
+void topping::on_pushButton_next_clicked()
+{
+    v.show();
+}
+
 void topping::on_pushButton_back_clicked()
 {
     this->hide();

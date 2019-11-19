@@ -1,6 +1,5 @@
 #include "cheese.h"
 #include "ui_cheese.h"
-#include "topping.h"
 
 
 cheese::cheese(QWidget *parent) :

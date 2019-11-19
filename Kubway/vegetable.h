@@ -1,20 +1,19 @@
-#ifndef TOPPING_H
-#define TOPPING_H
+#ifndef VEGETABLE_H
+#define VEGETABLE_H
 
 #include <QWidget>
-#include "vegetable.h"
 
 namespace Ui {
-class topping;
+class vegetable;
 }
 
-class topping : public QWidget
+class vegetable : public QWidget
 {
     Q_OBJECT
 
 public:
-    explicit topping(QWidget *parent = nullptr);
-    ~topping();
+    explicit vegetable(QWidget *parent = nullptr);
+    ~vegetable();
 
 private slots:
     void on_pushButton_1_clicked();
@@ -33,13 +32,10 @@ private slots:
 
     void on_pushButton_8_clicked();
 
-    void on_pushButton_next_clicked();
-
     void on_pushButton_back_clicked();
 
 private:
-    Ui::topping *ui;
-    vegetable v;
+    Ui::vegetable *ui;
 };
 
-#endif // TOPPING_H
+#endif // VEGETABLE_H

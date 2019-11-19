@@ -1,6 +1,5 @@
 #include "bread.h"
 #include "ui_bread.h"
-#include "cheese.h"
 
 bread::bread(QWidget *parent) :
     QWidget(parent),
