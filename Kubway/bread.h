@@ -36,7 +36,7 @@ private slots:
 private:
     Ui::bread *ui;
     cheese c;
-    bool flag;
+    bool flag[6];
 };
 
 #endif // BREAD_H

@@ -30,7 +30,7 @@ private slots:
 private:
     Ui::cheese *ui;
     topping t;
-    bool flag;
+    bool flag[3];
 };
 
 #endif // CHEESE_H

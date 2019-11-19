@@ -24,7 +24,6 @@ private slots:
 private:
     Ui::mainwindow *ui;
     bread b;
-    bool flag;
 };
 
 #endif // MAINWINDOW_H
