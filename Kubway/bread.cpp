@@ -5,6 +5,7 @@ bread::bread(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::bread)
 {
+    flag = true;
     ui->setupUi(this);
 }
 
@@ -15,8 +16,15 @@ bread::~bread()
 
 void bread::on_pushButton_1_clicked()
 {
+
     ui->label->setText("허니오트");
-    ui->pushButton_1->setStyleSheet("background-image: url(:/image/bread_page/click_on/bread_1.png);");
+    if(flag == true){
+        ui->pushButton_1->setStyleSheet("background-image: url(:/image/bread_page/click_on/bread_1.png);");
+        flag = false;
+    } else {
+        ui->pushButton_1->setStyleSheet("background-image: url(:/image/bread_page/click_off/bread_1.png);");
+        flag = true;
+    }
 }
 
 void bread::on_pushButton_2_clicked()

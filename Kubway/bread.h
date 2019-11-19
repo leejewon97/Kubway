@@ -15,6 +15,7 @@ class bread : public QWidget
 public:
     explicit bread(QWidget *parent = nullptr);
     ~bread();
+    bool flag;
 
 private slots:
     void on_pushButton_1_clicked();
