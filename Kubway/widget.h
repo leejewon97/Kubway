@@ -1,20 +1,19 @@
-#ifndef BREAD_H
-#define BREAD_H
+#ifndef WIDGET_H
+#define WIDGET_H
 
 #include <QWidget>
-#include "cheese.h"
 
 namespace Ui {
-class bread;
+class Widget;
 }
 
-class bread : public QWidget
+class Widget : public QWidget
 {
     Q_OBJECT
 
 public:
-    explicit bread(QWidget *parent = nullptr);
-    ~bread();
+    explicit Widget(QWidget *parent = nullptr);
+    ~Widget();
 
 private slots:
     void on_pushButton_1_clicked();
@@ -29,14 +28,8 @@ private slots:
 
     void on_pushButton_6_clicked();
 
-    void on_pushButton_next_clicked();
-
-    void on_pushButton_back_clicked();
-
 private:
-    Ui::bread *ui;
-    cheese c;
-    bool flag;
+    Ui::Widget *ui;
 };
 
-#endif // BREAD_H
+#endif // WIDGET_H

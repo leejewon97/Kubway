@@ -36,6 +36,7 @@ private slots:
 
 private:
     Ui::vegetable *ui;
+    bool flag;
 };
 
 #endif // VEGETABLE_H

@@ -40,6 +40,7 @@ private slots:
 private:
     Ui::topping *ui;
     vegetable v;
+    bool flag;
 };
 
 #endif // TOPPING_H
