@@ -2,6 +2,7 @@
 #define BREAD_H
 
 #include <QWidget>
+#include <QPushButton>
 #include "cheese.h"
 
 namespace Ui {
@@ -29,6 +30,10 @@ private slots:
 
     void on_pushButton_6_clicked();
 
+    void disableButtons(QPushButton* exBtn);
+
+    void enableButtons();
+
     void on_pushButton_next_clicked();
 
     void on_pushButton_back_clicked();
@@ -36,7 +41,8 @@ private slots:
 private:
     Ui::bread *ui;
     cheese c;
-    bool flag[6];
+    bool btnFlag;
+    QPushButton* buttons[6];
 };
 
 #endif // BREAD_H

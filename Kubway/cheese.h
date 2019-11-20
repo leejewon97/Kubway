@@ -2,6 +2,7 @@
 #define CHEESE_H
 
 #include <QWidget>
+#include <QPushButton>
 #include "topping.h"
 
 namespace Ui {
@@ -27,10 +28,15 @@ private slots:
 
     void on_pushButton_back_clicked();
 
+    void disableButtons(QPushButton* exBtn);
+
+    void enableButtons();
+
 private:
     Ui::cheese *ui;
     topping t;
-    bool flag[3];
+    bool btnFlag;
+    QPushButton* buttons[3];
 };
 
 #endif // CHEESE_H

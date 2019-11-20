@@ -2,6 +2,7 @@
 #define TOPPING_H
 
 #include <QWidget>
+#include <QPushButton>
 #include "vegetable.h"
 
 namespace Ui {
@@ -37,10 +38,15 @@ private slots:
 
     void on_pushButton_back_clicked();
 
+    void disableButtons(QPushButton* exBtn);
+
+    void enableButtons();
+
 private:
     Ui::topping *ui;
     vegetable v;
-    bool flag[8];
+    bool btnFlag;
+    QPushButton* buttons[8];
 };
 
 #endif // TOPPING_H
