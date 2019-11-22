@@ -29,6 +29,11 @@ SOURCES += \
         cheese.cpp \
         main.cpp \
         mainwindow.cpp \
+        sandwitch.cpp \
+        sandwitch_classic.cpp \
+        sandwitch_fresh.cpp \
+        sandwitch_new.cpp \
+        sandwitch_premium.cpp \
         topping.cpp \
         vegetable.cpp
 
@@ -36,6 +41,11 @@ HEADERS += \
         bread.h \
         cheese.h \
         mainwindow.h \
+        sandwitch.h \
+        sandwitch_classic.h \
+        sandwitch_fresh.h \
+        sandwitch_new.h \
+        sandwitch_premium.h \
         topping.h \
         vegetable.h
 
@@ -43,6 +53,11 @@ FORMS += \
         bread.ui \
         cheese.ui \
         mainwindow.ui \
+        sandwitch.ui \
+        sandwitch_classic.ui \
+        sandwitch_fresh.ui \
+        sandwitch_new.ui \
+        sandwitch_premium.ui \
         topping.ui \
         vegetable.ui
 
@@ -54,3 +69,17 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 RESOURCES += \
     res.qrc \
     res.qrc
+
+DISTFILES += \
+    image/sandwich_page/after_btn.png \
+    image/sandwich_page/background_sandwich_classic.png \
+    image/sandwich_page/background_sandwich_fresh.png \
+    image/sandwich_page/background_sandwich_new.png \
+    image/sandwich_page/background_sandwich_premium.png \
+    image/sandwich_page/before_btn.png \
+    image/sandwich_page/classic/click_off/t_1.png \
+    image/sandwich_page/classic/click_off/t_2.png \
+    image/sandwich_page/classic/click_off/t_3.png \
+    image/sandwich_page/classic/click_off/t_4.png \
+    image/sandwich_page/classic/click_off/t_5.png \
+    image/sandwich_page/classic/click_off/t_6.png

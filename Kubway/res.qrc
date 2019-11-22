@@ -86,5 +86,67 @@
         <file>image/subway_prototype.xd</file>
         <file>image/takeout.png</file>
         <file>transparent.png</file>
+        <file>image/sandwich_page/classic/click_on/t_1.png</file>
+        <file>image/sandwich_page/classic/click_on/t_2.png</file>
+        <file>image/sandwich_page/classic/click_on/t_3.png</file>
+        <file>image/sandwich_page/classic/click_on/t_4.png</file>
+        <file>image/sandwich_page/classic/click_on/t_5.png</file>
+        <file>image/sandwich_page/classic/click_on/t_6.png</file>
+        <file>image/sandwich_page/fresh/click_off/t_1.png</file>
+        <file>image/sandwich_page/fresh/click_off/t_2.png</file>
+        <file>image/sandwich_page/fresh/click_off/t_3.png</file>
+        <file>image/sandwich_page/fresh/click_off/t_4.png</file>
+        <file>image/sandwich_page/fresh/click_off/t_5.png</file>
+        <file>image/sandwich_page/fresh/click_off/t_6.png</file>
+        <file>image/sandwich_page/fresh/click_on/t_1.png</file>
+        <file>image/sandwich_page/fresh/click_on/t_2.png</file>
+        <file>image/sandwich_page/fresh/click_on/t_3.png</file>
+        <file>image/sandwich_page/fresh/click_on/t_4.png</file>
+        <file>image/sandwich_page/fresh/click_on/t_5.png</file>
+        <file>image/sandwich_page/fresh/click_on/t_6.png</file>
+        <file>image/sandwich_page/new/click_off/t_1.png</file>
+        <file>image/sandwich_page/new/click_off/t_2.png</file>
+        <file>image/sandwich_page/new/click_off/t_3.png</file>
+        <file>image/sandwich_page/new/click_off/t_4.png</file>
+        <file>image/sandwich_page/new/click_off/t_5.png</file>
+        <file>image/sandwich_page/new/click_off/t_6.png</file>
+        <file>image/sandwich_page/new/click_on/t_1.png</file>
+        <file>image/sandwich_page/new/click_on/t_2.png</file>
+        <file>image/sandwich_page/new/click_on/t_3.png</file>
+        <file>image/sandwich_page/new/click_on/t_4.png</file>
+        <file>image/sandwich_page/new/click_on/t_5.png</file>
+        <file>image/sandwich_page/new/click_on/t_6.png</file>
+        <file>image/sandwich_page/premium/click_off/t_1.png</file>
+        <file>image/sandwich_page/premium/click_off/t_2.png</file>
+        <file>image/sandwich_page/premium/click_off/t_3.png</file>
+        <file>image/sandwich_page/premium/click_off/t_4.png</file>
+        <file>image/sandwich_page/premium/click_off/t_5.png</file>
+        <file>image/sandwich_page/premium/click_off/t_6.png</file>
+        <file>image/sandwich_page/premium/click_off/t_7.png</file>
+        <file>image/sandwich_page/premium/click_off/t_8.png</file>
+        <file>image/sandwich_page/premium/click_off/t_9.png</file>
+        <file>image/sandwich_page/premium/click_off/t_10.png</file>
+        <file>image/sandwich_page/premium/click_on/t_1.png</file>
+        <file>image/sandwich_page/premium/click_on/t_2.png</file>
+        <file>image/sandwich_page/premium/click_on/t_3.png</file>
+        <file>image/sandwich_page/premium/click_on/t_4.png</file>
+        <file>image/sandwich_page/premium/click_on/t_5.png</file>
+        <file>image/sandwich_page/premium/click_on/t_6.png</file>
+        <file>image/sandwich_page/premium/click_on/t_7.png</file>
+        <file>image/sandwich_page/premium/click_on/t_8.png</file>
+        <file>image/sandwich_page/premium/click_on/t_9.png</file>
+        <file>image/sandwich_page/premium/click_on/t_10.png</file>
+        <file>image/sandwich_page/classic/click_off/t_1.png</file>
+        <file>image/sandwich_page/classic/click_off/t_2.png</file>
+        <file>image/sandwich_page/classic/click_off/t_3.png</file>
+        <file>image/sandwich_page/classic/click_off/t_4.png</file>
+        <file>image/sandwich_page/classic/click_off/t_5.png</file>
+        <file>image/sandwich_page/classic/click_off/t_6.png</file>
+        <file>image/sandwich_page/after_btn.png</file>
+        <file>image/sandwich_page/background_sandwich_classic.png</file>
+        <file>image/sandwich_page/background_sandwich_fresh.png</file>
+        <file>image/sandwich_page/background_sandwich_new.png</file>
+        <file>image/sandwich_page/background_sandwich_premium.png</file>
+        <file>image/sandwich_page/before_btn.png</file>
     </qresource>
 </RCC>
