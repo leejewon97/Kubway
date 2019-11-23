@@ -237,6 +237,19 @@
      <bool>true</bool>
     </property>
    </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>1270</y>
+      <width>102</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
   </widget>
  </widget>
  <resources/>
