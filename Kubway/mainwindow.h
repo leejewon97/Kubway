@@ -1,7 +1,7 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 #include <QWidget>
-#include "sandwich.h"
+#include "sandwitch.h"
 
 namespace Ui {
 class mainwindow;
@@ -22,7 +22,7 @@ private slots:
 
 private:
     Ui::mainwindow *ui;
-    sandwich s;
+    sandwitch s;
 };
 
 #endif // MAINWINDOW_H
