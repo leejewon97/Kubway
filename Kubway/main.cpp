@@ -3,7 +3,6 @@
 #include "topping.h"
 #include "mainwindow.h"
 #include "vegetable.h"
-#include "sandwitch.h"
 #include <QApplication>
 
 int main(int argc, char *argv[])

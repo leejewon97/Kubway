@@ -15,10 +15,10 @@ mainwindow::~mainwindow()
 
 void mainwindow::on_pushButton_2_clicked()
 {
-    s.show();
+    b.show();
 }
 
 void mainwindow::on_pushButton_clicked()
 {
-    s.show();
+    b.show();
 }
