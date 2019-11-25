@@ -15,6 +15,10 @@ sandwich_premium::sandwich_premium(QWidget *parent) :
     buttons[3] = ui->pushButton_4;
     buttons[4] = ui->pushButton_5;
     buttons[5] = ui->pushButton_6;
+    buttons[6] = ui->pushButton_7;
+    buttons[7] = ui->pushButton_8;
+    buttons[8] = ui->pushButton_9;
+    buttons[9] = ui->pushButton_10;
 }
 
 sandwich_premium::~sandwich_premium()
@@ -23,14 +27,14 @@ sandwich_premium::~sandwich_premium()
 }
 
 void sandwich_premium::disableButtons(QPushButton* exBtn){
-    for (int i = 0; i < 6; i++) {
+    for (int i = 0; i < 10; i++) {
         buttons[i]->setDisabled(true);
     }
     exBtn->setEnabled(true);
 }
 
 void sandwich_premium::enableButtons(){
-    for (int i = 0; i < 6; i++) {
+    for (int i = 0; i < 10; i++) {
         buttons[i]->setEnabled(true);
     }
 }
@@ -120,6 +124,66 @@ void sandwich_premium::on_pushButton_6_clicked()
     } else {
         ui->label->clear();
         ui->pushButton_6->setStyleSheet("background-image: url(:/image/sandwich_page/premium/click_off/t_6.png);");
+        btnFlag = true;
+        enableButtons();
+    }
+}
+
+void sandwich_premium::on_pushButton_7_clicked()
+{
+    if(btnFlag) {
+        ui->label->setText("터키 베이컨");
+        ui->pushButton_7->setStyleSheet("background-image: url(:/image/sandwich_page/premium/click_on/t_7.png);");
+        btnFlag = false;
+        disableButtons(ui->pushButton_7);
+    } else {
+        ui->label->clear();
+        ui->pushButton_7->setStyleSheet("background-image: url(:/image/sandwich_page/premium/click_off/t_7.png);");
+        btnFlag = true;
+        enableButtons();
+    }
+}
+
+void sandwich_premium::on_pushButton_8_clicked()
+{
+    if(btnFlag) {
+        ui->label->setText("스파이시 이탈리안");
+        ui->pushButton_8->setStyleSheet("background-image: url(:/image/sandwich_page/premium/click_on/t_8.png);");
+        btnFlag = false;
+        disableButtons(ui->pushButton_8);
+    } else {
+        ui->label->clear();
+        ui->pushButton_8->setStyleSheet("background-image: url(:/image/sandwich_page/premium/click_off/t_8.png);");
+        btnFlag = true;
+        enableButtons();
+    }
+}
+
+void sandwich_premium::on_pushButton_9_clicked()
+{
+    if(btnFlag) {
+        ui->label->setText("치킨 데리야끼");
+        ui->pushButton_9->setStyleSheet("background-image: url(:/image/sandwich_page/premium/click_on/t_9.png);");
+        btnFlag = false;
+        disableButtons(ui->pushButton_9);
+    } else {
+        ui->label->clear();
+        ui->pushButton_9->setStyleSheet("background-image: url(:/image/sandwich_page/premium/click_off/t_9.png);");
+        btnFlag = true;
+        enableButtons();
+    }
+}
+
+void sandwich_premium::on_pushButton_10_clicked()
+{
+    if(btnFlag) {
+        ui->label->setText("폴드포크");
+        ui->pushButton_10->setStyleSheet("background-image: url(:/image/sandwich_page/premium/click_on/t_10.png);");
+        btnFlag = false;
+        disableButtons(ui->pushButton_10);
+    } else {
+        ui->label->clear();
+        ui->pushButton_10->setStyleSheet("background-image: url(:/image/sandwich_page/premium/click_off/t_10.png);");
         btnFlag = true;
         enableButtons();
     }
