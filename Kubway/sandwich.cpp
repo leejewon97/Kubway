@@ -12,3 +12,8 @@ sandwich::~sandwich()
 {
     delete ui;
 }
+
+void sandwich::on_pushButton_clicked()
+{
+    sc.show();
+}

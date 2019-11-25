@@ -29,11 +29,11 @@ SOURCES += \
         cheese.cpp \
         main.cpp \
         mainwindow.cpp \
-        sandwitch.cpp \
-        sandwitch_classic.cpp \
-        sandwitch_fresh.cpp \
-        sandwitch_new.cpp \
-        sandwitch_premium.cpp \
+        sandwich.cpp \
+        sandwich_classic.cpp \
+        sandwich_fresh.cpp \
+        sandwich_new.cpp \
+        sandwich_premium.cpp \
         topping.cpp \
         vegetable.cpp
 
@@ -41,11 +41,11 @@ HEADERS += \
         bread.h \
         cheese.h \
         mainwindow.h \
-        sandwitch.h \
-        sandwitch_classic.h \
-        sandwitch_fresh.h \
-        sandwitch_new.h \
-        sandwitch_premium.h \
+        sandwich.h \
+        sandwich_classic.h \
+        sandwich_fresh.h \
+        sandwich_new.h \
+        sandwich_premium.h \
         topping.h \
         vegetable.h
 
@@ -53,11 +53,11 @@ FORMS += \
         bread.ui \
         cheese.ui \
         mainwindow.ui \
-        sandwitch.ui \
-        sandwitch_classic.ui \
-        sandwitch_fresh.ui \
-        sandwitch_new.ui \
-        sandwitch_premium.ui \
+        sandwich.ui \
+        sandwich_classic.ui \
+        sandwich_fresh.ui \
+        sandwich_new.ui \
+        sandwich_premium.ui \
         topping.ui \
         vegetable.ui
 

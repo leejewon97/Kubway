@@ -3,13 +3,20 @@
 #include "topping.h"
 #include "mainwindow.h"
 #include "vegetable.h"
+#include "sandwich.h"
+#include "sandwich_classic.h"
+
+
 #include <QApplication>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
     mainwindow m;
-    m.show();
+    sandwich s;
+      s.show();
+
+
 
     return a.exec();
 }

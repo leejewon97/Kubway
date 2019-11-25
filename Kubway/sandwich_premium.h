@@ -1,21 +1,21 @@
-#ifndef SANDWITCH_FRESH_H
-#define SANDWITCH_FRESH_H
+#ifndef sandwich_premium_H
+#define sandwich_premium_H
 
 #include <QWidget>
 #include <QPushButton>
-#include <bread.h>
+#include "cheese.h"
 
 namespace Ui {
-class sandwitch_fresh;
+class sandwich_premium;
 }
 
-class sandwitch_fresh : public QWidget
+class sandwich_premium : public QWidget
 {
     Q_OBJECT
 
 public:
-    explicit sandwitch_fresh(QWidget *parent = nullptr);
-    ~sandwitch_fresh();
+    explicit sandwich_premium(QWidget *parent = nullptr);
+    ~sandwich_premium();
 
 private slots:
     void on_pushButton_1_clicked();
@@ -34,15 +34,15 @@ private slots:
 
     void enableButtons();
 
-    void on_pushButton_back_clicked();
-
     void on_pushButton_next_clicked();
 
+    void on_pushButton_back_clicked();
+
 private:
-    Ui::sandwitch_fresh *ui;
+    Ui::sandwich_premium *ui;
+    cheese c;
     bool btnFlag;
     QPushButton* buttons[6];
-    bread b;
 };
 
-#endif // SANDWITCH_FRESH_H
+#endif // sandwich_premium_H
