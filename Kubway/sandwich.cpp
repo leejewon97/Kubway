@@ -32,3 +32,8 @@ void sandwich::on_premium_btn_clicked()
 {
     sp.show();
 }
+
+void sandwich::on_pushButton_back_clicked()
+{
+    this->hide();
+}

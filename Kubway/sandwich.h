@@ -30,6 +30,8 @@ private slots:
 
     void on_premium_btn_clicked();
 
+    void on_pushButton_back_clicked();
+
 private:
     Ui::sandwich *ui;
     sandwich_classic sc;
