@@ -3,7 +3,7 @@
 
 #include <QWidget>
 #include <QPushButton>
-#include "cheese.h"
+#include "bread.h"
 
 namespace Ui {
 class sandwich_premium;
@@ -40,7 +40,7 @@ private slots:
 
 private:
     Ui::sandwich_premium *ui;
-    cheese c;
+    bread b;
     bool btnFlag;
     QPushButton* buttons[6];
 };

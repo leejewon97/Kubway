@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include "bread.h"
+#include "sandwich.h"
 
 namespace Ui {
 class mainwindow;
@@ -24,6 +25,7 @@ private slots:
 private:
     Ui::mainwindow *ui;
     bread b;
+    sandwich s;
 };
 
 #endif // MAINWINDOW_H

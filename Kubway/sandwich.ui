@@ -34,17 +34,95 @@
      <height>1392</height>
     </size>
    </property>
-   <widget class="QPushButton" name="pushButton">
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/image/back.png);</string>
+   </property>
+   <widget class="QPushButton" name="classic_btn">
     <property name="geometry">
      <rect>
-      <x>290</x>
-      <y>270</y>
-      <width>113</width>
-      <height>32</height>
+      <x>190</x>
+      <y>330</y>
+      <width>240</width>
+      <height>170</height>
      </rect>
     </property>
+    <property name="minimumSize">
+     <size>
+      <width>240</width>
+      <height>170</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/image/sandwich_page/classic/click_off/t_1.png);</string>
+    </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>classic</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="fresh_btn">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>330</y>
+      <width>240</width>
+      <height>170</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>240</width>
+      <height>170</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/image/sandwich_page/fresh/click_off/t_1.png);</string>
+    </property>
+    <property name="text">
+     <string>fresh</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="new_btn">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>600</y>
+      <width>240</width>
+      <height>170</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>240</width>
+      <height>170</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/image/sandwich_page/new/click_off/t_1.png);</string>
+    </property>
+    <property name="text">
+     <string>new</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="premium_btn">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>600</y>
+      <width>240</width>
+      <height>170</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>240</width>
+      <height>170</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/image/sandwich_page/premium/click_off/t_4.png);</string>
+    </property>
+    <property name="text">
+     <string>premium</string>
     </property>
    </widget>
   </widget>

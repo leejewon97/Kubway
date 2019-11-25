@@ -35,7 +35,7 @@
     </size>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-image: url(:/image/bread_page/bread_page_back.png);</string>
+    <string notr="true">background-image: url(:/image/sandwich_page/background_sandwich_classic.png);</string>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_3">
     <property name="spacing">
@@ -159,12 +159,12 @@
           <property name="minimumSize">
            <size>
             <width>0</width>
-            <height>326</height>
+            <height>360</height>
            </size>
           </property>
           <property name="maximumSize">
            <size>
-            <width>322</width>
+            <width>247</width>
             <height>16777215</height>
            </size>
           </property>
@@ -184,12 +184,12 @@
           <property name="minimumSize">
            <size>
             <width>0</width>
-            <height>326</height>
+            <height>360</height>
            </size>
           </property>
           <property name="maximumSize">
            <size>
-            <width>322</width>
+            <width>247</width>
             <height>16777215</height>
            </size>
           </property>
@@ -215,12 +215,12 @@
           <property name="minimumSize">
            <size>
             <width>0</width>
-            <height>326</height>
+            <height>360</height>
            </size>
           </property>
           <property name="maximumSize">
            <size>
-            <width>322</width>
+            <width>247</width>
             <height>16777215</height>
            </size>
           </property>
@@ -257,12 +257,12 @@
           <property name="minimumSize">
            <size>
             <width>0</width>
-            <height>326</height>
+            <height>360</height>
            </size>
           </property>
           <property name="maximumSize">
            <size>
-            <width>322</width>
+            <width>247</width>
             <height>16777215</height>
            </size>
           </property>
@@ -282,12 +282,12 @@
           <property name="minimumSize">
            <size>
             <width>0</width>
-            <height>326</height>
+            <height>360</height>
            </size>
           </property>
           <property name="maximumSize">
            <size>
-            <width>322</width>
+            <width>247</width>
             <height>16777215</height>
            </size>
           </property>
@@ -307,12 +307,12 @@
           <property name="minimumSize">
            <size>
             <width>0</width>
-            <height>326</height>
+            <height>360</height>
            </size>
           </property>
           <property name="maximumSize">
            <size>
-            <width>322</width>
+            <width>247</width>
             <height>16777215</height>
            </size>
           </property>

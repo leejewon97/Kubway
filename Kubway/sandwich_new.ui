@@ -35,7 +35,7 @@
     </size>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-image: url(:/image/bread_page/bread_page_back.png);</string>
+    <string notr="true">background-image: url(:/image/sandwich_page/background_sandwich_new.png);</string>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_3">
     <property name="spacing">
@@ -159,17 +159,17 @@
           <property name="minimumSize">
            <size>
             <width>0</width>
-            <height>326</height>
+            <height>360</height>
            </size>
           </property>
           <property name="maximumSize">
            <size>
-            <width>322</width>
+            <width>247</width>
             <height>16777215</height>
            </size>
           </property>
           <property name="styleSheet">
-           <string notr="true">background-image: url(:/image/sandwich_page/classic/click_off/t_1.png);</string>
+           <string notr="true">background-image: url(:/image/sandwich_page/new/click_off/t_1.png);</string>
           </property>
           <property name="text">
            <string/>
@@ -184,17 +184,17 @@
           <property name="minimumSize">
            <size>
             <width>0</width>
-            <height>326</height>
+            <height>360</height>
            </size>
           </property>
           <property name="maximumSize">
            <size>
-            <width>322</width>
+            <width>247</width>
             <height>16777215</height>
            </size>
           </property>
           <property name="styleSheet">
-           <string notr="true">background-image: url(:/image/sandwich_page/classic/click_off/t_2.png);</string>
+           <string notr="true">background-image: url(:/image/sandwich_page/new/click_off/t_2.png);</string>
           </property>
           <property name="text">
            <string/>
@@ -215,17 +215,17 @@
           <property name="minimumSize">
            <size>
             <width>0</width>
-            <height>326</height>
+            <height>360</height>
            </size>
           </property>
           <property name="maximumSize">
            <size>
-            <width>322</width>
+            <width>247</width>
             <height>16777215</height>
            </size>
           </property>
           <property name="styleSheet">
-           <string notr="true">background-image: url(:/image/sandwich_page/classic/click_off/t_3.png);</string>
+           <string notr="true">background-image: url(:/image/sandwich_page/new/click_off/t_3.png);</string>
           </property>
           <property name="text">
            <string/>
@@ -257,17 +257,17 @@
           <property name="minimumSize">
            <size>
             <width>0</width>
-            <height>326</height>
+            <height>360</height>
            </size>
           </property>
           <property name="maximumSize">
            <size>
-            <width>322</width>
+            <width>247</width>
             <height>16777215</height>
            </size>
           </property>
           <property name="styleSheet">
-           <string notr="true">background-image: url(:/image/sandwich_page/classic/click_off/t_4.png);</string>
+           <string notr="true">background-image: url(:/image/sandwich_page/new/click_off/t_4.png);</string>
           </property>
           <property name="text">
            <string/>
@@ -282,17 +282,17 @@
           <property name="minimumSize">
            <size>
             <width>0</width>
-            <height>326</height>
+            <height>360</height>
            </size>
           </property>
           <property name="maximumSize">
            <size>
-            <width>322</width>
+            <width>247</width>
             <height>16777215</height>
            </size>
           </property>
           <property name="styleSheet">
-           <string notr="true">background-image: url(:/image/sandwich_page/classic/click_off/t_5.png);</string>
+           <string notr="true">background-image: url(:/image/sandwich_page/new/click_off/t_5.png);</string>
           </property>
           <property name="text">
            <string/>
@@ -307,17 +307,17 @@
           <property name="minimumSize">
            <size>
             <width>0</width>
-            <height>326</height>
+            <height>360</height>
            </size>
           </property>
           <property name="maximumSize">
            <size>
-            <width>322</width>
+            <width>247</width>
             <height>16777215</height>
            </size>
           </property>
           <property name="styleSheet">
-           <string notr="true">background-image: url(:/image/sandwich_page/classic/click_off/t_6.png);</string>
+           <string notr="true">background-image: url(:/image/sandwich_page/new/click_off/t_6.png);</string>
           </property>
           <property name="text">
            <string/>

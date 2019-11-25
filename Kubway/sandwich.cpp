@@ -13,7 +13,22 @@ sandwich::~sandwich()
     delete ui;
 }
 
-void sandwich::on_pushButton_clicked()
+void sandwich::on_classic_btn_clicked()
 {
     sc.show();
+}
+
+void sandwich::on_fresh_btn_clicked()
+{
+    sf.show();
+}
+
+void sandwich::on_new_btn_clicked()
+{
+    sn.show();
+}
+
+void sandwich::on_premium_btn_clicked()
+{
+    sp.show();
 }

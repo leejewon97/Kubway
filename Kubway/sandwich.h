@@ -4,7 +4,9 @@
 #include <QWidget>
 #include <QPushButton>
 #include "sandwich_classic.h"
-#include "bread.h"
+#include "sandwich_fresh.h"
+#include "sandwich_new.h"
+#include "sandwich_premium.h"
 
 namespace Ui {
 class sandwich;
@@ -19,11 +21,21 @@ public:
     ~sandwich();
 
 private slots:
-    void on_pushButton_clicked();
+
+    void on_classic_btn_clicked();
+
+    void on_fresh_btn_clicked();
+
+    void on_new_btn_clicked();
+
+    void on_premium_btn_clicked();
 
 private:
     Ui::sandwich *ui;
     sandwich_classic sc;
+    sandwich_fresh sf;
+    sandwich_new sn;
+    sandwich_premium sp;
 
 
 };

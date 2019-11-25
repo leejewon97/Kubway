@@ -127,7 +127,7 @@ void sandwich_premium::on_pushButton_6_clicked()
 
 void sandwich_premium::on_pushButton_next_clicked()
 {
-    c.show();
+    b.show();
 }
 
 void sandwich_premium::on_pushButton_back_clicked()
