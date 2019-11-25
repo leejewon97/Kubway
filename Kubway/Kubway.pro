@@ -67,19 +67,6 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 RESOURCES += \
-    res.qrc \
     res.qrc
 
-DISTFILES += \
-    image/sandwich_page/after_btn.png \
-    image/sandwich_page/background_sandwich_classic.png \
-    image/sandwich_page/background_sandwich_fresh.png \
-    image/sandwich_page/background_sandwich_new.png \
-    image/sandwich_page/background_sandwich_premium.png \
-    image/sandwich_page/before_btn.png \
-    image/sandwich_page/classic/click_off/t_1.png \
-    image/sandwich_page/classic/click_off/t_2.png \
-    image/sandwich_page/classic/click_off/t_3.png \
-    image/sandwich_page/classic/click_off/t_4.png \
-    image/sandwich_page/classic/click_off/t_5.png \
-    image/sandwich_page/classic/click_off/t_6.png
+DISTFILES +=

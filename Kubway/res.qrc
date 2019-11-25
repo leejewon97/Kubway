@@ -15,6 +15,8 @@
         <file>image/bread_page/bread_page_back.png</file>
         <file>image/button/Forward Arrow.png</file>
         <file>image/button/go_back_btn.png</file>
+        <file>image/button/hot_btn.png</file>
+        <file>image/button/new_btn.png</file>
         <file>image/cheese_page/click_off/cheese_1.png</file>
         <file>image/cheese_page/click_off/cheese_2.png</file>
         <file>image/cheese_page/click_off/cheese_3.png</file>
@@ -25,22 +27,73 @@
         <file>image/main_page/back.png</file>
         <file>image/main_page/btn1.png</file>
         <file>image/main_page/btn2.png</file>
-        <file>image/sauce_page/sauce/img_recipe_s01.jpg</file>
-        <file>image/sauce_page/sauce/img_recipe_s02.jpg</file>
-        <file>image/sauce_page/sauce/img_recipe_s03.jpg</file>
-        <file>image/sauce_page/sauce/img_recipe_s04.jpg</file>
-        <file>image/sauce_page/sauce/img_recipe_s05.jpg</file>
-        <file>image/sauce_page/sauce/img_recipe_s06.jpg</file>
-        <file>image/sauce_page/sauce/img_recipe_s07.jpg</file>
-        <file>image/sauce_page/sauce/img_recipe_s09.jpg</file>
-        <file>image/sauce_page/sauce/img_recipe_s10.jpg</file>
-        <file>image/sauce_page/sauce/img_recipe_s11.jpg</file>
-        <file>image/sauce_page/sauce/img_recipe_s12.jpg</file>
-        <file>image/sauce_page/sauce/img_recipe_s13.jpg</file>
-        <file>image/sauce_page/sauce/img_recipe_s14.jpg</file>
-        <file>image/sauce_page/sauce/img_recipe_s15.jpg</file>
-        <file>image/sauce_page/sauce/img_recipe_s17.jpg</file>
-        <file>image/sauce_page/sauce/img_recipe_s18.jpg</file>
+        <file>image/menu_page/back.png</file>
+        <file>image/menu_page/box_1.png</file>
+        <file>image/menu_page/box_2.png</file>
+        <file>image/menu_page/box_3.png</file>
+        <file>image/menu_page/box_4.png</file>
+        <file>image/sandwich_page/classic/click_off/t_1.png</file>
+        <file>image/sandwich_page/classic/click_off/t_2.png</file>
+        <file>image/sandwich_page/classic/click_off/t_3.png</file>
+        <file>image/sandwich_page/classic/click_off/t_4.png</file>
+        <file>image/sandwich_page/classic/click_off/t_5.png</file>
+        <file>image/sandwich_page/classic/click_off/t_6.png</file>
+        <file>image/sandwich_page/classic/click_on/t_1.png</file>
+        <file>image/sandwich_page/classic/click_on/t_2.png</file>
+        <file>image/sandwich_page/classic/click_on/t_3.png</file>
+        <file>image/sandwich_page/classic/click_on/t_4.png</file>
+        <file>image/sandwich_page/classic/click_on/t_5.png</file>
+        <file>image/sandwich_page/classic/click_on/t_6.png</file>
+        <file>image/sandwich_page/fresh/click_off/t_1.png</file>
+        <file>image/sandwich_page/fresh/click_off/t_2.png</file>
+        <file>image/sandwich_page/fresh/click_off/t_3.png</file>
+        <file>image/sandwich_page/fresh/click_off/t_4.png</file>
+        <file>image/sandwich_page/fresh/click_off/t_5.png</file>
+        <file>image/sandwich_page/fresh/click_off/t_6.png</file>
+        <file>image/sandwich_page/fresh/click_on/t_1.png</file>
+        <file>image/sandwich_page/fresh/click_on/t_2.png</file>
+        <file>image/sandwich_page/fresh/click_on/t_3.png</file>
+        <file>image/sandwich_page/fresh/click_on/t_4.png</file>
+        <file>image/sandwich_page/fresh/click_on/t_5.png</file>
+        <file>image/sandwich_page/fresh/click_on/t_6.png</file>
+        <file>image/sandwich_page/new/click_off/t_1.png</file>
+        <file>image/sandwich_page/new/click_off/t_2.png</file>
+        <file>image/sandwich_page/new/click_off/t_3.png</file>
+        <file>image/sandwich_page/new/click_off/t_4.png</file>
+        <file>image/sandwich_page/new/click_off/t_5.png</file>
+        <file>image/sandwich_page/new/click_off/t_6.png</file>
+        <file>image/sandwich_page/new/click_on/t_1.png</file>
+        <file>image/sandwich_page/new/click_on/t_2.png</file>
+        <file>image/sandwich_page/new/click_on/t_3.png</file>
+        <file>image/sandwich_page/new/click_on/t_4.png</file>
+        <file>image/sandwich_page/new/click_on/t_5.png</file>
+        <file>image/sandwich_page/new/click_on/t_6.png</file>
+        <file>image/sandwich_page/premium/click_off/t_1.png</file>
+        <file>image/sandwich_page/premium/click_off/t_10.png</file>
+        <file>image/sandwich_page/premium/click_off/t_2.png</file>
+        <file>image/sandwich_page/premium/click_off/t_3.png</file>
+        <file>image/sandwich_page/premium/click_off/t_4.png</file>
+        <file>image/sandwich_page/premium/click_off/t_5.png</file>
+        <file>image/sandwich_page/premium/click_off/t_6.png</file>
+        <file>image/sandwich_page/premium/click_off/t_7.png</file>
+        <file>image/sandwich_page/premium/click_off/t_8.png</file>
+        <file>image/sandwich_page/premium/click_off/t_9.png</file>
+        <file>image/sandwich_page/premium/click_on/t_1.png</file>
+        <file>image/sandwich_page/premium/click_on/t_10.png</file>
+        <file>image/sandwich_page/premium/click_on/t_2.png</file>
+        <file>image/sandwich_page/premium/click_on/t_3.png</file>
+        <file>image/sandwich_page/premium/click_on/t_4.png</file>
+        <file>image/sandwich_page/premium/click_on/t_5.png</file>
+        <file>image/sandwich_page/premium/click_on/t_6.png</file>
+        <file>image/sandwich_page/premium/click_on/t_7.png</file>
+        <file>image/sandwich_page/premium/click_on/t_8.png</file>
+        <file>image/sandwich_page/premium/click_on/t_9.png</file>
+        <file>image/sandwich_page/after_btn.png</file>
+        <file>image/sandwich_page/background_sandwich_classic.png</file>
+        <file>image/sandwich_page/background_sandwich_fresh.png</file>
+        <file>image/sandwich_page/background_sandwich_new.png</file>
+        <file>image/sandwich_page/background_sandwich_premium.png</file>
+        <file>image/sandwich_page/before_btn.png</file>
         <file>image/sauce_page/sauce_page_back.png</file>
         <file>image/topping_page/click_off/t_1.png</file>
         <file>image/topping_page/click_off/t_2.png</file>
@@ -77,76 +130,7 @@
         <file>image/vegetable_page/click_on/t_8.png</file>
         <file>image/vegetable_page/more_variety.png</file>
         <file>image/vegetable_page/vegetable_page_back.png</file>
-        <file>image/back.png</file>
-        <file>image/eat.png</file>
-        <file>image/KakaoTalk_Photo_2019-11-11-18-32-24-1.png</file>
-        <file>image/KakaoTalk_Photo_2019-11-11-18-32-24-2.png</file>
-        <file>image/KakaoTalk_Photo_2019-11-11-18-32-24-3.png</file>
-        <file>image/KakaoTalk_Photo_2019-11-11-18-32-24-4.jpeg</file>
         <file>image/subway_prototype.xd</file>
-        <file>image/takeout.png</file>
         <file>transparent.png</file>
-        <file>image/sandwich_page/classic/click_on/t_1.png</file>
-        <file>image/sandwich_page/classic/click_on/t_2.png</file>
-        <file>image/sandwich_page/classic/click_on/t_3.png</file>
-        <file>image/sandwich_page/classic/click_on/t_4.png</file>
-        <file>image/sandwich_page/classic/click_on/t_5.png</file>
-        <file>image/sandwich_page/classic/click_on/t_6.png</file>
-        <file>image/sandwich_page/fresh/click_off/t_1.png</file>
-        <file>image/sandwich_page/fresh/click_off/t_2.png</file>
-        <file>image/sandwich_page/fresh/click_off/t_3.png</file>
-        <file>image/sandwich_page/fresh/click_off/t_4.png</file>
-        <file>image/sandwich_page/fresh/click_off/t_5.png</file>
-        <file>image/sandwich_page/fresh/click_off/t_6.png</file>
-        <file>image/sandwich_page/fresh/click_on/t_1.png</file>
-        <file>image/sandwich_page/fresh/click_on/t_2.png</file>
-        <file>image/sandwich_page/fresh/click_on/t_3.png</file>
-        <file>image/sandwich_page/fresh/click_on/t_4.png</file>
-        <file>image/sandwich_page/fresh/click_on/t_5.png</file>
-        <file>image/sandwich_page/fresh/click_on/t_6.png</file>
-        <file>image/sandwich_page/new/click_off/t_1.png</file>
-        <file>image/sandwich_page/new/click_off/t_2.png</file>
-        <file>image/sandwich_page/new/click_off/t_3.png</file>
-        <file>image/sandwich_page/new/click_off/t_4.png</file>
-        <file>image/sandwich_page/new/click_off/t_5.png</file>
-        <file>image/sandwich_page/new/click_off/t_6.png</file>
-        <file>image/sandwich_page/new/click_on/t_1.png</file>
-        <file>image/sandwich_page/new/click_on/t_2.png</file>
-        <file>image/sandwich_page/new/click_on/t_3.png</file>
-        <file>image/sandwich_page/new/click_on/t_4.png</file>
-        <file>image/sandwich_page/new/click_on/t_5.png</file>
-        <file>image/sandwich_page/new/click_on/t_6.png</file>
-        <file>image/sandwich_page/premium/click_off/t_1.png</file>
-        <file>image/sandwich_page/premium/click_off/t_2.png</file>
-        <file>image/sandwich_page/premium/click_off/t_3.png</file>
-        <file>image/sandwich_page/premium/click_off/t_4.png</file>
-        <file>image/sandwich_page/premium/click_off/t_5.png</file>
-        <file>image/sandwich_page/premium/click_off/t_6.png</file>
-        <file>image/sandwich_page/premium/click_off/t_7.png</file>
-        <file>image/sandwich_page/premium/click_off/t_8.png</file>
-        <file>image/sandwich_page/premium/click_off/t_9.png</file>
-        <file>image/sandwich_page/premium/click_off/t_10.png</file>
-        <file>image/sandwich_page/premium/click_on/t_1.png</file>
-        <file>image/sandwich_page/premium/click_on/t_2.png</file>
-        <file>image/sandwich_page/premium/click_on/t_3.png</file>
-        <file>image/sandwich_page/premium/click_on/t_4.png</file>
-        <file>image/sandwich_page/premium/click_on/t_5.png</file>
-        <file>image/sandwich_page/premium/click_on/t_6.png</file>
-        <file>image/sandwich_page/premium/click_on/t_7.png</file>
-        <file>image/sandwich_page/premium/click_on/t_8.png</file>
-        <file>image/sandwich_page/premium/click_on/t_9.png</file>
-        <file>image/sandwich_page/premium/click_on/t_10.png</file>
-        <file>image/sandwich_page/classic/click_off/t_1.png</file>
-        <file>image/sandwich_page/classic/click_off/t_2.png</file>
-        <file>image/sandwich_page/classic/click_off/t_3.png</file>
-        <file>image/sandwich_page/classic/click_off/t_4.png</file>
-        <file>image/sandwich_page/classic/click_off/t_5.png</file>
-        <file>image/sandwich_page/classic/click_off/t_6.png</file>
-        <file>image/sandwich_page/after_btn.png</file>
-        <file>image/sandwich_page/background_sandwich_classic.png</file>
-        <file>image/sandwich_page/background_sandwich_fresh.png</file>
-        <file>image/sandwich_page/background_sandwich_new.png</file>
-        <file>image/sandwich_page/background_sandwich_premium.png</file>
-        <file>image/sandwich_page/before_btn.png</file>
     </qresource>
 </RCC>
