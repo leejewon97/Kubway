@@ -158,9 +158,9 @@
        <property name="geometry">
         <rect>
          <x>0</x>
-         <y>-444</y>
+         <y>-189</y>
          <width>1045</width>
-         <height>1460</height>
+         <height>1560</height>
         </rect>
        </property>
        <property name="autoFillBackground">
@@ -547,6 +547,22 @@
          </layout>
         </item>
         <item>
+         <spacer name="verticalSpacer_8">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
          <layout class="QHBoxLayout" name="horizontalLayout_7">
           <item>
            <widget class="QPushButton" name="pushButton_13">
@@ -630,6 +646,22 @@
            </widget>
           </item>
          </layout>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_9">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
         </item>
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout_8">
