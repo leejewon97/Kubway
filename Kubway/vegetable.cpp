@@ -125,3 +125,8 @@ void vegetable::on_pushButton_back_clicked()
 {
     this->hide();
 }
+
+void vegetable::on_pushButton_next_clicked()
+{
+    sa.show();
+}

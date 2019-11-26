@@ -132,5 +132,37 @@
         <file>image/vegetable_page/vegetable_page_back.png</file>
         <file>image/subway_prototype.xd</file>
         <file>transparent.png</file>
+        <file>image/sauce_page/click_off/sauce_1.png</file>
+        <file>image/sauce_page/click_off/sauce_2.png</file>
+        <file>image/sauce_page/click_off/sauce_3.png</file>
+        <file>image/sauce_page/click_off/sauce_4.png</file>
+        <file>image/sauce_page/click_off/sauce_5.png</file>
+        <file>image/sauce_page/click_off/sauce_6.png</file>
+        <file>image/sauce_page/click_off/sauce_7.png</file>
+        <file>image/sauce_page/click_off/sauce_8.png</file>
+        <file>image/sauce_page/click_off/sauce_9.png</file>
+        <file>image/sauce_page/click_off/sauce_10.png</file>
+        <file>image/sauce_page/click_off/sauce_11.png</file>
+        <file>image/sauce_page/click_off/sauce_12.png</file>
+        <file>image/sauce_page/click_off/sauce_13.png</file>
+        <file>image/sauce_page/click_off/sauce_14.png</file>
+        <file>image/sauce_page/click_off/sauce_15.png</file>
+        <file>image/sauce_page/click_off/sauce_16.png</file>
+        <file>image/sauce_page/click_on/sauce_1.png</file>
+        <file>image/sauce_page/click_on/sauce_2.png</file>
+        <file>image/sauce_page/click_on/sauce_3.png</file>
+        <file>image/sauce_page/click_on/sauce_4.png</file>
+        <file>image/sauce_page/click_on/sauce_5.png</file>
+        <file>image/sauce_page/click_on/sauce_6.png</file>
+        <file>image/sauce_page/click_on/sauce_7.png</file>
+        <file>image/sauce_page/click_on/sauce_8.png</file>
+        <file>image/sauce_page/click_on/sauce_9.png</file>
+        <file>image/sauce_page/click_on/sauce_10.png</file>
+        <file>image/sauce_page/click_on/sauce_11.png</file>
+        <file>image/sauce_page/click_on/sauce_12.png</file>
+        <file>image/sauce_page/click_on/sauce_13.png</file>
+        <file>image/sauce_page/click_on/sauce_14.png</file>
+        <file>image/sauce_page/click_on/sauce_15.png</file>
+        <file>image/sauce_page/click_on/sauce_16.png</file>
     </qresource>
 </RCC>

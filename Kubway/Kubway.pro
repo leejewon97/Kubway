@@ -34,6 +34,7 @@ SOURCES += \
         sandwich_fresh.cpp \
         sandwich_new.cpp \
         sandwich_premium.cpp \
+        sauce.cpp \
         topping.cpp \
         vegetable.cpp
 
@@ -46,6 +47,7 @@ HEADERS += \
         sandwich_fresh.h \
         sandwich_new.h \
         sandwich_premium.h \
+        sauce.h \
         topping.h \
         vegetable.h
 
@@ -58,6 +60,7 @@ FORMS += \
         sandwich_fresh.ui \
         sandwich_new.ui \
         sandwich_premium.ui \
+        sauce.ui \
         topping.ui \
         vegetable.ui
 

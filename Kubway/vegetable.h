@@ -2,6 +2,7 @@
 #define VEGETABLE_H
 
 #include <QWidget>
+#include "sauce.h"
 
 namespace Ui {
 class vegetable;
@@ -34,9 +35,12 @@ private slots:
 
     void on_pushButton_back_clicked();
 
+    void on_pushButton_next_clicked();
+
 private:
     Ui::vegetable *ui;
     bool btnFlag[8];
+    sauce sa;
 };
 
 #endif // VEGETABLE_H
