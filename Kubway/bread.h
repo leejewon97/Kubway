@@ -43,6 +43,7 @@ private:
     cheese c;
     bool btnFlag;
     QPushButton* buttons[6];
+    int it;
 };
 
 #endif // BREAD_H

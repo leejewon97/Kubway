@@ -7,24 +7,9 @@ sauce::sauce(QWidget *parent) :
 {
     ui->setupUi(this);
     ui->label->clear();
-    btnFlag = true;
-
-    buttons[0] = ui->pushButton_1;
-    buttons[1] = ui->pushButton_2;
-    buttons[2] = ui->pushButton_3;
-    buttons[3] = ui->pushButton_4;
-    buttons[4] = ui->pushButton_5;
-    buttons[5] = ui->pushButton_6;
-    buttons[6] = ui->pushButton_7;
-    buttons[7] = ui->pushButton_8;
-    buttons[8] = ui->pushButton_9;
-    buttons[9] = ui->pushButton_10;
-    buttons[10] = ui->pushButton_11;
-    buttons[11] = ui->pushButton_12;
-    buttons[12] = ui->pushButton_13;
-    buttons[13] = ui->pushButton_14;
-    buttons[14] = ui->pushButton_15;
-    buttons[15] = ui->pushButton_16;
+    for (int i = 0; i < 16; i++) {
+        btnFlag[i] = true;
+    }
 }
 
 sauce::~sauce()
@@ -32,256 +17,211 @@ sauce::~sauce()
     delete ui;
 }
 
-void sauce::disableButtons(QPushButton* exBtn){
-    for (int i = 0; i < 16; i++) {
-        buttons[i]->setDisabled(true);
-    }
-    exBtn->setEnabled(true);
-}
-
-void sauce::enableButtons(){
-    for (int i = 0; i < 16; i++) {
-        buttons[i]->setEnabled(true);
-    }
-}
-
 void sauce::on_pushButton_1_clicked()
 {
-    if(btnFlag) {
+    if(btnFlag[0]) {
         ui->label->setText("랜치 드레싱");
         ui->pushButton_1->setStyleSheet("background-image: url(:/image/sauce_page/click_on/sauce_1.png);");
-        btnFlag = false;
-        disableButtons(ui->pushButton_1);
+        btnFlag[0] = false;
     } else {
         ui->label->clear();
         ui->pushButton_1->setStyleSheet("background-image: url(:/image/sauce_page/click_off/sauce_1.png);");
-        btnFlag = true;
-        enableButtons();
+        btnFlag[0] = true;
     }
 }
 
 void sauce::on_pushButton_2_clicked()
 {
-    if(btnFlag) {
+    if(btnFlag[1]) {
         ui->label->setText("마요네즈");
         ui->pushButton_2->setStyleSheet("background-image: url(:/image/sauce_page/click_on/sauce_2.png);");
-        btnFlag = false;
-        disableButtons(ui->pushButton_2);
+        btnFlag[1] = false;
     } else {
         ui->label->clear();
         ui->pushButton_2->setStyleSheet("background-image: url(:/image/sauce_page/click_off/sauce_2.png);");
-        btnFlag = true;
-        enableButtons();
+        btnFlag[1] = true;
     }
 }
 
 void sauce::on_pushButton_3_clicked()
 {
-    if(btnFlag) {
+    if(btnFlag[2]) {
         ui->label->setText("머스타드");
         ui->pushButton_3->setStyleSheet("background-image: url(:/image/sauce_page/click_on/sauce_3.png);");
-        btnFlag = false;
-        disableButtons(ui->pushButton_3);
+        btnFlag[2] = false;
     } else {
         ui->label->clear();
         ui->pushButton_3->setStyleSheet("background-image: url(:/image/sauce_page/click_off/sauce_3.png);");
-        btnFlag = true;
-        enableButtons();
+        btnFlag[2] = true;
     }
 }
 
 void sauce::on_pushButton_4_clicked()
 {
-    if(btnFlag) {
+    if(btnFlag[3]) {
         ui->label->setText("홀스래디쉬");
         ui->pushButton_4->setStyleSheet("background-image: url(:/image/sauce_page/click_on/sauce_4.png);");
-        btnFlag = false;
-        disableButtons(ui->pushButton_4);
+        btnFlag[3] = false;
     } else {
         ui->label->clear();
         ui->pushButton_4->setStyleSheet("background-image: url(:/image/sauce_page/click_off/sauce_4.png);");
-        btnFlag = true;
-        enableButtons();
+        btnFlag[3] = true;
     }
 }
 
 void sauce::on_pushButton_5_clicked()
 {
-    if(btnFlag) {
+    if(btnFlag[4]) {
         ui->label->setText("스위트 어니언");
         ui->pushButton_5->setStyleSheet("background-image: url(:/image/sauce_page/click_on/sauce_5.png);");
-        btnFlag = false;
-        disableButtons(ui->pushButton_5);
+        btnFlag[4] = false;
     } else {
         ui->label->clear();
         ui->pushButton_5->setStyleSheet("background-image: url(:/image/sauce_page/click_off/sauce_5.png);");
-        btnFlag = true;
-        enableButtons();
+        btnFlag[4] = true;
     }
 }
 
 void sauce::on_pushButton_6_clicked()
 {
-    if(btnFlag) {
+    if(btnFlag[5]) {
         ui->label->setText("사우스 웨스트");
         ui->pushButton_6->setStyleSheet("background-image: url(:/image/sauce_page/click_on/sauce_6.png);");
-        btnFlag = false;
-        disableButtons(ui->pushButton_6);
+        btnFlag[5] = false;
     } else {
         ui->label->clear();
         ui->pushButton_6->setStyleSheet("background-image: url(:/image/sauce_page/click_off/sauce_6.png);");
-        btnFlag = true;
-        enableButtons();
+        btnFlag[5] = true;
     }
 }
 
 void sauce::on_pushButton_7_clicked()
 {
-    if(btnFlag) {
+    if(btnFlag[6]) {
         ui->label->setText("사우전 아일랜드");
         ui->pushButton_7->setStyleSheet("background-image: url(:/image/sauce_page/click_on/sauce_7.png);");
-        btnFlag = false;
-        disableButtons(ui->pushButton_7);
+        btnFlag[6] = false;
     } else {
         ui->label->clear();
         ui->pushButton_7->setStyleSheet("background-image: url(:/image/sauce_page/click_off/sauce_7.png);");
-        btnFlag = true;
-        enableButtons();
+        btnFlag[6] = true;
     }
 }
 
 void sauce::on_pushButton_8_clicked()
 {
-    if(btnFlag) {
+    if(btnFlag[7]) {
         ui->label->setText("허니 머스타드");
         ui->pushButton_8->setStyleSheet("background-image: url(:/image/sauce_page/click_on/sauce_8.png);");
-        btnFlag = false;
-        disableButtons(ui->pushButton_8);
+        btnFlag[7] = false;
     } else {
         ui->label->clear();
         ui->pushButton_8->setStyleSheet("background-image: url(:/image/sauce_page/click_off/sauce_8.png);");
-        btnFlag = true;
-        enableButtons();
+        btnFlag[7] = true;
     }
 }
 
 void sauce::on_pushButton_9_clicked()
 {
-    if(btnFlag) {
+    if(btnFlag[8]) {
         ui->label->setText("스위트 칠리");
         ui->pushButton_9->setStyleSheet("background-image: url(:/image/sauce_page/click_on/sauce_9.png);");
-        btnFlag = false;
-        disableButtons(ui->pushButton_9);
+        btnFlag[8] = false;
     } else {
         ui->label->clear();
         ui->pushButton_9->setStyleSheet("background-image: url(:/image/sauce_page/click_off/sauce_9.png);");
-        btnFlag = true;
-        enableButtons();
+        btnFlag[8] = true;
     }
 }
 
 void sauce::on_pushButton_10_clicked()
 {
-    if(btnFlag) {
+    if(btnFlag[9]) {
         ui->label->setText("이탈리안 드레싱");
         ui->pushButton_10->setStyleSheet("background-image: url(:/image/sauce_page/click_on/sauce_10.png);");
-        btnFlag = false;
-        disableButtons(ui->pushButton_10);
+        btnFlag[9] = false;
     } else {
         ui->label->clear();
         ui->pushButton_10->setStyleSheet("background-image: url(:/image/sauce_page/click_off/sauce_10.png);");
-        btnFlag = true;
-        enableButtons();
+        btnFlag[9] = true;
     }
 }
 
 void sauce::on_pushButton_11_clicked()
 {
-    if(btnFlag) {
+    if(btnFlag[10]) {
         ui->label->setText("스모크 바비큐");
         ui->pushButton_11->setStyleSheet("background-image: url(:/image/sauce_page/click_on/sauce_11.png);");
-        btnFlag = false;
-        disableButtons(ui->pushButton_11);
+        btnFlag[10] = false;
     } else {
         ui->label->clear();
         ui->pushButton_11->setStyleSheet("background-image: url(:/image/sauce_page/click_off/sauce_11.png);");
-        btnFlag = true;
-        enableButtons();
+        btnFlag[10] = true;
     }
 }
 
 void sauce::on_pushButton_12_clicked()
 {
-    if(btnFlag) {
+    if(btnFlag[11]) {
         ui->label->setText("핫칠리");
         ui->pushButton_12->setStyleSheet("background-image: url(:/image/sauce_page/click_on/sauce_12.png);");
-        btnFlag = false;
-        disableButtons(ui->pushButton_12);
+        btnFlag[11] = false;
     } else {
         ui->label->clear();
         ui->pushButton_12->setStyleSheet("background-image: url(:/image/sauce_page/click_off/sauce_12.png);");
-        btnFlag = true;
-        enableButtons();
+        btnFlag[11] = true;
     }
 }
 
 void sauce::on_pushButton_13_clicked()
 {
-    if(btnFlag) {
+    if(btnFlag[12]) {
         ui->label->setText("와인 식초");
         ui->pushButton_13->setStyleSheet("background-image: url(:/image/sauce_page/click_on/sauce_13.png);");
-        btnFlag = false;
-        disableButtons(ui->pushButton_13);
+        btnFlag[12] = false;
     } else {
         ui->label->clear();
         ui->pushButton_13->setStyleSheet("background-image: url(:/image/sauce_page/click_off/sauce_13.png);");
-        btnFlag = true;
-        enableButtons();
+        btnFlag[12] = true;
     }
 }
 
 void sauce::on_pushButton_14_clicked()
 {
-    if(btnFlag) {
+    if(btnFlag[13]) {
         ui->label->setText("올리브 오일");
         ui->pushButton_14->setStyleSheet("background-image: url(:/image/sauce_page/click_on/sauce_14.png);");
-        btnFlag = false;
-        disableButtons(ui->pushButton_14);
+        btnFlag[13] = false;
     } else {
         ui->label->clear();
         ui->pushButton_14->setStyleSheet("background-image: url(:/image/sauce_page/click_off/sauce_14.png);");
-        btnFlag = true;
-        enableButtons();
+        btnFlag[13] = true;
     }
 }
 
 void sauce::on_pushButton_15_clicked()
 {
-    if(btnFlag) {
+    if(btnFlag[14]) {
         ui->label->setText("소금");
         ui->pushButton_15->setStyleSheet("background-image: url(:/image/sauce_page/click_on/sauce_15.png);");
-        btnFlag = false;
-        disableButtons(ui->pushButton_15);
+        btnFlag[14] = false;
     } else {
         ui->label->clear();
         ui->pushButton_15->setStyleSheet("background-image: url(:/image/sauce_page/click_off/sauce_15.png);");
-        btnFlag = true;
-        enableButtons();
+        btnFlag[14] = true;
     }
 }
 
 void sauce::on_pushButton_16_clicked()
 {
-    if(btnFlag) {
+    if(btnFlag[15]) {
         ui->label->setText("후추");
         ui->pushButton_16->setStyleSheet("background-image: url(:/image/sauce_page/click_on/sauce_16.png);");
-        btnFlag = false;
-        disableButtons(ui->pushButton_16);
+        btnFlag[15] = false;
     } else {
         ui->label->clear();
         ui->pushButton_16->setStyleSheet("background-image: url(:/image/sauce_page/click_off/sauce_16.png);");
-        btnFlag = true;
-        enableButtons();
+        btnFlag[15] = true;
     }
 }
 

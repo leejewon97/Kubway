@@ -49,18 +49,13 @@ private slots:
 
     void on_pushButton_16_clicked();
 
-    void disableButtons(QPushButton* exBtn);
-
-    void enableButtons();
-
     void on_pushButton_next_clicked();
 
     void on_pushButton_back_clicked();
 
 private:
     Ui::sauce *ui;
-    bool btnFlag;
-    QPushButton* buttons[16];
+    bool btnFlag[16];
 };
 
 #endif // sauce_H
