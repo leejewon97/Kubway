@@ -5,6 +5,7 @@
 #include "vegetable.h"
 #include "sandwich.h"
 #include "sandwich_classic.h"
+#include "side_select.h"
 
 
 #include <QApplication>
@@ -15,6 +16,9 @@ int main(int argc, char *argv[])
     mainwindow m;
     sandwich s;
     m.show();
+
+    side_select ss;
+    ss.show();
 
 
 
