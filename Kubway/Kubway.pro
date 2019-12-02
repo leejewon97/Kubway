@@ -35,8 +35,6 @@ SOURCES += \
         sandwich_new.cpp \
         sandwich_premium.cpp \
         sauce.cpp \
-        side.cpp \
-        side_select.cpp \
         topping.cpp \
         vegetable.cpp
 
@@ -50,8 +48,6 @@ HEADERS += \
         sandwich_new.h \
         sandwich_premium.h \
         sauce.h \
-        side.h \
-        side_select.h \
         topping.h \
         vegetable.h
 
@@ -65,8 +61,6 @@ FORMS += \
         sandwich_new.ui \
         sandwich_premium.ui \
         sauce.ui \
-        side.ui \
-        side_select.ui \
         topping.ui \
         vegetable.ui
 
@@ -78,7 +72,4 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 RESOURCES += \
     res.qrc
 
-DISTFILES += \
-    image/side_page/back.png \
-    image/side_page/btn_one.png \
-    image/side_page/btn_set.png
+DISTFILES +=
