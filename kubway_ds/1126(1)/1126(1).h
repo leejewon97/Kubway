@@ -119,7 +119,7 @@ void print_Node(NodePointer temp)
 	{
 		cout << "종류 : " << temp->name;
 		cout << " 가격 : " << temp->price;
-		cout << " 추천 소스 : " << temp->rcsauce1 << temp->rcsauce2 << endl;
+		cout << " 추천 소스 : " << temp->rcsauce1 << " " << temp->rcsauce2 << endl;
 	}
 }
 
@@ -134,8 +134,8 @@ void find_Node(NodePointer temp)
 		if (strcmp(temp->name, findname) == 0)
 		{
 			cout << "종류 : " << temp->name;
-			cout << "가격 : " << temp->price << endl;
-			cout << " 추천 소스 : " << temp->rcsauce1 << temp->rcsauce2 << endl;
+			cout << " 가격 : " << temp->price;
+			cout << " 추천 소스 : " << temp->rcsauce1 << " " << temp->rcsauce2 << endl;
 			break;
 		}
 	}
