@@ -7,6 +7,8 @@ side_select::side_select(QWidget *parent) :
 {
     ui->setupUi(this);
     ui->label->clear();
+
+
     for (int i = 0; i < 2; i++) {
         btnFlag[i] = true;
     }
@@ -27,8 +29,9 @@ side_select::~side_select()
 bool side_select::getClickOne() {
     return click_one;
 }
-void side_select::setClickOne(bool b) {
-    click_one =b;
+void side_select::setClickOne() {
+    poo.show();
+    this->close();
 }
 void side_select::setString(QString s) {
     str = s;

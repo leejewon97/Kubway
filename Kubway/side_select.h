@@ -23,7 +23,7 @@ public:
 
     bool getClickOne();
 
-    void setClickOne(bool b);
+    void setClickOne();
 
 private slots:
     void on_pushButton_1_clicked();

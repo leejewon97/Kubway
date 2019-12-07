@@ -15,8 +15,7 @@ side::~side()
 
 void side::on_one_btn_clicked()
 {
-    ss.show();
-    ss.setClickOne(true);
+    ss.setClickOne();
 }
 
 void side::on_set_btn_clicked()
