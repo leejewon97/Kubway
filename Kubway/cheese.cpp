@@ -10,6 +10,8 @@ cheese::cheese(QWidget *parent) :
     ui->label->clear();
     btnFlag = true;
 
+    connect(t, SIGNAL(buttonPressed()), this, SLOT(closeAll()));
+
     buttons[0] = ui->pushButton_1;
     buttons[1] = ui->pushButton_2;
     buttons[2] = ui->pushButton_3;
@@ -96,12 +98,23 @@ void cheese::on_pushButton_3_clicked()
 void cheese::on_pushButton_next_clicked()
 {
     if(btnFlag == false) {
-        t.setString(getString());
-        t.show();
+        t->setString(getString());
+        t->show();
     }
 }
 
 void cheese::on_pushButton_back_clicked()
 {
     this->hide();
+}
+
+void cheese::closeAll()
+{
+    t->hide();
+    on_pushButton_home_clicked();
+}
+
+void cheese::on_pushButton_home_clicked()
+{
+    emit buttonPressed();
 }

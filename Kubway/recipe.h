@@ -17,12 +17,20 @@ public:
     explicit recipe(QWidget *parent = nullptr);
     ~recipe();
 
+signals:
+    void buttonPressed();
+
 private slots:
     void on_pushButton_clicked();
 
+    void closeAll();
+
+
+    void on_pushButton_home_clicked();
+
 private:
     Ui::recipe *ui;
-    order_done od;
+    order_done *od = new order_done;
 };
 
 #endif // RECIPE_H

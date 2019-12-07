@@ -18,6 +18,9 @@ public:
     explicit pay_or_order(QWidget *parent = nullptr);
     ~pay_or_order();
 
+signals:
+    void buttonPressed();
+
 private slots:
     void on_pay_btn_clicked();
 
@@ -25,9 +28,14 @@ private slots:
 
     void on_pushButton_back_clicked();
 
+    void closeAll();
+
+
+    void on_pushButton_home_clicked();
+
 private:
     Ui::pay_or_order *ui;
-    card_or_cash coc;
+    card_or_cash *coc = new card_or_cash;
 };
 
 #endif // PAY_OR_ORDER_H

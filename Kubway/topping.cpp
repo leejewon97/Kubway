@@ -8,6 +8,8 @@ topping::topping(QWidget *parent) :
     ui->setupUi(this);
     ui->label->clear();
 
+    connect(v, SIGNAL(buttonPressed()), this, SLOT(closeAll()));
+
     buttons[0] = ui->pushButton_1;
     buttons[1] = ui->pushButton_2;
     buttons[2] = ui->pushButton_3;
@@ -189,12 +191,24 @@ void topping::on_pushButton_8_clicked()
 void topping::on_pushButton_next_clicked()
 {
     if(btnFlag == false) {
-        v.setString(getString());
-        v.show();
+        v->setString(getString());
+        v->show();
     }
 }
 
 void topping::on_pushButton_back_clicked()
 {
     this->hide();
+}
+
+void topping::closeAll()
+{
+    v->hide();
+    on_pushButton_home_clicked();
+}
+
+
+void topping::on_pushButton_home_clicked()
+{
+    emit buttonPressed();
 }

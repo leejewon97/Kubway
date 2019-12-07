@@ -15,7 +15,6 @@
         <file>image/bread_page/bread_page_back.png</file>
         <file>image/button/Forward Arrow.png</file>
         <file>image/button/go_back_btn.png</file>
-        <file>image/button/go_home_btn.png</file>
         <file>image/button/hot_btn.png</file>
         <file>image/button/new_btn.png</file>
         <file>image/button/square_1067.png</file>
@@ -34,18 +33,6 @@
         <file>image/menu_page/box_2.png</file>
         <file>image/menu_page/box_3.png</file>
         <file>image/menu_page/box_4.png</file>
-        <file>image/order_done_page/back.png</file>
-        <file>image/order_done_page/main_btn.png</file>
-        <file>image/pay_or_order_page/back.png</file>
-        <file>image/pay_or_order_page/pay_btn.png</file>
-        <file>image/pay_or_order_page/plus_btn.png</file>
-        <file>image/payment_page/back.png</file>
-        <file>image/payment_page/card_btn.png</file>
-        <file>image/payment_page/cash_btn.png</file>
-        <file>image/payment_page_2/back.png</file>
-        <file>image/payment_page_2/money_back.png</file>
-        <file>image/receipt_page/back.png</file>
-        <file>image/receipt_page/receipt.png</file>
         <file>image/sandwich_page/classic/click_off/t_1.png</file>
         <file>image/sandwich_page/classic/click_off/t_2.png</file>
         <file>image/sandwich_page/classic/click_off/t_3.png</file>
@@ -161,9 +148,6 @@
         <file>image/sideselect_page/drink_pass.png</file>
         <file>image/sideselect_page/img_1.png</file>
         <file>image/sideselect_page/side_page_back.png</file>
-        <file>image/size_select_page/15_btn.png</file>
-        <file>image/size_select_page/30_btn.png</file>
-        <file>image/size_select_page/back.png</file>
         <file>image/topping_page/click_off/t_1.png</file>
         <file>image/topping_page/click_off/t_2.png</file>
         <file>image/topping_page/click_off/t_3.png</file>
@@ -202,6 +186,18 @@
         <file>image/subway_images.zip</file>
         <file>image/subway_prototype.xd</file>
         <file>image/transparent.png</file>
-        <file>transparent.png</file>
+        <file>image/order_done_page/back.png</file>
+        <file>image/order_done_page/main_btn.png</file>
+        <file>image/pay_or_order_page/back.png</file>
+        <file>image/pay_or_order_page/pay_btn.png</file>
+        <file>image/pay_or_order_page/plus_btn.png</file>
+        <file>image/payment_page/back.png</file>
+        <file>image/payment_page/card_btn.png</file>
+        <file>image/payment_page/cash_btn.png</file>
+        <file>image/payment_page_2/back.png</file>
+        <file>image/payment_page_2/money_back.png</file>
+        <file>image/receipt_page/back.png</file>
+        <file>image/receipt_page/receipt.png</file>
+        <file>image/button/go_home_btn.png</file>
     </qresource>
 </RCC>

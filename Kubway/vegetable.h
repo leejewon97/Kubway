@@ -20,6 +20,9 @@ public:
 
     QString getString();
 
+signals:
+    void buttonPressed();
+
 private slots:
     void on_pushButton_1_clicked();
 
@@ -41,11 +44,16 @@ private slots:
 
     void on_pushButton_next_clicked();
 
+    void closeAll();
+
+
+    void on_pushButton_home_clicked();
+
 private:
     Ui::vegetable *ui;
     bool btnFlag[8];
     QString str;
-    sauce sa;
+    sauce *sa = new sauce;
     int str_length=0;
 };
 

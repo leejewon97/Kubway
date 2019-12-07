@@ -6,6 +6,12 @@ sandwich::sandwich(QWidget *parent) :
     ui(new Ui::sandwich)
 {
     ui->setupUi(this);
+
+
+    connect(sn, SIGNAL(buttonPressed()), this, SLOT(closeAll()));
+    connect(sc, SIGNAL(buttonPressed()), this, SLOT(closeAll()));
+    connect(sf, SIGNAL(buttonPressed()), this, SLOT(closeAll()));
+    connect(sp, SIGNAL(buttonPressed()), this, SLOT(closeAll()));
 }
 
 sandwich::~sandwich()
@@ -15,25 +21,39 @@ sandwich::~sandwich()
 
 void sandwich::on_classic_btn_clicked()
 {
-    sc.show();
+    sc->show();
 }
 
 void sandwich::on_fresh_btn_clicked()
 {
-    sf.show();
+    sf->show();
 }
 
 void sandwich::on_new_btn_clicked()
 {
-    sn.show();
+    sn->show();
 }
 
 void sandwich::on_premium_btn_clicked()
 {
-    sp.show();
+    sp->show();
 }
 
 void sandwich::on_pushButton_back_clicked()
 {
     this->hide();
+}
+
+void sandwich::on_pushButton_home_clicked()
+{
+    emit buttonPressed();
+}
+
+void sandwich::closeAll()
+{
+    sn->hide();
+    sc->hide();
+    sf->hide();
+    sp->hide();
+    on_pushButton_home_clicked();
 }

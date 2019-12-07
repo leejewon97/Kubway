@@ -8,12 +8,17 @@ bread::bread(QWidget *parent) :
     ui->setupUi(this);
     ui->label->clear();
     btnFlag = true;
+
+    connect(c, SIGNAL(buttonPressed()), this, SLOT(closeAll()));
+
     buttons[0] = ui->pushButton_1;
     buttons[1] = ui->pushButton_2;
     buttons[2] = ui->pushButton_3;
     buttons[3] = ui->pushButton_4;
     buttons[4] = ui->pushButton_5;
     buttons[5] = ui->pushButton_6;
+
+
 }
 
 bread::~bread()
@@ -26,6 +31,7 @@ void bread::setString(QString s) {
 QString bread::getString() {
     return str;
 }
+
 void bread::disableButtons(QPushButton* exBtn){
     for (int i = 0; i < 6; i++) {
         buttons[i]->setDisabled(true);
@@ -151,8 +157,8 @@ void bread::on_pushButton_6_clicked()
 void bread::on_pushButton_next_clicked()
 {
     if(btnFlag == false) {
-        c.setString(getString());
-        c.show();
+        c->setString(getString());
+        c->show();
     }
 }
 
@@ -163,5 +169,19 @@ void bread::on_pushButton_back_clicked()
 
 void bread::on_pushButton_home_clicked()
 {
+    str.clear();
+    ui->pushButton_1->setStyleSheet("background-image: url(:/image/bread_page/click_off/bread_1.png);");
+    ui->pushButton_2->setStyleSheet("background-image: url(:/image/bread_page/click_off/bread_2.png);");
+    ui->pushButton_3->setStyleSheet("background-image: url(:/image/bread_page/click_off/bread_3.png);");
+    ui->pushButton_4->setStyleSheet("background-image: url(:/image/bread_page/click_off/bread_4.png);");
+    ui->pushButton_5->setStyleSheet("background-image: url(:/image/bread_page/click_off/bread_5.png);");
+    ui->pushButton_6->setStyleSheet("background-image: url(:/image/bread_page/click_off/bread_6.png);");
+    btnFlag = true;
+    emit buttonPressed();
+}
 
+void bread::closeAll()
+{
+    c->hide();
+    on_pushButton_home_clicked();
 }

@@ -9,6 +9,8 @@ sandwich_classic::sandwich_classic(QWidget *parent) :
     ui->label->clear();
     btnFlag = true;
 
+    connect(b, SIGNAL(buttonPressed()), this, SLOT(closeAll()));
+
     buttons[0] = ui->pushButton_1;
     buttons[1] = ui->pushButton_2;
     buttons[2] = ui->pushButton_3;
@@ -16,7 +18,6 @@ sandwich_classic::sandwich_classic(QWidget *parent) :
     buttons[4] = ui->pushButton_5;
     buttons[5] = ui->pushButton_6;
 
-    //read_Node(&head);
 }
 
 sandwich_classic::~sandwich_classic()
@@ -46,10 +47,8 @@ QString sandwich_classic::getString() {
 
 void sandwich_classic::on_pushButton_1_clicked()
 {
-    read_Node(&head);
     if(btnFlag) {
-        // 깨짐
-        str.append(find_Node(head, "에그마요15cm"));
+        str.append("에그마요\n");
         ui->label->setText(getString());
         ui->pushButton_1->setStyleSheet("background-image: url(:/image/sandwich_page/classic/click_on/t_1.png);");
         btnFlag = false;
@@ -151,12 +150,24 @@ void sandwich_classic::on_pushButton_6_clicked()
 void sandwich_classic::on_pushButton_next_clicked()
 {
     if(btnFlag == false) {
-            b.setString(getString());
-            b.show();
+            b->setString(getString());
+            b->show();
     }
 }
 
 void sandwich_classic::on_pushButton_back_clicked()
 {
     this->hide();
+}
+
+
+void sandwich_classic::on_pushButton_home_clicked()
+{
+    emit buttonPressed();
+}
+
+void sandwich_classic::closeAll()
+{
+    b->hide();
+    on_pushButton_home_clicked();
 }

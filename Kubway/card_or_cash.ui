@@ -61,6 +61,22 @@
      </spacer>
     </item>
     <item>
+     <widget class="QPushButton" name="pushButton_home">
+      <property name="minimumSize">
+       <size>
+        <width>80</width>
+        <height>85</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/image/button/go_home_btn.png);</string>
+      </property>
+      <property name="text">
+       <string>PushButton</string>
+      </property>
+     </widget>
+    </item>
+    <item>
      <spacer name="verticalSpacer_5">
       <property name="orientation">
        <enum>Qt::Vertical</enum>

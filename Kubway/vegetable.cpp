@@ -7,6 +7,8 @@ vegetable::vegetable(QWidget *parent) :
 {
     ui->setupUi(this);
     ui->label->clear();
+
+    connect(sa, SIGNAL(buttonPressed()), this, SLOT(closeAll()));
     for (int i = 0; i < 8; i++) {
         btnFlag[i] = true;
     }
@@ -177,8 +179,19 @@ void vegetable::on_pushButton_next_clicked()
         flag = flag && btnFlag[i];
     }
     if( !flag ){
-        sa.setString(getString() +'\n');
-        sa.show();
+        sa->setString(getString() +'\n');
+        sa->show();
     }
 
+}
+
+void vegetable::closeAll()
+{
+    sa->hide();
+    on_pushButton_home_clicked();
+}
+
+void vegetable::on_pushButton_home_clicked()
+{
+    emit buttonPressed();
 }

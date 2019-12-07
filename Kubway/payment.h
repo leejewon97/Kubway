@@ -17,12 +17,20 @@ public:
     explicit payment(QWidget *parent = nullptr);
     ~payment();
 
+signals:
+    void buttonPressed();
+
 private slots:
     void on_pushButton_next_clicked();
 
+    void closeAll();
+
+
+    void on_pushButton_home_clicked();
+
 private:
     Ui::payment *ui;
-    recipe r;
+    recipe *r = new recipe;
 };
 
 #endif // PAYMENT_H

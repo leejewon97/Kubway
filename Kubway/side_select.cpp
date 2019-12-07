@@ -8,6 +8,8 @@ side_select::side_select(QWidget *parent) :
     ui->setupUi(this);
     ui->label->clear();
 
+    connect(poo, SIGNAL(buttonPressed()), this, SLOT(closeAll()));
+
 
     for (int i = 0; i < 2; i++) {
         btnFlag[i] = true;
@@ -30,7 +32,7 @@ bool side_select::getClickOne() {
     return click_one;
 }
 void side_select::setClickOne() {
-    poo.show();
+    poo->show();
     this->close();
 }
 void side_select::setString(QString s) {
@@ -200,6 +202,18 @@ void side_select::on_pushButton_back_clicked()
 void side_select::on_pushButton_next_clicked()
 {
     if(!(btnFlag[0]||btnFlag[1])){
-        poo.show();
+        poo->show();
     }
+}
+
+void side_select::closeAll()
+{
+    poo->hide();
+    on_pushButton_home_clicked();
+}
+
+
+void side_select::on_pushButton_home_clicked()
+{
+    emit buttonPressed();
 }

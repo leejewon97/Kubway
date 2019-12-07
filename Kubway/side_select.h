@@ -25,6 +25,9 @@ public:
 
     void setClickOne();
 
+signals:
+    void buttonPressed();
+
 private slots:
     void on_pushButton_1_clicked();
 
@@ -52,13 +55,18 @@ private slots:
 
     void on_pushButton_next_clicked();
 
+    void closeAll();
+
+
+
+    void on_pushButton_home_clicked();
 
 private:
     Ui::side_select *ui;
     bool btnFlag[2];
     QString str;
     QPushButton* buttons[7];
-    pay_or_order poo;
+    pay_or_order *poo = new pay_or_order;
     bool click_one =false;
 };
 

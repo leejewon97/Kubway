@@ -24,6 +24,13 @@ public:
 
     QString getString();
 
+    int getClickHome();
+
+    void setClickHome(int h);
+
+signals:
+    void buttonPressed();
+
 private slots:
     void on_pushButton_1_clicked();
 
@@ -47,12 +54,15 @@ private slots:
 
     void on_pushButton_home_clicked();
 
+    void closeAll();
+
 private:
     Ui::bread *ui;
-    cheese c;
+    cheese *c = new cheese;
     bool btnFlag;
     QPushButton* buttons[6];
     QString str;
+    int click_home;
 };
 
 #endif // BREAD_H
