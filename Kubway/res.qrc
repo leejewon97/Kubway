@@ -198,5 +198,6 @@
         <file>image/payment_page_2/money_back.png</file>
         <file>image/receipt_page/back.png</file>
         <file>image/receipt_page/receipt.png</file>
+        <file>image/button/go_home_btn.png</file>
     </qresource>
 </RCC>
