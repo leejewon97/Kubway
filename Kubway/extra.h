@@ -2,7 +2,7 @@
 #include <fstream>
 #include <stdlib.h>
 #include <cstdio>
-#include <string>
+#include <string.h>
 
 using namespace std;
 
@@ -28,9 +28,7 @@ void delete_Node(NodePointer*);
 void read_Node(NodePointer *temp)
 {
 	FILE *file;
-	FILE *fl;
-
-	NodePointer item = *temp;
+    FILE *fl;
 
 	int num, i;
 	int save_price;

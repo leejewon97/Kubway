@@ -15,6 +15,8 @@ sandwich_classic::sandwich_classic(QWidget *parent) :
     buttons[3] = ui->pushButton_4;
     buttons[4] = ui->pushButton_5;
     buttons[5] = ui->pushButton_6;
+
+    //read_Node(&head);
 }
 
 sandwich_classic::~sandwich_classic()
@@ -44,8 +46,10 @@ QString sandwich_classic::getString() {
 
 void sandwich_classic::on_pushButton_1_clicked()
 {
+    read_Node(&head);
     if(btnFlag) {
-        str.append("에그마요\n");
+        // 깨짐
+        str.append(find_Node(head, "에그마요15cm"));
         ui->label->setText(getString());
         ui->pushButton_1->setStyleSheet("background-image: url(:/image/sandwich_page/classic/click_on/t_1.png);");
         btnFlag = false;
