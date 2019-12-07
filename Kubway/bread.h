@@ -6,7 +6,6 @@
 #include <QString>
 #include "cheese.h"
 
-
 using namespace std;
 
 namespace Ui {

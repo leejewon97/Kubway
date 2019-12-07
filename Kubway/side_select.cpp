@@ -24,12 +24,19 @@ side_select::~side_select()
     delete ui;
 }
 
+bool side_select::getClickOne() {
+    return click_one;
+}
+void side_select::setClickOne(bool b) {
+    click_one =b;
+}
 void side_select::setString(QString s) {
     str = s;
 }
 QString side_select::getString() {
     return str;
 }
+
 void side_select::disableButtons(QPushButton* exBtn){
     for (int i = 0; i < 5; i++) {
         buttons[i]->setDisabled(true);
@@ -189,7 +196,9 @@ void side_select::on_pushButton_back_clicked()
 
 void side_select::on_pushButton_next_clicked()
 {
-    if( btnFlag[0] || btnFlag[1] != true ){
-
+    if(!(btnFlag[0]&&btnFlag[1])){
+        poo.show();
     }
+
+
 }

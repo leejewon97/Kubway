@@ -3,6 +3,8 @@
 
 #include <QWidget>
 #include <QPushButton>
+#include "pay_or_order.h"
+
 namespace Ui {
 class side_select;
 }
@@ -18,6 +20,10 @@ public:
     void setString(QString s);
 
     QString getString();
+
+    bool getClickOne();
+
+    void setClickOne(bool b);
 
 private slots:
     void on_pushButton_1_clicked();
@@ -46,11 +52,14 @@ private slots:
 
     void on_pushButton_next_clicked();
 
+
 private:
     Ui::side_select *ui;
     bool btnFlag[2];
     QString str;
     QPushButton* buttons[7];
+    pay_or_order poo;
+    bool click_one =false;
 };
 
 #endif // side_select_H

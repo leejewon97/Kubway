@@ -186,5 +186,17 @@
         <file>image/subway_images.zip</file>
         <file>image/subway_prototype.xd</file>
         <file>image/transparent.png</file>
+        <file>image/order_done_page/back.png</file>
+        <file>image/order_done_page/main_btn.png</file>
+        <file>image/pay_or_order_page/back.png</file>
+        <file>image/pay_or_order_page/pay_btn.png</file>
+        <file>image/pay_or_order_page/plus_btn.png</file>
+        <file>image/payment_page/back.png</file>
+        <file>image/payment_page/card_btn.png</file>
+        <file>image/payment_page/cash_btn.png</file>
+        <file>image/payment_page_2/back.png</file>
+        <file>image/payment_page_2/money_back.png</file>
+        <file>image/receipt_page/back.png</file>
+        <file>image/receipt_page/receipt.png</file>
     </qresource>
 </RCC>

@@ -10,6 +10,11 @@ vegetable::vegetable(QWidget *parent) :
     for (int i = 0; i < 8; i++) {
         btnFlag[i] = true;
     }
+    on_pushButton_1_clicked();
+    on_pushButton_2_clicked();
+    on_pushButton_3_clicked();
+    on_pushButton_4_clicked();
+    on_pushButton_5_clicked();
 }
 
 vegetable::~vegetable()
@@ -26,7 +31,6 @@ QString vegetable::getString() {
 
 void vegetable::on_pushButton_1_clicked()
 {
-    str_length = str.length();
     if(btnFlag[0]){
         str.append("양상추 ");
         ui->label->setText(getString());
@@ -61,7 +65,6 @@ void vegetable::on_pushButton_2_clicked()
 
 void vegetable::on_pushButton_3_clicked()
 {
-
     if(btnFlag[2]){
         str.append("오이 ");
         ui->label->setText(getString());

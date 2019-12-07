@@ -17,6 +17,7 @@ public:
     explicit side(QWidget *parent = nullptr);
     ~side();
 
+
 private slots:
     void on_one_btn_clicked();
 

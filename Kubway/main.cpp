@@ -6,6 +6,7 @@
 #include "sandwich.h"
 #include "sandwich_classic.h"
 #include "side_select.h"
+#include "side.h"
 
 
 #include <QApplication>
@@ -15,9 +16,9 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
     mainwindow m;
     sandwich s;
+    side si;
     m.show();
-
-
+    si.show();
 
     return a.exec();
 }
