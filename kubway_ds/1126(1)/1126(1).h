@@ -24,7 +24,7 @@ void read_Node(NodePointer*);
 void save_Node(NodePointer);
 void make_Node(NodePointer *, int, char *, char *, char *);
 void print_Node(NodePointer);
-void find_Node(NodePointer);
+char *find_Node(NodePointer);
 void delete_Node(NodePointer*);
 
 void read_Node(NodePointer *temp)
@@ -123,9 +123,11 @@ void print_Node(NodePointer temp)
 	}
 }
 
-void find_Node(NodePointer temp)
+char *find_Node(NodePointer temp)
 {
 	char findname[30];
+	char pvalue[30];
+
 	cout << "찾을 샌드위치 입력 : ";
 	cin >> findname;
 
@@ -133,9 +135,8 @@ void find_Node(NodePointer temp)
 	{
 		if (strcmp(temp->name, findname) == 0)
 		{
-			cout << "종류 : " << temp->name;
-			cout << " 가격 : " << temp->price << "원";
-			cout << " 추천 소스 : " << temp->rcsauce1 << " " << temp->rcsauce2 << endl;
+			sprintf(pvalue, "\t%d", temp->price);
+			strcat(temp->name, pvalue);
 			break;
 		}
 	}
@@ -143,6 +144,7 @@ void find_Node(NodePointer temp)
 	{
 		cout << "찾는 샌드위치가 없습니다." << endl;
 	}
+	return temp->name;
 }
 
 void delete_Node(NodePointer *node)

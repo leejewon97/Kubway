@@ -42,7 +42,7 @@ int main(void)
 			print_Node(head);
 			break;
 		case 3:
-			find_Node(head);
+			cout << find_Node(head) << endl;
 			break;
 		case 4:
 			delete_Node(&head);
