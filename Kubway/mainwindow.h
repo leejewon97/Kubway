@@ -22,18 +22,13 @@ public:
     QString getString();
 
 private slots:
-
-    void closeAll();
-
-private slots:
     void on_pushButton_2_clicked();
 
-    void on_pushButton_clicked();    
+    void on_pushButton_clicked();
 
 private:
     Ui::mainwindow *ui;
-    sandwich *s = new sandwich();
-    bread b;
+    sandwich s;
 };
 
 #endif // MAINWINDOW_H

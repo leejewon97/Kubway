@@ -15,14 +15,6 @@ public:
     explicit order_done(QWidget *parent = nullptr);
     ~order_done();
 
-signals:
-    void buttonPressed();
-
-private slots:
-    void closeAll();
-
-    void on_pushButton_home_clicked();
-
 private:
     Ui::order_done *ui;
 };

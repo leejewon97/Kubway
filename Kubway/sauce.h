@@ -22,9 +22,6 @@ public:
 
     QString getString();
 
-signals:
-    void buttonPressed();
-
 private slots:
     void on_pushButton_1_clicked();
 
@@ -62,17 +59,12 @@ private slots:
 
     void on_pushButton_back_clicked();
 
-    void closeAll();
-
-
-    void on_pushButton_home_clicked();
-
 private:
     Ui::sauce *ui;
     bool btnFlag[16];
     QString str;
-    side *si = new side;
-    side_select *ss = new side_select;
+    side si;
+    side_select ss;
 };
 
 #endif // sauce_H

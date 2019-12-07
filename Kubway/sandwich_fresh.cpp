@@ -9,8 +9,6 @@ sandwich_fresh::sandwich_fresh(QWidget *parent) :
     ui->label->clear();
     btnFlag = true;
 
-    connect(b, SIGNAL(buttonPressed()), this, SLOT(closeAll()));
-
     buttons[0] = ui->pushButton_1;
     buttons[1] = ui->pushButton_2;
     buttons[2] = ui->pushButton_3;
@@ -149,8 +147,8 @@ void sandwich_fresh::on_pushButton_6_clicked()
 void sandwich_fresh::on_pushButton_next_clicked()
 {
     if(btnFlag == false) {
-            b->setString(getString());
-            b->show();
+            b.setString(getString());
+            b.show();
     }
 }
 
@@ -158,18 +156,3 @@ void sandwich_fresh::on_pushButton_back_clicked()
 {
     this->hide();
 }
-\
-void sandwich_fresh::on_pushButton_home_clicked()
-{
-    emit buttonPressed();
-}
-
-
-void sandwich_fresh::closeAll()
-{
-    b->hide();
-    on_pushButton_home_clicked();
-}
-
-
-

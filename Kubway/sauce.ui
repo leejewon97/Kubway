@@ -125,25 +125,6 @@
           </property>
          </spacer>
         </item>
-        <item>
-         <widget class="QPushButton" name="pushButton_home">
-          <property name="minimumSize">
-           <size>
-            <width>85</width>
-            <height>80</height>
-           </size>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">background-image: url(:/image/button/go_home_btn.png);</string>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-          <property name="flat">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
        </layout>
       </item>
       <item>
@@ -184,12 +165,12 @@
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>1028</width>
+           <width>1031</width>
            <height>1572</height>
           </rect>
          </property>
          <property name="autoFillBackground">
-          <bool>true</bool>
+          <bool>false</bool>
          </property>
          <property name="styleSheet">
           <string notr="true"/>

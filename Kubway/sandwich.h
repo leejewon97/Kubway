@@ -18,10 +18,7 @@ class sandwich : public QWidget
 
 public:
     explicit sandwich(QWidget *parent = nullptr);
-    ~sandwich();
-
-signals:
-    void buttonPressed();
+    ~sandwich();   
 
 private slots:
 
@@ -35,17 +32,12 @@ private slots:
 
     void on_pushButton_back_clicked();
 
-    void on_pushButton_home_clicked();
-
-    void closeAll();
-
-
 private:
     Ui::sandwich *ui;
-    sandwich_classic *sc = new sandwich_classic;
-    sandwich_fresh *sf = new sandwich_fresh;
-    sandwich_new *sn = new sandwich_new;
-    sandwich_premium *sp = new sandwich_premium;
+    sandwich_classic sc;
+    sandwich_fresh sf;
+    sandwich_new sn;
+    sandwich_premium sp;
 
 
 };

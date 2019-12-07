@@ -16,10 +16,8 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
     mainwindow m;
     sandwich s;
-    bread b;
+    side si;
     m.show();
 
     return a.exec();
-
-
 }

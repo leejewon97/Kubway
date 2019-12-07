@@ -17,9 +17,6 @@ public:
     explicit side(QWidget *parent = nullptr);
     ~side();
 
-signals:
-    void buttonPressed();
-
 
 private slots:
     void on_one_btn_clicked();
@@ -28,14 +25,9 @@ private slots:
 
     void on_pushButton_back_clicked();
 
-    void closeAll();
-
-
-    void on_pushButton_home_clicked();
-
 private:
     Ui::side *ui;
-    side_select *ss = new side_select;
+    side_select ss;
 };
 
 #endif // SIDE_H

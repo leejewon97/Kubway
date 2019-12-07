@@ -6,8 +6,6 @@ recipe::recipe(QWidget *parent) :
     ui(new Ui::recipe)
 {
     ui->setupUi(this);
-
-    connect(od, SIGNAL(buttonPressed()), this, SLOT(closeAll()));
 }
 
 recipe::~recipe()
@@ -17,16 +15,5 @@ recipe::~recipe()
 
 void recipe::on_pushButton_clicked()
 {
-    od->show();
-}
-
-void recipe::closeAll()
-{
-    od->hide();
-    on_pushButton_home_clicked();
-}
-
-void recipe::on_pushButton_home_clicked()
-{
-    emit buttonPressed();
+    od.show();
 }

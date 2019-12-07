@@ -7,14 +7,9 @@ sauce::sauce(QWidget *parent) :
 {
     ui->setupUi(this);
     ui->label->clear();
-
-    connect(si, SIGNAL(buttonPressed()), this, SLOT(closeAll()));
-
     for (int i = 0; i < 16; i++) {
         btnFlag[i] = true;
     }
-
-
 }
 
 sauce::~sauce()
@@ -307,8 +302,8 @@ void sauce::on_pushButton_next_clicked()
         flag = flag && btnFlag[i];
     }
     if( !flag ){
-        ss->setString(getString());
-        si->show();
+        ss.setString(getString());
+        si.show();
     }
 
 }
@@ -316,15 +311,4 @@ void sauce::on_pushButton_next_clicked()
 void sauce::on_pushButton_back_clicked()
 {
     this->hide();
-}
-
-void sauce::closeAll()
-{
-    si->hide();
-    on_pushButton_home_clicked();
-}
-
-void sauce::on_pushButton_home_clicked()
-{
-    emit buttonPressed();
 }

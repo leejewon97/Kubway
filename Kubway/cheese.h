@@ -22,9 +22,6 @@ public:
 
     QString getString();
 
-signals:
-    void buttonPressed();
-
 private slots:
     void on_pushButton_1_clicked();
 
@@ -40,14 +37,9 @@ private slots:
 
     void enableButtons();
 
-    void closeAll();
-
-
-    void on_pushButton_home_clicked();
-
 private:
     Ui::cheese *ui;
-    topping *t = new topping;
+    topping t;
     bool btnFlag;
     QString str;
     QPushButton* buttons[3];
