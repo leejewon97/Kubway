@@ -61,7 +61,7 @@ void vegetable::on_pushButton_2_clicked()
 
 void vegetable::on_pushButton_3_clicked()
 {
-    int str_length =str.length();
+
     if(btnFlag[2]){
         str.append("오이 ");
         ui->label->setText(getString());
