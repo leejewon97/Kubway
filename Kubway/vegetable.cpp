@@ -169,6 +169,13 @@ void vegetable::on_pushButton_back_clicked()
 
 void vegetable::on_pushButton_next_clicked()
 {
-    sa.setString(getString() +'\n');
-    sa.show();
+    bool flag = true;
+    for (int i = 0; i < 8; i++) {
+        flag = flag && btnFlag[i];
+    }
+    if( !flag ){
+        sa.setString(getString() +'\n');
+        sa.show();
+    }
+
 }

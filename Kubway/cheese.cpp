@@ -95,8 +95,10 @@ void cheese::on_pushButton_3_clicked()
 
 void cheese::on_pushButton_next_clicked()
 {
-    t.setString(getString());
-    t.show();
+    if(btnFlag == false) {
+        t.setString(getString());
+        t.show();
+    }
 }
 
 void cheese::on_pushButton_back_clicked()

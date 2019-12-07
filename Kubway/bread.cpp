@@ -150,8 +150,10 @@ void bread::on_pushButton_6_clicked()
 
 void bread::on_pushButton_next_clicked()
 {
-    c.setString(getString());
-    c.show();
+    if(btnFlag == false) {
+        c.setString(getString());
+        c.show();
+    }
 }
 
 void bread::on_pushButton_back_clicked()

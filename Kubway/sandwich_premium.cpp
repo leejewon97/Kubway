@@ -218,8 +218,10 @@ void sandwich_premium::on_pushButton_10_clicked()
 
 void sandwich_premium::on_pushButton_next_clicked()
 {
-    b.setString(getString());
-    b.show();
+    if(btnFlag == false) {
+            b.setString(getString());
+            b.show();
+    }
 }
 
 void sandwich_premium::on_pushButton_back_clicked()

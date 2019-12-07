@@ -146,8 +146,11 @@ void sandwich_new::on_pushButton_6_clicked()
 
 void sandwich_new::on_pushButton_next_clicked()
 {
-    b.setString(getString());
-    b.show();
+    if(btnFlag == false) {
+            b.setString(getString());
+            b.show();
+    }
+
 }
 
 void sandwich_new::on_pushButton_back_clicked()

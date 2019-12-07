@@ -297,8 +297,15 @@ void sauce::on_pushButton_16_clicked()
 
 void sauce::on_pushButton_next_clicked()
 {
-    ss.setString(getString() + '\n');
-    si.show();
+    bool flag = true;
+    for (int i = 0; i < 16; i++) {
+        flag = flag && btnFlag[i];
+    }
+    if( !flag ){
+        ss.setString(getString());
+        si.show();
+    }
+
 }
 
 void sauce::on_pushButton_back_clicked()

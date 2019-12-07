@@ -17,10 +17,6 @@ int main(int argc, char *argv[])
     sandwich s;
     m.show();
 
-    side_select ss;
-    ss.show();
-
-
 
     return a.exec();
 }

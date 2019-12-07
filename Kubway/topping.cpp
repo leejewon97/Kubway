@@ -188,8 +188,10 @@ void topping::on_pushButton_8_clicked()
 
 void topping::on_pushButton_next_clicked()
 {
-    v.setString(getString());
-    v.show();
+    if(btnFlag == false) {
+        v.setString(getString());
+        v.show();
+    }
 }
 
 void topping::on_pushButton_back_clicked()
