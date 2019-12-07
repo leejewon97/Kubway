@@ -123,20 +123,21 @@ void print_Node(NodePointer temp)
 	}
 }
 
-char *find_Node(NodePointer temp)
+char *find_Node(NodePointer temp, char* arg)
 {
 	char findname[30];
 	char pvalue[30];
+	char *ret;
 
-	cout << "찾을 샌드위치 입력 : ";
-	cin >> findname;
+	strcpy(findname, arg);
 
 	for (; temp != NULL; temp = temp->link)
 	{
 		if (strcmp(temp->name, findname) == 0)
 		{
-			sprintf(pvalue, "\t%d", temp->price);
-			strcat(temp->name, pvalue);
+			sprintf(pvalue, "\t%d\n", temp->price);
+			ret = temp->name;
+			strcat(ret, pvalue);
 			break;
 		}
 	}
@@ -144,7 +145,7 @@ char *find_Node(NodePointer temp)
 	{
 		cout << "찾는 샌드위치가 없습니다." << endl;
 	}
-	return temp->name;
+	return ret;
 }
 
 void delete_Node(NodePointer *node)
