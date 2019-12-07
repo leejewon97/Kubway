@@ -128,26 +128,6 @@
         <file>image/sauce_page/click_on/sauce_8.png</file>
         <file>image/sauce_page/click_on/sauce_9.png</file>
         <file>image/sauce_page/sauce_page_back.png</file>
-        <file>image/side_page/back.png</file>
-        <file>image/side_page/btn_one.png</file>
-        <file>image/side_page/btn_set.png</file>
-        <file>image/sideselect_page/click_off/t_1.png</file>
-        <file>image/sideselect_page/click_off/t_2.png</file>
-        <file>image/sideselect_page/click_off/t_3.png</file>
-        <file>image/sideselect_page/click_off/t_4.png</file>
-        <file>image/sideselect_page/click_off/t_5.png</file>
-        <file>image/sideselect_page/click_off/t_7.png</file>
-        <file>image/sideselect_page/click_off/t_8.png</file>
-        <file>image/sideselect_page/click_on/t_1.png</file>
-        <file>image/sideselect_page/click_on/t_2.png</file>
-        <file>image/sideselect_page/click_on/t_3.png</file>
-        <file>image/sideselect_page/click_on/t_4.png</file>
-        <file>image/sideselect_page/click_on/t_5.png</file>
-        <file>image/sideselect_page/click_on/t_7.png</file>
-        <file>image/sideselect_page/click_on/t_8.png</file>
-        <file>image/sideselect_page/drink_pass.png</file>
-        <file>image/sideselect_page/img_1.png</file>
-        <file>image/sideselect_page/side_page_back.png</file>
         <file>image/topping_page/click_off/t_1.png</file>
         <file>image/topping_page/click_off/t_2.png</file>
         <file>image/topping_page/click_off/t_3.png</file>
@@ -185,5 +165,25 @@
         <file>image/vegetable_page/vegetable_page_back.png</file>
         <file>image/subway_images.zip</file>
         <file>image/subway_prototype.xd</file>
+        <file>transparent.png</file>
+        <file>image/sideselect_page/img_1.png</file>
+        <file>image/sideselect_page/side_page_back.png</file>
+        <file>image/sideselect_page/click_off/t_1.png</file>
+        <file>image/sideselect_page/click_off/t_2.png</file>
+        <file>image/sideselect_page/click_off/t_3.png</file>
+        <file>image/sideselect_page/click_off/t_4.png</file>
+        <file>image/sideselect_page/click_off/t_5.png</file>
+        <file>image/sideselect_page/click_off/t_7.png</file>
+        <file>image/sideselect_page/click_off/t_8.png</file>
+        <file>image/sideselect_page/click_on/t_1.png</file>
+        <file>image/sideselect_page/click_on/t_2.png</file>
+        <file>image/sideselect_page/click_on/t_3.png</file>
+        <file>image/sideselect_page/click_on/t_4.png</file>
+        <file>image/sideselect_page/click_on/t_5.png</file>
+        <file>image/sideselect_page/click_on/t_7.png</file>
+        <file>image/sideselect_page/click_on/t_8.png</file>
+        <file>image/side_page/back.png</file>
+        <file>image/side_page/btn_one.png</file>
+        <file>image/side_page/btn_set.png</file>
     </qresource>
 </RCC>

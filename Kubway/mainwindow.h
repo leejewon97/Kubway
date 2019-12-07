@@ -17,6 +17,10 @@ public:
     explicit mainwindow(QWidget *parent = nullptr);
     ~mainwindow();
 
+    void setString(QString s);
+
+    QString getString();
+
 private slots:
     void on_pushButton_2_clicked();
 

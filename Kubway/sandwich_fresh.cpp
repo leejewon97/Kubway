@@ -35,15 +35,24 @@ void sandwich_fresh::enableButtons(){
     }
 }
 
+void sandwich_fresh::setString(QString s) {
+    str = s;
+}
+QString sandwich_fresh::getString() {
+    return str;
+}
+
 void sandwich_fresh::on_pushButton_1_clicked()
 {
     if(btnFlag) {
-        ui->label->setText("로티세리 바비큐 치킨");
+        str.append("로티세리 바비큐 치킨\n");
+        ui->label->setText(getString());
         ui->pushButton_1->setStyleSheet("background-image: url(:/image/sandwich_page/fresh/click_on/t_1.png);");
         btnFlag = false;
         disableButtons(ui->pushButton_1);
     } else {
-        ui->label->clear();
+        str.chop(12);
+        ui->label->setText(getString());
         ui->pushButton_1->setStyleSheet("background-image: url(:/image/sandwich_page/fresh/click_off/t_1.png);");
         btnFlag = true;
         enableButtons();
@@ -53,12 +62,14 @@ void sandwich_fresh::on_pushButton_1_clicked()
 void sandwich_fresh::on_pushButton_2_clicked()
 {
     if(btnFlag) {
-        ui->label->setText("로스트 치킨");
+        str.append("로스트 치킨\n");
+        ui->label->setText(getString());
         ui->pushButton_2->setStyleSheet("background-image: url(:/image/sandwich_page/fresh/click_on/t_2.png);");
         btnFlag = false;
         disableButtons(ui->pushButton_2);
     } else {
-        ui->label->clear();
+        str.chop(7);
+        ui->label->setText(getString());
         ui->pushButton_2->setStyleSheet("background-image: url(:/image/sandwich_page/fresh/click_off/t_2.png);");
         btnFlag = true;
         enableButtons();
@@ -68,12 +79,14 @@ void sandwich_fresh::on_pushButton_2_clicked()
 void sandwich_fresh::on_pushButton_3_clicked()
 {
     if(btnFlag) {
-        ui->label->setText("로스트 비프");
+        str.append("로스트 비프\n");
+        ui->label->setText(getString());
         ui->pushButton_3->setStyleSheet("background-image: url(:/image/sandwich_page/fresh/click_on/t_3.png);");
         btnFlag = false;
         disableButtons(ui->pushButton_3);
     } else {
-        ui->label->clear();
+        str.chop(7);
+        ui->label->setText(getString());
         ui->pushButton_3->setStyleSheet("background-image: url(:/image/sandwich_page/fresh/click_off/t_3.png);");
         btnFlag = true;
         enableButtons();
@@ -83,12 +96,14 @@ void sandwich_fresh::on_pushButton_3_clicked()
 void sandwich_fresh::on_pushButton_4_clicked()
 {
     if(btnFlag) {
-        ui->label->setText("서브웨이 클럽");
+        str.append("서브웨이 클럽\n");
+        ui->label->setText(getString());
         ui->pushButton_4->setStyleSheet("background-image: url(:/image/sandwich_page/fresh/click_on/t_4.png);");
         btnFlag = false;
         disableButtons(ui->pushButton_4);
     } else {
-        ui->label->clear();
+        str.chop(8);
+        ui->label->setText(getString());
         ui->pushButton_4->setStyleSheet("background-image: url(:/image/sandwich_page/fresh/click_off/t_4.png);");
         btnFlag = true;
         enableButtons();
@@ -98,12 +113,14 @@ void sandwich_fresh::on_pushButton_4_clicked()
 void sandwich_fresh::on_pushButton_5_clicked()
 {
     if(btnFlag) {
-        ui->label->setText("터키");
+        str.append("터키\n");
+        ui->label->setText(getString());
         ui->pushButton_5->setStyleSheet("background-image: url(:/image/sandwich_page/fresh/click_on/t_5.png);");
         btnFlag = false;
         disableButtons(ui->pushButton_5);
     } else {
-        ui->label->clear();
+        str.chop(3);
+        ui->label->setText(getString());
         ui->pushButton_5->setStyleSheet("background-image: url(:/image/sandwich_page/fresh/click_off/t_5.png);");
         btnFlag = true;
         enableButtons();
@@ -113,12 +130,14 @@ void sandwich_fresh::on_pushButton_5_clicked()
 void sandwich_fresh::on_pushButton_6_clicked()
 {
     if(btnFlag) {
-        ui->label->setText("베지");
+        str.append("베지\n");
+        ui->label->setText(getString());
         ui->pushButton_6->setStyleSheet("background-image: url(:/image/sandwich_page/fresh/click_on/t_6.png);");
         btnFlag = false;
         disableButtons(ui->pushButton_6);
     } else {
-        ui->label->clear();
+        str.chop(3);
+        ui->label->setText(getString());
         ui->pushButton_6->setStyleSheet("background-image: url(:/image/sandwich_page/fresh/click_off/t_6.png);");
         btnFlag = true;
         enableButtons();
@@ -127,6 +146,7 @@ void sandwich_fresh::on_pushButton_6_clicked()
 
 void sandwich_fresh::on_pushButton_next_clicked()
 {
+    b.setString(getString());
     b.show();
 }
 

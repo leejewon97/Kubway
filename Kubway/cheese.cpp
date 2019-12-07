@@ -20,6 +20,12 @@ cheese::~cheese()
     delete ui;
 }
 
+void cheese::setString(QString s) {
+    str = s;
+}
+QString cheese::getString() {
+    return str;
+}
 void cheese::disableButtons(QPushButton* exBtn){
     for (int i = 0; i < 3; i++) {
         buttons[i]->setDisabled(true);
@@ -36,50 +42,57 @@ void cheese::enableButtons(){
 void cheese::on_pushButton_1_clicked()
 {
     if(btnFlag) {
-        ui->label->setText("아메리칸 치즈");
+        str.append("아메리칸 치즈\n");
+        ui->label->setText(getString());
         ui->pushButton_1->setStyleSheet("background-image: url(:/image/cheese_page/click_on/cheese_1.png);");
         btnFlag = false;
         disableButtons(ui->pushButton_1);
     } else {
-        ui->label->clear();
+        ui->label->setText(getString());
         ui->pushButton_1->setStyleSheet("background-image: url(:/image/cheese_page/click_off/cheese_1.png);");
         btnFlag = true;
         enableButtons();
     }
+
 }
 
 void cheese::on_pushButton_2_clicked()
 {
     if(btnFlag) {
-        ui->label->setText("슈레드 치즈");
+        str.append("슈레드 치즈\n");
+        ui->label->setText(getString());
         ui->pushButton_2->setStyleSheet("background-image: url(:/image/cheese_page/click_on/cheese_2.png);");
         btnFlag = false;
         disableButtons(ui->pushButton_2);
     } else {
-        ui->label->clear();
+        ui->label->setText(getString());
         ui->pushButton_2->setStyleSheet("background-image: url(:/image/cheese_page/click_off/cheese_2.png);");
         btnFlag = true;
         enableButtons();
     }
+
 }
 
 void cheese::on_pushButton_3_clicked()
 {
     if(btnFlag) {
-        ui->label->setText("모짜렐라 치즈");
+        str.append("모짜렐라 치즈\n");
+        ui->label->setText(getString());
         ui->pushButton_3->setStyleSheet("background-image: url(:/image/cheese_page/click_on/cheese_3.png);");
         btnFlag = false;
         disableButtons(ui->pushButton_3);
     } else {
-        ui->label->clear();
+        ui->label->setText(getString());
         ui->pushButton_3->setStyleSheet("background-image: url(:/image/cheese_page/click_off/cheese_3.png);");
         btnFlag = true;
         enableButtons();
     }
+
 }
 
 void cheese::on_pushButton_next_clicked()
 {
+    t.setString(getString());
     t.show();
 }
 

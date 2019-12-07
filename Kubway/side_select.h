@@ -15,6 +15,10 @@ public:
     explicit side_select(QWidget *parent = nullptr);
     ~side_select();
 
+    void setString(QString s);
+
+    QString getString();
+
 private slots:
     void on_pushButton_1_clicked();
 
@@ -41,6 +45,7 @@ private slots:
 private:
     Ui::side_select *ui;
     bool btnFlag[2];
+    QString str;
     QPushButton* buttons[7];
 };
 

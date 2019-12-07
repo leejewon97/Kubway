@@ -18,7 +18,7 @@ class sandwich : public QWidget
 
 public:
     explicit sandwich(QWidget *parent = nullptr);
-    ~sandwich();
+    ~sandwich();   
 
 private slots:
 

@@ -17,6 +17,10 @@ public:
     explicit sandwich_premium(QWidget *parent = nullptr);
     ~sandwich_premium();
 
+    void setString(QString s);
+
+    QString getString();
+
 private slots:
     void on_pushButton_1_clicked();
 
@@ -50,6 +54,7 @@ private:
     Ui::sandwich_premium *ui;
     bread b;
     bool btnFlag;
+    QString str;
     QPushButton* buttons[10];
 };
 

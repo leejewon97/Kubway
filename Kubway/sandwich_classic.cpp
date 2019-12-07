@@ -35,15 +35,24 @@ void sandwich_classic::enableButtons(){
     }
 }
 
+void sandwich_classic::setString(QString s) {
+    str = s;
+}
+QString sandwich_classic::getString() {
+    return str;
+}
+
 void sandwich_classic::on_pushButton_1_clicked()
 {
     if(btnFlag) {
-        ui->label->setText("에그마요");
+        str.append("에그마요\n");
+        ui->label->setText(getString());
         ui->pushButton_1->setStyleSheet("background-image: url(:/image/sandwich_page/classic/click_on/t_1.png);");
         btnFlag = false;
         disableButtons(ui->pushButton_1);
     } else {
-        ui->label->clear();
+        str.chop(5);
+        ui->label->setText(getString());
         ui->pushButton_1->setStyleSheet("background-image: url(:/image/sandwich_page/classic/click_off/t_1.png);");
         btnFlag = true;
         enableButtons();
@@ -53,12 +62,14 @@ void sandwich_classic::on_pushButton_1_clicked()
 void sandwich_classic::on_pushButton_2_clicked()
 {
     if(btnFlag) {
-        ui->label->setText("참치");
+        str.append("참치\n");
+        ui->label->setText(getString());
         ui->pushButton_2->setStyleSheet("background-image: url(:/image/sandwich_page/classic/click_on/t_2.png);");
         btnFlag = false;
         disableButtons(ui->pushButton_2);
     } else {
-        ui->label->clear();
+        str.chop(3);
+        ui->label->setText(getString());
         ui->pushButton_2->setStyleSheet("background-image: url(:/image/sandwich_page/classic/click_off/t_2.png);");
         btnFlag = true;
         enableButtons();
@@ -68,12 +79,14 @@ void sandwich_classic::on_pushButton_2_clicked()
 void sandwich_classic::on_pushButton_3_clicked()
 {
     if(btnFlag) {
-        ui->label->setText("햄");
+        str.append("햄\n");
+        ui->label->setText(getString());
         ui->pushButton_3->setStyleSheet("background-image: url(:/image/sandwich_page/classic/click_on/t_3.png);");
         btnFlag = false;
         disableButtons(ui->pushButton_3);
     } else {
-        ui->label->clear();
+        str.chop(2);
+        ui->label->setText(getString());
         ui->pushButton_3->setStyleSheet("background-image: url(:/image/sandwich_page/classic/click_off/t_3.png);");
         btnFlag = true;
         enableButtons();
@@ -83,12 +96,14 @@ void sandwich_classic::on_pushButton_3_clicked()
 void sandwich_classic::on_pushButton_4_clicked()
 {
     if(btnFlag) {
-        ui->label->setText("미트볼");
+        str.append("미트볼\n");
+        ui->label->setText(getString());
         ui->pushButton_4->setStyleSheet("background-image: url(:/image/sandwich_page/classic/click_on/t_4.png);");
         btnFlag = false;
         disableButtons(ui->pushButton_4);
     } else {
-        ui->label->clear();
+        str.chop(4);
+        ui->label->setText(getString());
         ui->pushButton_4->setStyleSheet("background-image: url(:/image/sandwich_page/classic/click_off/t_4.png);");
         btnFlag = true;
         enableButtons();
@@ -98,12 +113,14 @@ void sandwich_classic::on_pushButton_4_clicked()
 void sandwich_classic::on_pushButton_5_clicked()
 {
     if(btnFlag) {
-        ui->label->setText("비엘티");
+        str.append("비엘티\n");
+        ui->label->setText(getString());
         ui->pushButton_5->setStyleSheet("background-image: url(:/image/sandwich_page/classic/click_on/t_5.png);");
         btnFlag = false;
         disableButtons(ui->pushButton_5);
     } else {
-        ui->label->clear();
+        str.chop(4);
+        ui->label->setText(getString());
         ui->pushButton_5->setStyleSheet("background-image: url(:/image/sandwich_page/classic/click_off/t_5.png);");
         btnFlag = true;
         enableButtons();
@@ -113,12 +130,14 @@ void sandwich_classic::on_pushButton_5_clicked()
 void sandwich_classic::on_pushButton_6_clicked()
 {
     if(btnFlag) {
-        ui->label->setText("이탈리안 비엘티");
+        str.append("이탈리안 비엘티\n");
+        ui->label->setText(getString());
         ui->pushButton_6->setStyleSheet("background-image: url(:/image/sandwich_page/classic/click_on/t_6.png);");
         btnFlag = false;
         disableButtons(ui->pushButton_6);
     } else {
-        ui->label->clear();
+        str.chop(8);
+        ui->label->setText(getString());
         ui->pushButton_6->setStyleSheet("background-image: url(:/image/sandwich_page/classic/click_off/t_6.png);");
         btnFlag = true;
         enableButtons();
@@ -127,6 +146,7 @@ void sandwich_classic::on_pushButton_6_clicked()
 
 void sandwich_classic::on_pushButton_next_clicked()
 {
+    b.setString(getString());
     b.show();
 }
 

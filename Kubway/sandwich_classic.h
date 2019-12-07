@@ -17,6 +17,10 @@ public:
     explicit sandwich_classic(QWidget *parent = nullptr);
     ~sandwich_classic();
 
+    void setString(QString s);
+
+    QString getString();
+
 private slots:
     void on_pushButton_1_clicked();
 
@@ -42,6 +46,7 @@ private:
     Ui::sandwich_classic *ui;
     bread b;
     bool btnFlag;
+    QString str;
     QPushButton* buttons[6];
 };
 

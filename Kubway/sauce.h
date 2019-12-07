@@ -3,6 +3,8 @@
 
 #include <QWidget>
 #include <QPushButton>
+#include "side.h"
+#include "side_select.h"
 
 namespace Ui {
 class sauce;
@@ -15,6 +17,10 @@ class sauce : public QWidget
 public:
     explicit sauce(QWidget *parent = nullptr);
     ~sauce();
+
+    void setString(QString s);
+
+    QString getString();
 
 private slots:
     void on_pushButton_1_clicked();
@@ -56,6 +62,9 @@ private slots:
 private:
     Ui::sauce *ui;
     bool btnFlag[16];
+    QString str;
+    side si;
+    side_select ss;
 };
 
 #endif // sauce_H

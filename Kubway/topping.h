@@ -17,6 +17,10 @@ public:
     explicit topping(QWidget *parent = nullptr);
     ~topping();
 
+    void setString(QString s);
+
+    QString getString();
+
 private slots:
     void on_pushButton_1_clicked();
 
@@ -46,6 +50,7 @@ private:
     Ui::topping *ui;
     vegetable v;
     bool btnFlag;
+    QString str;
     QPushButton* buttons[8];
 };
 

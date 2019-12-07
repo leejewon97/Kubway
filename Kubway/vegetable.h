@@ -16,6 +16,10 @@ public:
     explicit vegetable(QWidget *parent = nullptr);
     ~vegetable();
 
+    void setString(QString s);
+
+    QString getString();
+
 private slots:
     void on_pushButton_1_clicked();
 
@@ -40,6 +44,7 @@ private slots:
 private:
     Ui::vegetable *ui;
     bool btnFlag[8];
+    QString str;
     sauce sa;
 };
 

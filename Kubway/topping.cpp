@@ -23,6 +23,13 @@ topping::~topping()
     delete ui;
 }
 
+void topping::setString(QString s) {
+    str = s;
+}
+QString topping::getString() {
+    return str;
+}
+
 void topping::disableButtons(QPushButton* exBtn){
     for (int i = 0; i < 8; i++) {
         buttons[i]->setDisabled(true);
@@ -39,125 +46,149 @@ void topping::enableButtons(){
 void topping::on_pushButton_1_clicked()
 {
     if(btnFlag) {
-        ui->label->setText("더블 업");
+        str.append("더블 업\n");
+        ui->label->setText(getString());
         ui->pushButton_1->setStyleSheet("background-image: url(:/image/topping_page/click_on/t_1.png);");
         btnFlag = false;
         disableButtons(ui->pushButton_1);
     } else {
-        ui->label->clear();
+        str.chop(5);
+        ui->label->setText(getString());
         ui->pushButton_1->setStyleSheet("background-image: url(:/image/topping_page/click_off/t_1.png);");
         btnFlag = true;
         enableButtons();
     }
+
 }
 
 void topping::on_pushButton_2_clicked()
 {
     if(btnFlag) {
-        ui->label->setText("에그마요");
+        str.append("에그마요\n");
+        ui->label->setText(getString());
         ui->pushButton_2->setStyleSheet("background-image: url(:/image/topping_page/click_on/t_2.png);");
         btnFlag = false;
         disableButtons(ui->pushButton_2);
     } else {
-        ui->label->clear();
+        str.chop(5);
+        ui->label->setText(getString());
         ui->pushButton_2->setStyleSheet("background-image: url(:/image/topping_page/click_off/t_2.png);");
         btnFlag = true;
         enableButtons();
     }
+
 }
 
 void topping::on_pushButton_3_clicked()
 {
     if(btnFlag) {
-        ui->label->setText("페페로니");
+        str.append("페페로니\n");
+        ui->label->setText(getString());
         ui->pushButton_3->setStyleSheet("background-image: url(:/image/topping_page/click_on/t_3.png);");
         btnFlag = false;
         disableButtons(ui->pushButton_3);
     } else {
-        ui->label->clear();
+        str.chop(5);
+        ui->label->setText(getString());
         ui->pushButton_3->setStyleSheet("background-image: url(:/image/topping_page/click_off/t_3.png);");
         btnFlag = true;
         enableButtons();
     }
+
 }
 
 void topping::on_pushButton_4_clicked()
 {
     if(btnFlag) {
-        ui->label->setText("베이컨");
+        str.append("베이컨\n");
+        ui->label->setText(getString());
         ui->pushButton_4->setStyleSheet("background-image: url(:/image/topping_page/click_on/t_4.png);");
         btnFlag = false;
         disableButtons(ui->pushButton_4);
     } else {
-        ui->label->clear();
+        ui->label->setText(getString());
         ui->pushButton_4->setStyleSheet("background-image: url(:/image/topping_page/click_off/t_4.png);");
         btnFlag = true;
         enableButtons();
     }
+
 }
 
 void topping::on_pushButton_5_clicked()
 {
     if(btnFlag) {
-        ui->label->setText("더블 치즈");
+        str.append("더블 치즈\n");
+        ui->label->setText(getString());
         ui->pushButton_5->setStyleSheet("background-image: url(:/image/topping_page/click_on/t_5.png);");
         btnFlag = false;
         disableButtons(ui->pushButton_5);
     } else {
-        ui->label->clear();
+        str.chop(6);
+        ui->label->setText(getString());
         ui->pushButton_5->setStyleSheet("background-image: url(:/image/topping_page/click_off/t_5.png);");
         btnFlag = true;
         enableButtons();
     }
+
 }
 
 void topping::on_pushButton_6_clicked()
 {
     if(btnFlag) {
-        ui->label->setText("오믈렛");
+        str.append("오믈렛\n");
+        ui->label->setText(getString());
         ui->pushButton_6->setStyleSheet("background-image: url(:/image/topping_page/click_on/t_6.png);");
         btnFlag = false;
         disableButtons(ui->pushButton_6);
     } else {
-        ui->label->clear();
+        str.chop(4);
+        ui->label->setText(getString());
         ui->pushButton_6->setStyleSheet("background-image: url(:/image/topping_page/click_off/t_6.png);");
         btnFlag = true;
         enableButtons();
     }
+
 }
 
 void topping::on_pushButton_7_clicked()
 {
     if(btnFlag) {
-        ui->label->setText("아보카도");
+        str.append("아보카도\n");
+        ui->label->setText(getString());
         ui->pushButton_7->setStyleSheet("background-image: url(:/image/topping_page/click_on/t_7.png);");
         btnFlag = false;
         disableButtons(ui->pushButton_7);
     } else {
-        ui->label->clear();
+        str.chop(5);
+        ui->label->setText(getString());
         ui->pushButton_7->setStyleSheet("background-image: url(:/image/topping_page/click_off/t_7.png);");
         btnFlag = true;
         enableButtons();
     }
+
 }
 
 void topping::on_pushButton_8_clicked()
 {
     if(btnFlag) {
-        ui->label->setText("베이컨 비츠");
+        str.append("베이컨 비츠\n");
+        ui->label->setText(getString());
         ui->pushButton_8->setStyleSheet("background-image: url(:/image/topping_page/click_on/t_8.png);");
         btnFlag = false;
         disableButtons(ui->pushButton_8);
     } else {
-        ui->label->clear();
+        str.chop(6);
+        ui->label->setText(getString());
         ui->pushButton_8->setStyleSheet("background-image: url(:/image/topping_page/click_off/t_8.png);");
         btnFlag = true;
         enableButtons();
     }
+
 }
 
 void topping::on_pushButton_next_clicked()
 {
+    v.setString(getString());
     v.show();
 }
 

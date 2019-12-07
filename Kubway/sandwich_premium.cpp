@@ -39,15 +39,24 @@ void sandwich_premium::enableButtons(){
     }
 }
 
+void sandwich_premium::setString(QString s) {
+    str = s;
+}
+QString sandwich_premium::getString() {
+    return str;
+}
+
 void sandwich_premium::on_pushButton_1_clicked()
 {
     if(btnFlag) {
-        ui->label->setText("쉬림프");
+        str.append("쉬림프\n");
+        ui->label->setText(getString());
         ui->pushButton_1->setStyleSheet("background-image: url(:/image/sandwich_page/premium/click_on/t_1.png);");
         btnFlag = false;
         disableButtons(ui->pushButton_1);
     } else {
-        ui->label->clear();
+        str.chop(4);
+        ui->label->setText(getString());
         ui->pushButton_1->setStyleSheet("background-image: url(:/image/sandwich_page/premium/click_off/t_1.png);");
         btnFlag = true;
         enableButtons();
@@ -57,12 +66,14 @@ void sandwich_premium::on_pushButton_1_clicked()
 void sandwich_premium::on_pushButton_2_clicked()
 {
     if(btnFlag) {
-        ui->label->setText("쉬림프 아보카도");
+        str.append("쉬림프 아보카도\n");
+        ui->label->setText(getString());
         ui->pushButton_2->setStyleSheet("background-image: url(:/image/sandwich_page/premium/click_on/t_2.png);");
         btnFlag = false;
         disableButtons(ui->pushButton_2);
     } else {
-        ui->label->clear();
+        str.chop(9);
+        ui->label->setText(getString());
         ui->pushButton_2->setStyleSheet("background-image: url(:/image/sandwich_page/premium/click_off/t_2.png);");
         btnFlag = true;
         enableButtons();
@@ -72,12 +83,14 @@ void sandwich_premium::on_pushButton_2_clicked()
 void sandwich_premium::on_pushButton_3_clicked()
 {
     if(btnFlag) {
-        ui->label->setText("스테이크 & 치즈");
+        str.append("스테이크 & 치즈\n");
+        ui->label->setText(getString());
         ui->pushButton_3->setStyleSheet("background-image: url(:/image/sandwich_page/premium/click_on/t_3.png);");
         btnFlag = false;
         disableButtons(ui->pushButton_3);
     } else {
-        ui->label->clear();
+        str.chop(10);
+        ui->label->setText(getString());
         ui->pushButton_3->setStyleSheet("background-image: url(:/image/sandwich_page/premium/click_off/t_3.png);");
         btnFlag = true;
         enableButtons();
@@ -87,12 +100,14 @@ void sandwich_premium::on_pushButton_3_clicked()
 void sandwich_premium::on_pushButton_4_clicked()
 {
     if(btnFlag) {
-        ui->label->setText("터키 베이컨 아보카도");
+        str.append("터키 베이컨 아보카도\n");
+        ui->label->setText(getString());
         ui->pushButton_4->setStyleSheet("background-image: url(:/image/sandwich_page/premium/click_on/t_4.png);");
         btnFlag = false;
         disableButtons(ui->pushButton_4);
     } else {
-        ui->label->clear();
+        str.chop(12);
+        ui->label->setText(getString());
         ui->pushButton_4->setStyleSheet("background-image: url(:/image/sandwich_page/premium/click_off/t_4.png);");
         btnFlag = true;
         enableButtons();
@@ -102,12 +117,14 @@ void sandwich_premium::on_pushButton_4_clicked()
 void sandwich_premium::on_pushButton_5_clicked()
 {
     if(btnFlag) {
-        ui->label->setText("치킨 베이컨 랜치");
+        str.append("치킨 베이컨 랜치\n");
+        ui->label->setText(getString());
         ui->pushButton_5->setStyleSheet("background-image: url(:/image/sandwich_page/premium/click_on/t_5.png);");
         btnFlag = false;
         disableButtons(ui->pushButton_5);
     } else {
-        ui->label->clear();
+        str.chop(10);
+        ui->label->setText(getString());
         ui->pushButton_5->setStyleSheet("background-image: url(:/image/sandwich_page/premium/click_off/t_5.png);");
         btnFlag = true;
         enableButtons();
@@ -117,12 +134,14 @@ void sandwich_premium::on_pushButton_5_clicked()
 void sandwich_premium::on_pushButton_6_clicked()
 {
     if(btnFlag) {
-        ui->label->setText("써브웨이 멜트");
+        str.append("써브웨이 멜트\n");
+        ui->label->setText(getString());
         ui->pushButton_6->setStyleSheet("background-image: url(:/image/sandwich_page/premium/click_on/t_6.png);");
         btnFlag = false;
         disableButtons(ui->pushButton_6);
     } else {
-        ui->label->clear();
+        str.chop(8);
+        ui->label->setText(getString());
         ui->pushButton_6->setStyleSheet("background-image: url(:/image/sandwich_page/premium/click_off/t_6.png);");
         btnFlag = true;
         enableButtons();
@@ -132,12 +151,14 @@ void sandwich_premium::on_pushButton_6_clicked()
 void sandwich_premium::on_pushButton_7_clicked()
 {
     if(btnFlag) {
-        ui->label->setText("터키 베이컨");
+        str.append("터키 베이컨\n");
+        ui->label->setText(getString());
         ui->pushButton_7->setStyleSheet("background-image: url(:/image/sandwich_page/premium/click_on/t_7.png);");
         btnFlag = false;
         disableButtons(ui->pushButton_7);
     } else {
-        ui->label->clear();
+        str.chop(7);
+        ui->label->setText(getString());
         ui->pushButton_7->setStyleSheet("background-image: url(:/image/sandwich_page/premium/click_off/t_7.png);");
         btnFlag = true;
         enableButtons();
@@ -147,12 +168,14 @@ void sandwich_premium::on_pushButton_7_clicked()
 void sandwich_premium::on_pushButton_8_clicked()
 {
     if(btnFlag) {
-        ui->label->setText("스파이시 이탈리안");
+        str.append("스파이시 이탈리안\n");
+        ui->label->setText(getString());
         ui->pushButton_8->setStyleSheet("background-image: url(:/image/sandwich_page/premium/click_on/t_8.png);");
         btnFlag = false;
         disableButtons(ui->pushButton_8);
     } else {
-        ui->label->clear();
+        str.chop(10);
+        ui->label->setText(getString());
         ui->pushButton_8->setStyleSheet("background-image: url(:/image/sandwich_page/premium/click_off/t_8.png);");
         btnFlag = true;
         enableButtons();
@@ -162,12 +185,14 @@ void sandwich_premium::on_pushButton_8_clicked()
 void sandwich_premium::on_pushButton_9_clicked()
 {
     if(btnFlag) {
-        ui->label->setText("치킨 데리야끼");
+        str.append("치킨 데리야끼\n");
+        ui->label->setText(getString());
         ui->pushButton_9->setStyleSheet("background-image: url(:/image/sandwich_page/premium/click_on/t_9.png);");
         btnFlag = false;
         disableButtons(ui->pushButton_9);
     } else {
-        ui->label->clear();
+        str.chop(8);
+        ui->label->setText(getString());
         ui->pushButton_9->setStyleSheet("background-image: url(:/image/sandwich_page/premium/click_off/t_9.png);");
         btnFlag = true;
         enableButtons();
@@ -177,12 +202,14 @@ void sandwich_premium::on_pushButton_9_clicked()
 void sandwich_premium::on_pushButton_10_clicked()
 {
     if(btnFlag) {
-        ui->label->setText("폴드포크");
+        str.append("폴드포크\n");
+        ui->label->setText(getString());
         ui->pushButton_10->setStyleSheet("background-image: url(:/image/sandwich_page/premium/click_on/t_10.png);");
         btnFlag = false;
         disableButtons(ui->pushButton_10);
     } else {
-        ui->label->clear();
+        str.chop(5);
+        ui->label->setText(getString());
         ui->pushButton_10->setStyleSheet("background-image: url(:/image/sandwich_page/premium/click_off/t_10.png);");
         btnFlag = true;
         enableButtons();
@@ -191,6 +218,7 @@ void sandwich_premium::on_pushButton_10_clicked()
 
 void sandwich_premium::on_pushButton_next_clicked()
 {
+    b.setString(getString());
     b.show();
 }
 

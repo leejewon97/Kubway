@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include <QPushButton>
+#include <QString>
 #include "topping.h"
 
 namespace Ui {
@@ -16,6 +17,10 @@ class cheese : public QWidget
 public:
     explicit cheese(QWidget *parent = nullptr);
     ~cheese();
+
+    void setString(QString s);
+
+    QString getString();
 
 private slots:
     void on_pushButton_1_clicked();
@@ -36,6 +41,7 @@ private:
     Ui::cheese *ui;
     topping t;
     bool btnFlag;
+    QString str;
     QPushButton* buttons[3];
 };
 

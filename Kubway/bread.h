@@ -3,7 +3,10 @@
 
 #include <QWidget>
 #include <QPushButton>
+#include <QString>
 #include "cheese.h"
+
+using namespace std;
 
 namespace Ui {
 class bread;
@@ -16,6 +19,10 @@ class bread : public QWidget
 public:
     explicit bread(QWidget *parent = nullptr);
     ~bread();
+
+    void setString(QString s);
+
+    QString getString();
 
 private slots:
     void on_pushButton_1_clicked();
@@ -43,7 +50,7 @@ private:
     cheese c;
     bool btnFlag;
     QPushButton* buttons[6];
-    int it;
+    QString str;
 };
 
 #endif // BREAD_H
