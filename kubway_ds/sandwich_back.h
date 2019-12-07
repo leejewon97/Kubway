@@ -24,7 +24,7 @@ void read_Node(NodePointer*);
 void save_Node(NodePointer);
 void make_Node(NodePointer *, int, char *, char *, char *);
 void print_Node(NodePointer);
-char *find_Node(NodePointer);
+char *find_Node(NodePointer, char *);
 void delete_Node(NodePointer*);
 
 void read_Node(NodePointer *temp)
