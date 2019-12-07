@@ -36,7 +36,11 @@ private slots:
 
     void disableButtons(QPushButton* exBtn);
 
+    void disableButtons2(QPushButton* exBtn);
+
     void enableButtons();
+
+    void enableButtons2();
 
     void on_pushButton_back_clicked();
 

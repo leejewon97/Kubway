@@ -46,6 +46,7 @@ private:
     bool btnFlag[8];
     QString str;
     sauce sa;
+    int str_length=0;
 };
 
 #endif // VEGETABLE_H

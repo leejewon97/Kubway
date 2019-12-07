@@ -16,6 +16,7 @@ side_select::side_select(QWidget *parent) :
     buttons[3] = ui->pushButton_4;
     buttons[4] = ui->pushButton_5;
     buttons[5] = ui->pushButton_6;
+    buttons[6] = ui->pushButton_7;
 }
 
 side_select::~side_select()
@@ -30,14 +31,26 @@ QString side_select::getString() {
     return str;
 }
 void side_select::disableButtons(QPushButton* exBtn){
-    for (int i = 0; i < 6; i++) {
+    for (int i = 0; i < 5; i++) {
         buttons[i]->setDisabled(true);
     }
     exBtn->setEnabled(true);
 }
 
+void side_select::disableButtons2(QPushButton* exBtn){
+    for (int i = 5; i < 7; i++) {
+        buttons[i]->setDisabled(true);
+    }
+    exBtn->setEnabled(true);
+}
 void side_select::enableButtons(){
-    for (int i = 0; i < 6; i++) {
+    for (int i = 0; i < 5; i++) {
+        buttons[i]->setEnabled(true);
+    } 
+}
+
+void side_select::enableButtons2(){
+    for (int i = 5; i < 7; i++) {
         buttons[i]->setEnabled(true);
     }
 }
@@ -50,10 +63,12 @@ void side_select::on_pushButton_1_clicked()
         btnFlag[0] = false;
         disableButtons(ui->pushButton_1);
     } else {
-        str.chop(6);
+        int index = str.indexOf("더블 초코칩");
+        str.remove(index,6);
         ui->label->setText(getString());
         ui->pushButton_1->setStyleSheet("background-image: url(:/image/sideselect_page/click_off/t_1.png);");
         btnFlag[0] = true;
+        enableButtons();
     }
 }
 
@@ -66,10 +81,12 @@ void side_select::on_pushButton_2_clicked()
         btnFlag[0] = false;
         disableButtons(ui->pushButton_2);
     } else {
-        str.chop(3);
+        int index = str.indexOf("초코칩");
+        str.remove(index,3);
         ui->label->setText(getString());
         ui->pushButton_2->setStyleSheet("background-image: url(:/image/sideselect_page/click_off/t_2.png);");
         btnFlag[0] = true;
+        enableButtons();
     }
 }
 
@@ -82,10 +99,12 @@ void side_select::on_pushButton_3_clicked()
         btnFlag[0] = false;
         disableButtons(ui->pushButton_3);
     } else {
-        str.chop(7);
+        int index = str.indexOf("오트밀 레이즌");
+        str.remove(index,7);
         ui->label->setText(getString());
         ui->pushButton_3->setStyleSheet("background-image: url(:/image/sideselect_page/click_off/t_3.png);");
         btnFlag[0] = true;
+        enableButtons();
     }
 }
 
@@ -98,10 +117,12 @@ void side_select::on_pushButton_4_clicked()
         btnFlag[0] = false;
         disableButtons(ui->pushButton_4);
     } else {
-        str.chop(9);
+        int index = str.indexOf("라즈베리 치즈케익");
+        str.remove(index,9);
         ui->label->setText(getString());
         ui->pushButton_4->setStyleSheet("background-image: url(:/image/sideselect_page/click_off/t_4.png);");
         btnFlag[0] = true;
+        enableButtons();
     }
 }
 
@@ -114,10 +135,12 @@ void side_select::on_pushButton_5_clicked()
         btnFlag[0] = false;
         disableButtons(ui->pushButton_5);
     } else {
-        str.chop(12);
+        int index = str.indexOf("화이트 초코 마카다미야");
+        str.remove(index,4);
         ui->label->setText(getString());
         ui->pushButton_5->setStyleSheet("background-image: url(:/image/sideselect_page/click_off/t_5.png);");
         btnFlag[0] = true;
+        enableButtons();
     }
 }
 
@@ -126,13 +149,16 @@ void side_select::on_pushButton_6_clicked()
     if(btnFlag[1]){
         str.append("탄산");
         ui->label->setText(getString());
-        ui->pushButton_6->setStyleSheet("background-image: url(:/image/sideselect_page/click_on/t_6.png);");
+        ui->pushButton_6->setStyleSheet("background-image: url(:/image/sideselect_page/click_on/t_7.png);");
         btnFlag[1] = false;
+        disableButtons2(ui->pushButton_6);
     } else {
-        str.chop(2);
+        int index = str.indexOf("탄산");
+        str.remove(index,4);
         ui->label->setText(getString());
-        ui->pushButton_6->setStyleSheet("background-image: url(:/image/sideselect_page/click_off/t_6.png);");
+        ui->pushButton_6->setStyleSheet("background-image: url(:/image/sideselect_page/click_off/t_7.png);");
         btnFlag[1] = true;
+        enableButtons2();
     }
 }
 
@@ -141,13 +167,16 @@ void side_select::on_pushButton_7_clicked()
     if(btnFlag[1]){
         str.append("커피");
         ui->label->setText(getString());
-        ui->pushButton_7->setStyleSheet("background-image: url(:/image/sideselect_page/click_on/t_7.png);");
+        ui->pushButton_7->setStyleSheet("background-image: url(:/image/sideselect_page/click_on/t_8.png);");
         btnFlag[1] = false;
+        disableButtons2(ui->pushButton_7);
     } else {
-        str.chop(2);
+        int index = str.indexOf("커피");
+        str.remove(index,2);
         ui->label->setText(getString());
-        ui->pushButton_7->setStyleSheet("background-image: url(:/image/sideselect_page/click_off/t_7.png);");
+        ui->pushButton_7->setStyleSheet("background-image: url(:/image/sideselect_page/click_off/t_8.png);");
         btnFlag[1] = true;
+        enableButtons2();
     }
 }
 

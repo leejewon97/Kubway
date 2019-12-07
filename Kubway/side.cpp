@@ -15,10 +15,15 @@ side::~side()
 
 void side::on_one_btn_clicked()
 {
-
+    this->hide();
 }
 
 void side::on_set_btn_clicked()
 {
+    ss.show();
+}
 
+void side::on_pushButton_back_clicked()
+{
+    this->hide();
 }

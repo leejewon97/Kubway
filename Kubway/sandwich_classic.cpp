@@ -136,7 +136,7 @@ void sandwich_classic::on_pushButton_6_clicked()
         btnFlag = false;
         disableButtons(ui->pushButton_6);
     } else {
-        str.chop(8);
+        str.chop(9);
         ui->label->setText(getString());
         ui->pushButton_6->setStyleSheet("background-image: url(:/image/sandwich_page/classic/click_off/t_6.png);");
         btnFlag = true;

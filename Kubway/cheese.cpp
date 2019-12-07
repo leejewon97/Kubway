@@ -48,6 +48,7 @@ void cheese::on_pushButton_1_clicked()
         btnFlag = false;
         disableButtons(ui->pushButton_1);
     } else {
+        str.chop(8);
         ui->label->setText(getString());
         ui->pushButton_1->setStyleSheet("background-image: url(:/image/cheese_page/click_off/cheese_1.png);");
         btnFlag = true;
@@ -65,6 +66,7 @@ void cheese::on_pushButton_2_clicked()
         btnFlag = false;
         disableButtons(ui->pushButton_2);
     } else {
+        str.chop(6);
         ui->label->setText(getString());
         ui->pushButton_2->setStyleSheet("background-image: url(:/image/cheese_page/click_off/cheese_2.png);");
         btnFlag = true;
@@ -82,6 +84,7 @@ void cheese::on_pushButton_3_clicked()
         btnFlag = false;
         disableButtons(ui->pushButton_3);
     } else {
+        str.chop(8);
         ui->label->setText(getString());
         ui->pushButton_3->setStyleSheet("background-image: url(:/image/cheese_page/click_off/cheese_3.png);");
         btnFlag = true;

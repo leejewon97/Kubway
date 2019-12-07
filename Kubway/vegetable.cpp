@@ -26,13 +26,15 @@ QString vegetable::getString() {
 
 void vegetable::on_pushButton_1_clicked()
 {
+    str_length = str.length();
     if(btnFlag[0]){
         str.append("양상추 ");
         ui->label->setText(getString());
         ui->pushButton_1->setStyleSheet("background-image: url(:/image/vegetable_page/click_on/t_1.png);");
         btnFlag[0] = false;
     } else {
-        str.chop(4);
+        int index = str.indexOf("양상추 ");
+        str.remove(index,4);
         ui->label->setText(getString());
         ui->pushButton_1->setStyleSheet("background-image: url(:/image/vegetable_page/click_off/t_1.png);");
         btnFlag[0] = true;
@@ -48,7 +50,8 @@ void vegetable::on_pushButton_2_clicked()
         ui->pushButton_2->setStyleSheet("background-image: url(:/image/vegetable_page/click_on/t_2.png);");
         btnFlag[1] = false;
     } else {
-        str.chop(4);
+        int index = str.indexOf("토마토 ");
+        str.remove(index,4);
         ui->label->setText(getString());
         ui->pushButton_2->setStyleSheet("background-image: url(:/image/vegetable_page/click_off/t_2.png);");
         btnFlag[1] = true;
@@ -58,13 +61,15 @@ void vegetable::on_pushButton_2_clicked()
 
 void vegetable::on_pushButton_3_clicked()
 {
+    int str_length =str.length();
     if(btnFlag[2]){
         str.append("오이 ");
         ui->label->setText(getString());
         ui->pushButton_3->setStyleSheet("background-image: url(:/image/vegetable_page/click_on/t_3.png);");
         btnFlag[2] = false;
     } else {
-        str.chop(3);
+        int index = str.indexOf("오이 ");
+        str.remove(index,3);
         ui->label->setText(getString());
         ui->pushButton_3->setStyleSheet("background-image: url(:/image/vegetable_page/click_off/t_3.png);");
         btnFlag[2] = true;
@@ -80,7 +85,8 @@ void vegetable::on_pushButton_4_clicked()
         ui->pushButton_4->setStyleSheet("background-image: url(:/image/vegetable_page/click_on/t_4.png);");
         btnFlag[3] = false;
     } else {
-        str.chop(3);
+        int index = str.indexOf("피망 ");
+        str.remove(index,3);
         ui->label->setText(getString());
         ui->pushButton_4->setStyleSheet("background-image: url(:/image/vegetable_page/click_off/t_4.png);");
         btnFlag[3] = true;
@@ -96,7 +102,8 @@ void vegetable::on_pushButton_5_clicked()
         ui->pushButton_5->setStyleSheet("background-image: url(:/image/vegetable_page/click_on/t_5.png);");
         btnFlag[4] = false;
     } else {
-        str.chop(3);
+        int index = str.indexOf("양파 ");
+        str.remove(index,3);
         ui->label->setText(getString());
         ui->pushButton_5->setStyleSheet("background-image: url(:/image/vegetable_page/click_off/t_5.png);");
         btnFlag[4] = true;
@@ -112,7 +119,8 @@ void vegetable::on_pushButton_6_clicked()
         ui->pushButton_6->setStyleSheet("background-image: url(:/image/vegetable_page/click_on/t_6.png);");
         btnFlag[5] = false;
     } else {
-        str.chop(3);
+        int index = str.indexOf("피클 ");
+        str.remove(index,3);
         ui->label->setText(getString());
         ui->pushButton_6->setStyleSheet("background-image: url(:/image/vegetable_page/click_off/t_6.png);");
         btnFlag[5] = true;
@@ -128,7 +136,8 @@ void vegetable::on_pushButton_7_clicked()
         ui->pushButton_7->setStyleSheet("background-image: url(:/image/vegetable_page/click_on/t_7.png);");
         btnFlag[6] = false;
     } else {
-        str.chop(4);
+        int index = str.indexOf("올리브 ");
+        str.remove(index,4);
         ui->label->setText(getString());
         ui->pushButton_7->setStyleSheet("background-image: url(:/image/vegetable_page/click_off/t_7.png);");
         btnFlag[6] = true;
@@ -144,7 +153,8 @@ void vegetable::on_pushButton_8_clicked()
         ui->pushButton_8->setStyleSheet("background-image: url(:/image/vegetable_page/click_on/t_8.png);");
         btnFlag[7] = false;
     } else {
-        str.chop(5);
+        int index = str.indexOf("할라피뇨 ");
+        str.remove(index,4);
         ui->label->setText(getString());
         ui->pushButton_8->setStyleSheet("background-image: url(:/image/vegetable_page/click_off/t_8.png);");
         btnFlag[7] = true;
@@ -159,6 +169,6 @@ void vegetable::on_pushButton_back_clicked()
 
 void vegetable::on_pushButton_next_clicked()
 {
-    sa.setString(getString());
+    sa.setString(getString() +'\n');
     sa.show();
 }
