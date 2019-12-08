@@ -20,6 +20,10 @@ public:
     explicit sandwich(QWidget *parent = nullptr);
     ~sandwich();
 
+    void setString(QString s);
+
+    QString getString();
+
 signals:
     void buttonPressed();
 
@@ -46,6 +50,7 @@ private:
     sandwich_fresh *sf = new sandwich_fresh;
     sandwich_new *sn = new sandwich_new;
     sandwich_premium *sp = new sandwich_premium;
+    QString str;
 
 
 };

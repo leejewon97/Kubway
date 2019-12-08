@@ -22,6 +22,8 @@ public:
 
     QString getString();
 
+    void setStringLength(int s);
+
 signals:
     void buttonPressed();
 
@@ -65,6 +67,7 @@ private:
     QString str;
     QPushButton* buttons[10];
     for_back fb;
+    int strlen;
 };
 
 #endif // sandwich_premium_H

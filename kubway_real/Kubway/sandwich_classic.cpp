@@ -24,6 +24,10 @@ sandwich_classic::~sandwich_classic()
     delete ui;
 }
 
+void sandwich_classic::setStringLength(int s) {
+    strlen = s;
+}
+
 void sandwich_classic::disableButtons(QPushButton* exBtn){
     for (int i = 0; i < 6; i++) {
         buttons[i]->setDisabled(true);
@@ -176,7 +180,7 @@ void sandwich_classic::on_pushButton_back_clicked()
     ui->pushButton_5->setStyleSheet("background-image: url(:/image/sandwich_page/classic/click_off/t_5.png);");
     ui->pushButton_6->setStyleSheet("background-image: url(:/image/sandwich_page/classic/click_off/t_6.png);");
     btnFlag = true;
-    str.clear();
+    str.remove(strlen,500);
     enableButtons();
     this->hide();
 }

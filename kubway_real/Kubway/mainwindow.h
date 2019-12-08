@@ -38,6 +38,7 @@ private:
     sandwich *s = new sandwich();
     bread b;
     login l;
+    QString str;
 };
 
 #endif // MAINWINDOW_H

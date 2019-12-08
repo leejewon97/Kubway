@@ -22,7 +22,7 @@ void pay_or_order::on_pay_btn_clicked()
 
 void pay_or_order::on_order_btn_clicked()
 {
-
+    emit buttonPressed();
 }
 
 void pay_or_order::on_pushButton_back_clicked()

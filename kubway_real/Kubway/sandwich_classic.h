@@ -22,6 +22,8 @@ public:
 
     QString getString();
 
+    void setStringLength(int s);
+
 signals:
     void buttonPressed();
 
@@ -56,6 +58,7 @@ private:
     bool btnFlag;
     QString str;
     QPushButton* buttons[6];
+    int strlen;
     for_back fb;
 };
 

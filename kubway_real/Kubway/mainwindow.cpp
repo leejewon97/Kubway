@@ -18,14 +18,24 @@ mainwindow::~mainwindow()
     delete ui;
 }
 
+QString mainwindow::getString() {
+    return str;
+}
+
+void mainwindow::setString(QString s) {
+    str =s;
+}
 void mainwindow::on_pushButton_2_clicked()
 {
+    str.append("HOME\n");
+    s->setString(this->getString());
     s->show();
 }
 
 void mainwindow::on_pushButton_clicked()
 {
-
+    str.append("RESTAURANT\n");
+    s->setString(this->getString());
     s->show();
 }
 
