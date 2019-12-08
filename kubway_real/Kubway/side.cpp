@@ -15,6 +15,18 @@ side::~side()
     delete ui;
 }
 
+void side::setStringLength(int s) {
+    strlen = s;
+}
+
+void side::setString(QString s) {
+    str = s;
+}
+
+QString side::getString() {
+    return str;
+}
+
 void side::on_one_btn_clicked()
 {
     ss->setClickOne();
@@ -22,6 +34,8 @@ void side::on_one_btn_clicked()
 
 void side::on_set_btn_clicked()
 {
+    ss->setString(getString());
+    ss->setStringLength(str.length());
     ss->show();
 }
 

@@ -17,6 +17,12 @@ public:
     explicit side(QWidget *parent = nullptr);
     ~side();
 
+    void setStringLength(int x);
+
+    void setString(QString s);
+
+    QString getString();
+
 signals:
     void buttonPressed();
 
@@ -36,6 +42,8 @@ private slots:
 private:
     Ui::side *ui;
     side_select *ss = new side_select;
+    QString str;
+    int strlen;
 };
 
 #endif // SIDE_H

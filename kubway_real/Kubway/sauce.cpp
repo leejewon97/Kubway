@@ -311,8 +311,8 @@ void sauce::on_pushButton_next_clicked()
         flag = flag && btnFlag[i];
     }
     if( !flag ){
-        ss->setString(getString());
-        ss->setStringLength(str.length());
+        si->setString(getString());
+        si->setStringLength(str.length());
         si->show();
     }
 
