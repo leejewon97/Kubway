@@ -4,6 +4,7 @@
 #include <QWidget>
 #include <QPushButton>
 #include "bread.h"
+#include "for_back.h"
 
 namespace Ui {
 class sandwich_classic;
@@ -55,6 +56,7 @@ private:
     bool btnFlag;
     QString str;
     QPushButton* buttons[6];
+    for_back fb;
 };
 
 #endif // sandwich_classic_H

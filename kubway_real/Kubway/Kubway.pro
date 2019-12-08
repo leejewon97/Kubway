@@ -28,6 +28,7 @@ SOURCES += \
         bread.cpp \
         card_or_cash.cpp \
         cheese.cpp \
+        for_back.cpp \
         main.cpp \
         mainwindow.cpp \
         order_done.cpp \
@@ -50,6 +51,7 @@ HEADERS += \
         card_or_cash.h \
         cheese.h \
         extra.h \
+        for_back.h \
         mainwindow.h \
         order_done.h \
         pay_or_order.h \
@@ -71,6 +73,7 @@ FORMS += \
         bread.ui \
         card_or_cash.ui \
         cheese.ui \
+        for_back.ui \
         mainwindow.ui \
         order_done.ui \
         pay_or_order.ui \
