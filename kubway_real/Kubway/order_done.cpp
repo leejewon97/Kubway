@@ -17,10 +17,10 @@ order_done::~order_done()
 void order_done::closeAll()
 {
     this->hide();
-    on_pushButton_home_clicked();
 }
 
 void order_done::on_pushButton_home_clicked()
 {
     emit buttonPressed();
+    closeAll();
 }

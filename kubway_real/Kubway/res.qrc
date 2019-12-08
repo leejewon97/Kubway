@@ -205,5 +205,6 @@
         <file>extra.txt</file>
         <file>savepop.txt</file>
         <file>transparent.png</file>
+        <file>image/receipt_page/go_next_btn.png</file>
     </qresource>
 </RCC>
