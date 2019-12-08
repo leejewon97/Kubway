@@ -49,7 +49,7 @@ public:
         {
             if (strcmp(temp->name, findname) == 0)
             {
-                sprintf(pvalue, "\t%d\n", temp->price);
+                sprintf(pvalue, "\t%d 원\n", temp->price);
                 ret = temp->name;
                 strcat(ret, pvalue);
                 break;
@@ -59,18 +59,17 @@ public:
         return ret;
     }
 
-    void make_Node(NodePointer *temp, int _age, QString _name, QString _rcsauce1, QString _rcsauce2)
+    void make_Node(NodePointer *temp, int _age, char* _name, char* _rcsauce1, char* _rcsauce2)
     {
-        int i;
         NodePointer item;
         NodePointer cur = *temp;
         item = (NodePointer)malloc(sizeof(Node));
         item->price = _age;
-        /*
+
         strcpy(item->name, _name);
         strcpy(item->rcsauce1, _rcsauce1);
         strcpy(item->rcsauce2, _rcsauce2);
-        */
+
         item->link = NULL;
         if (*temp == NULL)
         {
@@ -102,11 +101,11 @@ public:
         //FILE *fl;
         int i;
         int save_price;
-        /*
-        char save_name[30];
-        char save_rcsauce1[30];
-        char save_rcsauce2[30];
-        */
+
+        char _name[30] = {0,};
+        char _rcsauce1[30] = {0,};
+        char _rcsauce2[30] = {0,};
+
         QString save_name;
         QString save_rcsauce1;
         QString save_rcsauce2;
@@ -116,9 +115,7 @@ public:
              return;
          } else {
              QTextStream stream(&file);
-
              num = stream.readLine().toInt();
-             qDebug() << num;
              /*
              for (int i = 0; i < num; i++) {
                  qDebug() << stream.readLine();
@@ -135,7 +132,12 @@ public:
                  save_price = arr.value(1).toInt();
                  save_rcsauce1 = arr.value(2);
                  save_rcsauce2 = arr.value(3);
-                 //make_Node(temp, save_price, save_name, save_rcsauce1, save_rcsauce2);
+
+                 qsnprintf(_name, sizeof(_name), "%s", save_name.toUtf8().constData());
+                 qsnprintf(_rcsauce1, sizeof(_name), "%s", save_rcsauce1.toUtf8().constData());
+                 qsnprintf(_rcsauce2, sizeof(_name), "%s", save_rcsauce2.toUtf8().constData());
+
+                 make_Node(temp, save_price, _name, _rcsauce1, _rcsauce2);
              }
          }
 

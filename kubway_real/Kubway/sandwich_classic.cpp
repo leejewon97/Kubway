@@ -48,15 +48,17 @@ QString sandwich_classic::getString() {
 
 void sandwich_classic::on_pushButton_1_clicked()
 {
+    char* search = fb.find_Node(fb.head, "에그마요15cm");
+    QString tmp = QString(search);
+    qDebug() << tmp;
     if(btnFlag) {
-        fb.find_Node(fb.head, "에그마요15cm");
-        str.append("에그마요\n");
+        str.append(tmp);
         ui->label->setText(getString());
         ui->pushButton_1->setStyleSheet("background-image: url(:/image/sandwich_page/classic/click_on/t_1.png);");
         btnFlag = false;
         disableButtons(ui->pushButton_1);
     } else {
-        str.chop(5);
+        str.chop(16);
         ui->label->setText(getString());
         ui->pushButton_1->setStyleSheet("background-image: url(:/image/sandwich_page/classic/click_off/t_1.png);");
         btnFlag = true;
@@ -67,7 +69,7 @@ void sandwich_classic::on_pushButton_1_clicked()
 void sandwich_classic::on_pushButton_2_clicked()
 {
     if(btnFlag) {
-        str.append("참치\n");
+        str.append(fb.find_Node(fb.head, "참치15cm"));
         ui->label->setText(getString());
         ui->pushButton_2->setStyleSheet("background-image: url(:/image/sandwich_page/classic/click_on/t_2.png);");
         btnFlag = false;
