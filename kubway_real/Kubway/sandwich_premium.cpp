@@ -50,14 +50,16 @@ QString sandwich_premium::getString() {
 
 void sandwich_premium::on_pushButton_1_clicked()
 {
+    fb.read_Node(&fb.head);
+    char* search = fb.find_Node(fb.head, "쉬림프15cm");
     if(btnFlag) {
-        str.append("쉬림프\n");
+        str.append(search);
         ui->label->setText(getString());
         ui->pushButton_1->setStyleSheet("background-image: url(:/image/sandwich_page/premium/click_on/t_1.png);");
         btnFlag = false;
         disableButtons(ui->pushButton_1);
     } else {
-        str.chop(4);
+        str.chop(QString(search).length());
         ui->label->setText(getString());
         ui->pushButton_1->setStyleSheet("background-image: url(:/image/sandwich_page/premium/click_off/t_1.png);");
         btnFlag = true;
@@ -67,14 +69,16 @@ void sandwich_premium::on_pushButton_1_clicked()
 
 void sandwich_premium::on_pushButton_2_clicked()
 {
+    fb.read_Node(&fb.head);
+    char* search = fb.find_Node(fb.head, "쉬림프아보카도15cm");
     if(btnFlag) {
-        str.append("쉬림프 아보카도\n");
+        str.append(search);
         ui->label->setText(getString());
         ui->pushButton_2->setStyleSheet("background-image: url(:/image/sandwich_page/premium/click_on/t_2.png);");
         btnFlag = false;
         disableButtons(ui->pushButton_2);
     } else {
-        str.chop(9);
+        str.chop(QString(search).length());
         ui->label->setText(getString());
         ui->pushButton_2->setStyleSheet("background-image: url(:/image/sandwich_page/premium/click_off/t_2.png);");
         btnFlag = true;
@@ -84,14 +88,16 @@ void sandwich_premium::on_pushButton_2_clicked()
 
 void sandwich_premium::on_pushButton_3_clicked()
 {
+    fb.read_Node(&fb.head);
+    char* search = fb.find_Node(fb.head, "스테이크&치즈15cm");
     if(btnFlag) {
-        str.append("스테이크 & 치즈\n");
+        str.append(search);
         ui->label->setText(getString());
         ui->pushButton_3->setStyleSheet("background-image: url(:/image/sandwich_page/premium/click_on/t_3.png);");
         btnFlag = false;
         disableButtons(ui->pushButton_3);
     } else {
-        str.chop(10);
+        str.chop(QString(search).length());
         ui->label->setText(getString());
         ui->pushButton_3->setStyleSheet("background-image: url(:/image/sandwich_page/premium/click_off/t_3.png);");
         btnFlag = true;
@@ -101,14 +107,16 @@ void sandwich_premium::on_pushButton_3_clicked()
 
 void sandwich_premium::on_pushButton_4_clicked()
 {
+    fb.read_Node(&fb.head);
+    char* search = fb.find_Node(fb.head, "터키베이컨아보카도15cm");
     if(btnFlag) {
-        str.append("터키 베이컨 아보카도\n");
+        str.append(search);
         ui->label->setText(getString());
         ui->pushButton_4->setStyleSheet("background-image: url(:/image/sandwich_page/premium/click_on/t_4.png);");
         btnFlag = false;
         disableButtons(ui->pushButton_4);
     } else {
-        str.chop(12);
+        str.chop(QString(search).length());
         ui->label->setText(getString());
         ui->pushButton_4->setStyleSheet("background-image: url(:/image/sandwich_page/premium/click_off/t_4.png);");
         btnFlag = true;
@@ -118,14 +126,16 @@ void sandwich_premium::on_pushButton_4_clicked()
 
 void sandwich_premium::on_pushButton_5_clicked()
 {
+    fb.read_Node(&fb.head);
+    char* search = fb.find_Node(fb.head, "치킨베이컨랜치15cm");
     if(btnFlag) {
-        str.append("치킨 베이컨 랜치\n");
+        str.append(search);
         ui->label->setText(getString());
         ui->pushButton_5->setStyleSheet("background-image: url(:/image/sandwich_page/premium/click_on/t_5.png);");
         btnFlag = false;
         disableButtons(ui->pushButton_5);
     } else {
-        str.chop(10);
+        str.chop(QString(search).length());
         ui->label->setText(getString());
         ui->pushButton_5->setStyleSheet("background-image: url(:/image/sandwich_page/premium/click_off/t_5.png);");
         btnFlag = true;
@@ -135,14 +145,16 @@ void sandwich_premium::on_pushButton_5_clicked()
 
 void sandwich_premium::on_pushButton_6_clicked()
 {
+    fb.read_Node(&fb.head);
+    char* search = fb.find_Node(fb.head, "써브웨이멜트15cm");
     if(btnFlag) {
-        str.append("써브웨이 멜트\n");
+        str.append(search);
         ui->label->setText(getString());
         ui->pushButton_6->setStyleSheet("background-image: url(:/image/sandwich_page/premium/click_on/t_6.png);");
         btnFlag = false;
         disableButtons(ui->pushButton_6);
     } else {
-        str.chop(8);
+        str.chop(QString(search).length());
         ui->label->setText(getString());
         ui->pushButton_6->setStyleSheet("background-image: url(:/image/sandwich_page/premium/click_off/t_6.png);");
         btnFlag = true;
@@ -152,14 +164,16 @@ void sandwich_premium::on_pushButton_6_clicked()
 
 void sandwich_premium::on_pushButton_7_clicked()
 {
+    fb.read_Node(&fb.head);
+    char* search = fb.find_Node(fb.head, "터키베이컨15cm");
     if(btnFlag) {
-        str.append("터키 베이컨\n");
+        str.append(search);
         ui->label->setText(getString());
         ui->pushButton_7->setStyleSheet("background-image: url(:/image/sandwich_page/premium/click_on/t_7.png);");
         btnFlag = false;
         disableButtons(ui->pushButton_7);
     } else {
-        str.chop(7);
+        str.chop(QString(search).length());
         ui->label->setText(getString());
         ui->pushButton_7->setStyleSheet("background-image: url(:/image/sandwich_page/premium/click_off/t_7.png);");
         btnFlag = true;
@@ -169,14 +183,16 @@ void sandwich_premium::on_pushButton_7_clicked()
 
 void sandwich_premium::on_pushButton_8_clicked()
 {
+    fb.read_Node(&fb.head);
+    char* search = fb.find_Node(fb.head, "이탈리안비엘티15cm");
     if(btnFlag) {
-        str.append("스파이시 이탈리안\n");
+        str.append(search);
         ui->label->setText(getString());
         ui->pushButton_8->setStyleSheet("background-image: url(:/image/sandwich_page/premium/click_on/t_8.png);");
         btnFlag = false;
         disableButtons(ui->pushButton_8);
     } else {
-        str.chop(10);
+        str.chop(QString(search).length());
         ui->label->setText(getString());
         ui->pushButton_8->setStyleSheet("background-image: url(:/image/sandwich_page/premium/click_off/t_8.png);");
         btnFlag = true;
@@ -186,14 +202,16 @@ void sandwich_premium::on_pushButton_8_clicked()
 
 void sandwich_premium::on_pushButton_9_clicked()
 {
+    fb.read_Node(&fb.head);
+    char* search = fb.find_Node(fb.head, "치킨데리야끼15cm");
     if(btnFlag) {
-        str.append("치킨 데리야끼\n");
+        str.append(search);
         ui->label->setText(getString());
         ui->pushButton_9->setStyleSheet("background-image: url(:/image/sandwich_page/premium/click_on/t_9.png);");
         btnFlag = false;
         disableButtons(ui->pushButton_9);
     } else {
-        str.chop(8);
+        str.chop(QString(search).length());
         ui->label->setText(getString());
         ui->pushButton_9->setStyleSheet("background-image: url(:/image/sandwich_page/premium/click_off/t_9.png);");
         btnFlag = true;
@@ -203,14 +221,16 @@ void sandwich_premium::on_pushButton_9_clicked()
 
 void sandwich_premium::on_pushButton_10_clicked()
 {
+    fb.read_Node(&fb.head);
+    char* search = fb.find_Node(fb.head, "폴드포크15cm");
     if(btnFlag) {
-        str.append("폴드포크\n");
+        str.append(search);
         ui->label->setText(getString());
         ui->pushButton_10->setStyleSheet("background-image: url(:/image/sandwich_page/premium/click_on/t_10.png);");
         btnFlag = false;
         disableButtons(ui->pushButton_10);
     } else {
-        str.chop(5);
+        str.chop(QString(search).length());
         ui->label->setText(getString());
         ui->pushButton_10->setStyleSheet("background-image: url(:/image/sandwich_page/premium/click_off/t_10.png);");
         btnFlag = true;
