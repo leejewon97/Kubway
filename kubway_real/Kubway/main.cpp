@@ -23,8 +23,10 @@ int main(int argc, char *argv[])
     a.setFont(font);
 
     mainwindow m;
+    recipe r;
 
     m.show();
+    //r.show();
 
 
     return a.exec();
