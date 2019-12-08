@@ -25,6 +25,8 @@ public:
 
     void setClickOne();
 
+    void setStringLength(int s);
+
 signals:
     void buttonPressed();
 
@@ -68,7 +70,7 @@ private:
     QPushButton* buttons[7];
     pay_or_order *poo = new pay_or_order;
     bool click_one =false;
-    const int strlen = str.length();
+    int strlen;
 };
 
 #endif // side_select_H

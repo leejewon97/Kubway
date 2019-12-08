@@ -22,6 +22,8 @@ public:
 
     QString getString();
 
+    void setStringLength(int s);
+
 signals:
     void buttonPressed();
 
@@ -73,7 +75,7 @@ private:
     QString str;
     side *si = new side;
     side_select *ss = new side_select;
-    const int strlen = str.length();
+    int strlen;
 };
 
 #endif // sauce_H

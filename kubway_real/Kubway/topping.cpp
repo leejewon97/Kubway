@@ -25,6 +25,10 @@ topping::~topping()
     delete ui;
 }
 
+
+void topping::setStringLength(int s) {
+    strlen = s;
+}
 void topping::setString(QString s) {
     str = s;
 }
@@ -192,6 +196,7 @@ void topping::on_pushButton_next_clicked()
 {
     if(btnFlag == false) {
         v->setString(getString());
+        v->setStringLength(str.length());
         v->show();
     }
 }

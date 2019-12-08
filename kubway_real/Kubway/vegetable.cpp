@@ -24,6 +24,10 @@ vegetable::~vegetable()
     delete ui;
 }
 
+void vegetable::setStringLength(int s) {
+    strlen = s;
+}
+
 void vegetable::setString(QString s) {
     str = s;
 }
@@ -197,6 +201,7 @@ void vegetable::on_pushButton_next_clicked()
     }
     if( !flag ){
         sa->setString(getString() +'\n');
+        sa->setStringLength(str.length());
         sa->show();
     }
 

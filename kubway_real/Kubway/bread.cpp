@@ -162,6 +162,7 @@ void bread::on_pushButton_next_clicked()
 {
     if(btnFlag == false) {
         c->setString(getString());
+        c->setStringLength(str.length());
         c->show();
     }
 }

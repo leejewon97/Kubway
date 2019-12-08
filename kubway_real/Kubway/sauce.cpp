@@ -22,6 +22,10 @@ sauce::~sauce()
     delete ui;
 }
 
+void sauce::setStringLength(int s) {
+    strlen = s;
+}
+
 void sauce::setString(QString s) {
     str = s;
 }
@@ -308,6 +312,7 @@ void sauce::on_pushButton_next_clicked()
     }
     if( !flag ){
         ss->setString(getString());
+        ss->setStringLength(str.length());
         si->show();
     }
 

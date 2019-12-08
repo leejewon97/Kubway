@@ -21,6 +21,8 @@ public:
 
     QString getString();
 
+    void setStringLength(int s);
+
 signals:
     void buttonPressed();
 
@@ -60,7 +62,7 @@ private:
     bool btnFlag;
     QString str;
     QPushButton* buttons[8];
-    const int strlen = str.length();
+    int strlen;
 };
 
 #endif // TOPPING_H

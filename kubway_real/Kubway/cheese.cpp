@@ -22,6 +22,10 @@ cheese::~cheese()
     delete ui;
 }
 
+void cheese::setStringLength(int s) {
+    strlen = s;
+}
+
 void cheese::setString(QString s) {
     str = s;
 }
@@ -99,6 +103,7 @@ void cheese::on_pushButton_next_clicked()
 {
     if(btnFlag == false) {
         t->setString(getString());
+        t->setStringLength(str.length());
         t->show();
     }
 }

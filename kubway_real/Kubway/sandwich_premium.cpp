@@ -222,6 +222,7 @@ void sandwich_premium::on_pushButton_next_clicked()
 {
     if(btnFlag == false) {
             b->setString(getString());
+            b->setStringLength(str.length());
             b->show();
     }
 }

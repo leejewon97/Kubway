@@ -20,6 +20,8 @@ public:
 
     QString getString();
 
+    void setStringLength(int s);
+
 signals:
     void buttonPressed();
 
@@ -54,7 +56,7 @@ private:
     bool btnFlag[8];
     QString str;
     sauce *sa = new sauce;
-    const int strlen =str.length();
+    int strlen;
 };
 
 #endif // VEGETABLE_H

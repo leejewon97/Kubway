@@ -22,6 +22,8 @@ public:
 
     QString getString();
 
+    void setStringLength(int s);
+
 signals:
     void buttonPressed();
 
@@ -51,7 +53,7 @@ private:
     bool btnFlag;
     QString str;
     QPushButton* buttons[3];
-    const int strlen =str.length();
+    int strlen;
 };
 
 #endif // CHEESE_H

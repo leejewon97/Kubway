@@ -28,6 +28,10 @@ side_select::~side_select()
     delete ui;
 }
 
+void side_select::setStringLength(int s) {
+    strlen = s;
+}
+
 bool side_select::getClickOne() {
     return click_one;
 }
