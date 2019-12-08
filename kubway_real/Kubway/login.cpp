@@ -19,7 +19,7 @@ void login::on_pushButton_login_clicked()
     QString id = ui->lineEdit_ID->text();
     QString password = ui->lineEdit_password->text();
 
-    if(id == "konkuk" && password == "1111") {
+    if(id == "spsj1004" && password == "1111") {
         this->hide();
         m.show();
     }
