@@ -4,6 +4,7 @@
 #include <QWidget>
 #include <QPushButton>
 #include "sandwich.h"
+#include "login.h"
 
 namespace Ui {
 class mainwindow;
@@ -30,10 +31,13 @@ private slots:
 
     void on_pushButton_clicked();    
 
+    void on_super_btn_clicked();
+
 private:
     Ui::mainwindow *ui;
     sandwich *s = new sandwich();
     bread b;
+    login l;
 };
 
 #endif // MAINWINDOW_H

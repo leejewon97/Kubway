@@ -34,3 +34,8 @@ void mainwindow::closeAll()
 
     s->hide();
 }
+
+void mainwindow::on_super_btn_clicked()
+{
+    l.show();
+}
