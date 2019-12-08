@@ -159,11 +159,29 @@ void sandwich_new::on_pushButton_next_clicked()
 
 void sandwich_new::on_pushButton_back_clicked()
 {
+    ui->pushButton_1->setStyleSheet("background-image: url(:/image/sandwich_page/new/click_off/t_1.png);");
+    ui->pushButton_2->setStyleSheet("background-image: url(:/image/sandwich_page/new/click_off/t_2.png);");
+    ui->pushButton_3->setStyleSheet("background-image: url(:/image/sandwich_page/new/click_off/t_3.png);");
+    ui->pushButton_4->setStyleSheet("background-image: url(:/image/sandwich_page/new/click_off/t_4.png);");
+    ui->pushButton_5->setStyleSheet("background-image: url(:/image/sandwich_page/new/click_off/t_5.png);");
+    ui->pushButton_6->setStyleSheet("background-image: url(:/image/sandwich_page/new/click_off/t_6.png);");
+    btnFlag = true;
+    str.clear();
+    enableButtons();
     this->hide();
 }
 
 void sandwich_new::on_pushButton_home_clicked()
 {
+    ui->pushButton_1->setStyleSheet("background-image: url(:/image/sandwich_page/new/click_off/t_1.png);");
+    ui->pushButton_2->setStyleSheet("background-image: url(:/image/sandwich_page/new/click_off/t_2.png);");
+    ui->pushButton_3->setStyleSheet("background-image: url(:/image/sandwich_page/new/click_off/t_3.png);");
+    ui->pushButton_4->setStyleSheet("background-image: url(:/image/sandwich_page/new/click_off/t_4.png);");
+    ui->pushButton_5->setStyleSheet("background-image: url(:/image/sandwich_page/new/click_off/t_5.png);");
+    ui->pushButton_6->setStyleSheet("background-image: url(:/image/sandwich_page/new/click_off/t_6.png);");
+    btnFlag = true;
+    str.clear();
+    enableButtons();
     emit buttonPressed();
 }
 

@@ -73,6 +73,7 @@ private:
     QString str;
     side *si = new side;
     side_select *ss = new side_select;
+    const int strlen = str.length();
 };
 
 #endif // sauce_H

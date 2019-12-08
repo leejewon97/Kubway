@@ -54,7 +54,7 @@ private:
     bool btnFlag[8];
     QString str;
     sauce *sa = new sauce;
-    int str_length=0;
+    const int strlen =str.length();
 };
 
 #endif // VEGETABLE_H

@@ -169,6 +169,23 @@ void vegetable::on_pushButton_8_clicked()
 
 void vegetable::on_pushButton_back_clicked()
 {
+    for (int i = 0; i < 5; i++) {
+        btnFlag[i] = false;
+    }
+    for(int i =5; i < 8; i++) {
+        btnFlag[i] = true;
+    }
+
+    ui->pushButton_1->setStyleSheet("background-image: url(:/image/vegetable_page/click_on/t_1.png);");
+    ui->pushButton_2->setStyleSheet("background-image: url(:/image/vegetable_page/click_on/t_2.png);");
+    ui->pushButton_3->setStyleSheet("background-image: url(:/image/vegetable_page/click_on/t_3.png);");
+    ui->pushButton_4->setStyleSheet("background-image: url(:/image/vegetable_page/click_on/t_4.png);");
+    ui->pushButton_5->setStyleSheet("background-image: url(:/image/vegetable_page/click_on/t_5.png);");
+    ui->pushButton_6->setStyleSheet("background-image: url(:/image/vegetable_page/click_off/t_6.png);");
+    ui->pushButton_7->setStyleSheet("background-image: url(:/image/vegetable_page/click_off/t_7.png);");
+    ui->pushButton_8->setStyleSheet("background-image: url(:/image/vegetable_page/click_off/t_8.png);");
+
+    str.remove(strlen,500);
     this->hide();
 }
 
@@ -193,5 +210,22 @@ void vegetable::closeAll()
 
 void vegetable::on_pushButton_home_clicked()
 {
+    for (int i = 0; i < 5; i++) {
+        btnFlag[i] = false;
+    }
+    for(int i =5; i < 8; i++) {
+        btnFlag[i] = true;
+    }
+
+    ui->pushButton_1->setStyleSheet("background-image: url(:/image/vegetable_page/click_on/t_1.png);");
+    ui->pushButton_2->setStyleSheet("background-image: url(:/image/vegetable_page/click_on/t_2.png);");
+    ui->pushButton_3->setStyleSheet("background-image: url(:/image/vegetable_page/click_on/t_3.png);");
+    ui->pushButton_4->setStyleSheet("background-image: url(:/image/vegetable_page/click_on/t_4.png);");
+    ui->pushButton_5->setStyleSheet("background-image: url(:/image/vegetable_page/click_on/t_5.png);");
+    ui->pushButton_6->setStyleSheet("background-image: url(:/image/vegetable_page/click_off/t_6.png);");
+    ui->pushButton_7->setStyleSheet("background-image: url(:/image/vegetable_page/click_off/t_7.png);");
+    ui->pushButton_8->setStyleSheet("background-image: url(:/image/vegetable_page/click_off/t_8.png);");
+
+    str.clear();
     emit buttonPressed();
 }

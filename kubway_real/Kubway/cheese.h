@@ -51,6 +51,7 @@ private:
     bool btnFlag;
     QString str;
     QPushButton* buttons[3];
+    const int strlen =str.length();
 };
 
 #endif // CHEESE_H

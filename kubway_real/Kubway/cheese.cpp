@@ -105,6 +105,12 @@ void cheese::on_pushButton_next_clicked()
 
 void cheese::on_pushButton_back_clicked()
 {
+    ui->pushButton_1->setStyleSheet("background-image: url(:/image/cheese_page/click_off/cheese_1.png);");
+    ui->pushButton_2->setStyleSheet("background-image: url(:/image/cheese_page/click_off/cheese_2.png);");
+    ui->pushButton_3->setStyleSheet("background-image: url(:/image/cheese_page/click_off/cheese_3.png);");
+    btnFlag = true;
+    str.remove(strlen,500);
+    enableButtons();
     this->hide();
 }
 
@@ -116,5 +122,11 @@ void cheese::closeAll()
 
 void cheese::on_pushButton_home_clicked()
 {
+    ui->pushButton_1->setStyleSheet("background-image: url(:/image/cheese_page/click_off/cheese_1.png);");
+    ui->pushButton_2->setStyleSheet("background-image: url(:/image/cheese_page/click_off/cheese_2.png);");
+    ui->pushButton_3->setStyleSheet("background-image: url(:/image/cheese_page/click_off/cheese_3.png);");
+    btnFlag = true;
+    str.clear();
+    enableButtons();
     emit buttonPressed();
 }

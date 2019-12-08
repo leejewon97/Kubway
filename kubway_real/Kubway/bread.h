@@ -28,6 +28,8 @@ public:
 
     void setClickHome(int h);
 
+    void setStringLength(int s);
+
 signals:
     void buttonPressed();
 
@@ -63,6 +65,7 @@ private:
     QPushButton* buttons[6];
     QString str;
     int click_home;
+    int strlen;
 };
 
 #endif // BREAD_H

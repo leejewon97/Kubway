@@ -60,6 +60,7 @@ private:
     bool btnFlag;
     QString str;
     QPushButton* buttons[8];
+    const int strlen = str.length();
 };
 
 #endif // TOPPING_H

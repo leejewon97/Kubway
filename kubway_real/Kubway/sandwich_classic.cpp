@@ -48,17 +48,15 @@ QString sandwich_classic::getString() {
 
 void sandwich_classic::on_pushButton_1_clicked()
 {
-    char* search = fb.find_Node(fb.head, "에그마요15cm");
-    QString tmp = QString(search);
-    qDebug() << tmp;
     if(btnFlag) {
-        str.append(tmp);
+        fb.find_Node(fb.head, "에그마요15cm");
+        str.append("에그마요\n");
         ui->label->setText(getString());
         ui->pushButton_1->setStyleSheet("background-image: url(:/image/sandwich_page/classic/click_on/t_1.png);");
         btnFlag = false;
         disableButtons(ui->pushButton_1);
     } else {
-        str.chop(16);
+        str.chop(5);
         ui->label->setText(getString());
         ui->pushButton_1->setStyleSheet("background-image: url(:/image/sandwich_page/classic/click_off/t_1.png);");
         btnFlag = true;
@@ -69,7 +67,7 @@ void sandwich_classic::on_pushButton_1_clicked()
 void sandwich_classic::on_pushButton_2_clicked()
 {
     if(btnFlag) {
-        str.append(fb.find_Node(fb.head, "참치15cm"));
+        str.append("참치\n");
         ui->label->setText(getString());
         ui->pushButton_2->setStyleSheet("background-image: url(:/image/sandwich_page/classic/click_on/t_2.png);");
         btnFlag = false;
@@ -155,18 +153,37 @@ void sandwich_classic::on_pushButton_next_clicked()
 {
     if(btnFlag == false) {
             b->setString(getString());
+            b->setStringLength(str.length());
             b->show();
     }
 }
 
 void sandwich_classic::on_pushButton_back_clicked()
 {
+    ui->pushButton_1->setStyleSheet("background-image: url(:/image/sandwich_page/classic/click_off/t_1.png);");
+    ui->pushButton_2->setStyleSheet("background-image: url(:/image/sandwich_page/classic/click_off/t_2.png);");
+    ui->pushButton_3->setStyleSheet("background-image: url(:/image/sandwich_page/classic/click_off/t_3.png);");
+    ui->pushButton_4->setStyleSheet("background-image: url(:/image/sandwich_page/classic/click_off/t_4.png);");
+    ui->pushButton_5->setStyleSheet("background-image: url(:/image/sandwich_page/classic/click_off/t_5.png);");
+    ui->pushButton_6->setStyleSheet("background-image: url(:/image/sandwich_page/classic/click_off/t_6.png);");
+    btnFlag = true;
+    str.clear();
+    enableButtons();
     this->hide();
 }
 
 
 void sandwich_classic::on_pushButton_home_clicked()
 {
+    ui->pushButton_1->setStyleSheet("background-image: url(:/image/sandwich_page/classic/click_off/t_1.png);");
+    ui->pushButton_2->setStyleSheet("background-image: url(:/image/sandwich_page/classic/click_off/t_2.png);");
+    ui->pushButton_3->setStyleSheet("background-image: url(:/image/sandwich_page/classic/click_off/t_3.png);");
+    ui->pushButton_4->setStyleSheet("background-image: url(:/image/sandwich_page/classic/click_off/t_4.png);");
+    ui->pushButton_5->setStyleSheet("background-image: url(:/image/sandwich_page/classic/click_off/t_5.png);");
+    ui->pushButton_6->setStyleSheet("background-image: url(:/image/sandwich_page/classic/click_off/t_6.png);");
+    btnFlag = true;
+    str.clear();
+    enableButtons();
     emit buttonPressed();
 }
 
