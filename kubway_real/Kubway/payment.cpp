@@ -29,3 +29,8 @@ void payment::on_pushButton_home_clicked()
 {
     emit buttonPressed();
 }
+
+void payment::on_pushButton_back_clicked()
+{
+    this->hide();
+}

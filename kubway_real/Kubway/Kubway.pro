@@ -49,12 +49,14 @@ HEADERS += \
         bread.h \
         card_or_cash.h \
         cheese.h \
+        extra.h \
         mainwindow.h \
         order_done.h \
         pay_or_order.h \
         payment.h \
         recipe.h \
         sandwich.h \
+        sandwich_back.h \
         sandwich_classic.h \
         sandwich_fresh.h \
         sandwich_new.h \

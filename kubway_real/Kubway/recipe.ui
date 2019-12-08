@@ -13,72 +13,72 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QWidget" name="widget" native="true">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>1045</width>
-     <height>1392</height>
-    </rect>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="leftMargin">
+    <number>0</number>
    </property>
-   <property name="minimumSize">
-    <size>
-     <width>1045</width>
-     <height>1392</height>
-    </size>
+   <property name="topMargin">
+    <number>0</number>
    </property>
-   <property name="styleSheet">
-    <string notr="true">background-image: url(:/image/receipt_page/back.png);</string>
+   <property name="rightMargin">
+    <number>0</number>
    </property>
-   <widget class="QPushButton" name="pushButton">
-    <property name="geometry">
-     <rect>
-      <x>100</x>
-      <y>0</y>
-      <width>831</width>
-      <height>1393</height>
-     </rect>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>831</width>
-      <height>1393</height>
-     </size>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image: url(:/image/receipt_page/receipt.png);</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_home">
-    <property name="geometry">
-     <rect>
-      <x>910</x>
-      <y>50</y>
-      <width>85</width>
-      <height>80</height>
-     </rect>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>85</width>
-      <height>80</height>
-     </size>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image: url(:/image/button/go_home_btn.png);</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="flat">
-     <bool>true</bool>
-    </property>
-   </widget>
-  </widget>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>1045</width>
+       <height>1392</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/image/receipt_page/back.png);</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>1395</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>833</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-image: url(:/image/receipt_page/receipt.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
  </widget>
  <resources/>
  <connections/>

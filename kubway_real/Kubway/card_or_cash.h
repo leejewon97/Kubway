@@ -30,6 +30,8 @@ private slots:
 
     void on_pushButton_home_clicked();
 
+    void on_pushButton_back_clicked();
+
 private:
     Ui::card_or_cash *ui;
     payment *p = new payment;

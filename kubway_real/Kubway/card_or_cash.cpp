@@ -37,3 +37,8 @@ void card_or_cash::on_pushButton_home_clicked()
 {
     emit buttonPressed();
 }
+
+void card_or_cash::on_pushButton_back_clicked()
+{
+    this->hide();
+}
