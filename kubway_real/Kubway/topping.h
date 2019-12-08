@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include <QPushButton>
+#include "topping_forback.h"
 #include "vegetable.h"
 
 namespace Ui {
@@ -63,6 +64,7 @@ private:
     QString str;
     QPushButton* buttons[8];
     int strlen;
+    topping_forback tf;
 };
 
 #endif // TOPPING_H

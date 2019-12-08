@@ -51,14 +51,16 @@ void topping::enableButtons(){
 
 void topping::on_pushButton_1_clicked()
 {
+    tf.read_Tnode(&tf.head);
+    char* search = tf.find_Tnode(tf.head, "더블업");
     if(btnFlag) {
-        str.append("더블 업\n");
+        str.append(search);
         ui->label->setText(getString());
         ui->pushButton_1->setStyleSheet("background-image: url(:/image/topping_page/click_on/t_1.png);");
         btnFlag = false;
         disableButtons(ui->pushButton_1);
     } else {
-        str.chop(5);
+        str.chop(QString(search).length());
         ui->label->setText(getString());
         ui->pushButton_1->setStyleSheet("background-image: url(:/image/topping_page/click_off/t_1.png);");
         btnFlag = true;
@@ -69,14 +71,16 @@ void topping::on_pushButton_1_clicked()
 
 void topping::on_pushButton_2_clicked()
 {
+    tf.read_Tnode(&tf.head);
+    char* search = tf.find_Tnode(tf.head, "에그마요");
     if(btnFlag) {
-        str.append("에그마요\n");
+        str.append(search);
         ui->label->setText(getString());
         ui->pushButton_2->setStyleSheet("background-image: url(:/image/topping_page/click_on/t_2.png);");
         btnFlag = false;
         disableButtons(ui->pushButton_2);
     } else {
-        str.chop(5);
+        str.chop(QString(search).length());
         ui->label->setText(getString());
         ui->pushButton_2->setStyleSheet("background-image: url(:/image/topping_page/click_off/t_2.png);");
         btnFlag = true;
@@ -87,14 +91,16 @@ void topping::on_pushButton_2_clicked()
 
 void topping::on_pushButton_3_clicked()
 {
+    tf.read_Tnode(&tf.head);
+    char* search = tf.find_Tnode(tf.head, "페페로니");
     if(btnFlag) {
-        str.append("페페로니\n");
+        str.append(search);
         ui->label->setText(getString());
         ui->pushButton_3->setStyleSheet("background-image: url(:/image/topping_page/click_on/t_3.png);");
         btnFlag = false;
         disableButtons(ui->pushButton_3);
     } else {
-        str.chop(5);
+        str.chop(QString(search).length());
         ui->label->setText(getString());
         ui->pushButton_3->setStyleSheet("background-image: url(:/image/topping_page/click_off/t_3.png);");
         btnFlag = true;
@@ -105,13 +111,16 @@ void topping::on_pushButton_3_clicked()
 
 void topping::on_pushButton_4_clicked()
 {
+    tf.read_Tnode(&tf.head);
+    char* search = tf.find_Tnode(tf.head, "베이컨");
     if(btnFlag) {
-        str.append("베이컨\n");
+        str.append(search);
         ui->label->setText(getString());
         ui->pushButton_4->setStyleSheet("background-image: url(:/image/topping_page/click_on/t_4.png);");
         btnFlag = false;
         disableButtons(ui->pushButton_4);
     } else {
+        str.chop(QString(search).length());
         ui->label->setText(getString());
         ui->pushButton_4->setStyleSheet("background-image: url(:/image/topping_page/click_off/t_4.png);");
         btnFlag = true;
@@ -122,14 +131,16 @@ void topping::on_pushButton_4_clicked()
 
 void topping::on_pushButton_5_clicked()
 {
+    tf.read_Tnode(&tf.head);
+    char* search = tf.find_Tnode(tf.head, "더블치즈");
     if(btnFlag) {
-        str.append("더블 치즈\n");
+        str.append(search);
         ui->label->setText(getString());
         ui->pushButton_5->setStyleSheet("background-image: url(:/image/topping_page/click_on/t_5.png);");
         btnFlag = false;
         disableButtons(ui->pushButton_5);
     } else {
-        str.chop(6);
+        str.chop(QString(search).length());
         ui->label->setText(getString());
         ui->pushButton_5->setStyleSheet("background-image: url(:/image/topping_page/click_off/t_5.png);");
         btnFlag = true;
@@ -140,14 +151,16 @@ void topping::on_pushButton_5_clicked()
 
 void topping::on_pushButton_6_clicked()
 {
+    tf.read_Tnode(&tf.head);
+    char* search = tf.find_Tnode(tf.head, "오믈렛");
     if(btnFlag) {
-        str.append("오믈렛\n");
+        str.append(search);
         ui->label->setText(getString());
         ui->pushButton_6->setStyleSheet("background-image: url(:/image/topping_page/click_on/t_6.png);");
         btnFlag = false;
         disableButtons(ui->pushButton_6);
     } else {
-        str.chop(4);
+        str.chop(QString(search).length());
         ui->label->setText(getString());
         ui->pushButton_6->setStyleSheet("background-image: url(:/image/topping_page/click_off/t_6.png);");
         btnFlag = true;
@@ -158,14 +171,16 @@ void topping::on_pushButton_6_clicked()
 
 void topping::on_pushButton_7_clicked()
 {
+    tf.read_Tnode(&tf.head);
+    char* search = tf.find_Tnode(tf.head, "아보카도");
     if(btnFlag) {
-        str.append("아보카도\n");
+        str.append(search);
         ui->label->setText(getString());
         ui->pushButton_7->setStyleSheet("background-image: url(:/image/topping_page/click_on/t_7.png);");
         btnFlag = false;
         disableButtons(ui->pushButton_7);
     } else {
-        str.chop(5);
+        str.chop(QString(search).length());
         ui->label->setText(getString());
         ui->pushButton_7->setStyleSheet("background-image: url(:/image/topping_page/click_off/t_7.png);");
         btnFlag = true;
@@ -176,14 +191,16 @@ void topping::on_pushButton_7_clicked()
 
 void topping::on_pushButton_8_clicked()
 {
+    tf.read_Tnode(&tf.head);
+    char* search = tf.find_Tnode(tf.head, "베이컨비츠");
     if(btnFlag) {
-        str.append("베이컨 비츠\n");
+        str.append(search);
         ui->label->setText(getString());
         ui->pushButton_8->setStyleSheet("background-image: url(:/image/topping_page/click_on/t_8.png);");
         btnFlag = false;
         disableButtons(ui->pushButton_8);
     } else {
-        str.chop(6);
+        str.chop(QString(search).length());
         ui->label->setText(getString());
         ui->pushButton_8->setStyleSheet("background-image: url(:/image/topping_page/click_off/t_8.png);");
         btnFlag = true;

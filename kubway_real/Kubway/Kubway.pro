@@ -29,8 +29,10 @@ SOURCES += \
         card_or_cash.cpp \
         cheese.cpp \
         for_back.cpp \
+        login.cpp \
         main.cpp \
         mainwindow.cpp \
+        manage.cpp \
         order_done.cpp \
         pay_or_order.cpp \
         payment.cpp \
@@ -44,6 +46,7 @@ SOURCES += \
         side.cpp \
         side_select.cpp \
         topping.cpp \
+        topping_forback.cpp \
         vegetable.cpp
 
 HEADERS += \
@@ -52,7 +55,9 @@ HEADERS += \
         cheese.h \
         extra.h \
         for_back.h \
+        login.h \
         mainwindow.h \
+        manage.h \
         order_done.h \
         pay_or_order.h \
         payment.h \
@@ -67,6 +72,7 @@ HEADERS += \
         side.h \
         side_select.h \
         topping.h \
+        topping_forback.h \
         vegetable.h
 
 FORMS += \
@@ -74,7 +80,9 @@ FORMS += \
         card_or_cash.ui \
         cheese.ui \
         for_back.ui \
+        login.ui \
         mainwindow.ui \
+        manage.ui \
         order_done.ui \
         pay_or_order.ui \
         payment.ui \
@@ -88,6 +96,7 @@ FORMS += \
         side.ui \
         side_select.ui \
         topping.ui \
+        topping_forback.ui \
         vegetable.ui
 
 # Default rules for deployment.
