@@ -243,7 +243,7 @@ void topping::on_pushButton_next_clicked()
     if(btnFlag == false) {
         v->setString(getString()+"양상추 토마토 오이 피망 양파 ");
         v->setStringLength(str.length());
-        v->setUi(str);
+        v->setUi(str + "양상추 토마토 오이 피망 양파 ");
         v->show();
     }
 }
