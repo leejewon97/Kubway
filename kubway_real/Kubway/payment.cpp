@@ -25,6 +25,8 @@ void payment::on_pushButton_next_clicked()
 {
     r->setString(getString());
     r->show();
+    r->setUi(getString());
+    qDebug() << getString();
 }
 
 void payment::closeAll()

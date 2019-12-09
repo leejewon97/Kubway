@@ -1,5 +1,7 @@
 #include "recipe.h"
 #include "ui_recipe.h"
+#include <QFile>
+#include <QDebug>
 
 recipe::recipe(QWidget *parent) :
     QWidget(parent),
@@ -13,12 +15,15 @@ recipe::recipe(QWidget *parent) :
     time = local.toString("yyyy-MM-dd  HH:mm:ss");
 
     ui->label_datetime->setText(time);
-    ui->label_inform->setText("test");
 }
 
 recipe::~recipe()
 {
     delete ui;
+}
+
+void recipe::setUi(QString s) {
+    ui->label_inform->setText(s);
 }
 
 void recipe::setString(QString s) {
@@ -33,10 +38,14 @@ void recipe::closeAll()
 
 void recipe::on_pushButton_next_clicked()
 {
-    od->show();
+    QString  fileName = QApplication::applicationDirPath() + "/recipe.txt";
+    QFile file(fileName);
+    file.open(QIODevice::WriteOnly | QIODevice::Text);
+    QTextStream stream(&file);
+    stream << "영수증";
 }
 
 void recipe::on_pushButton_next_2_clicked()
 {
-    od->show();
+    on_pushButton_next_clicked();
 }

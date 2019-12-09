@@ -25,6 +25,8 @@ public:
 
     void setString(QString s);
 
+    void setUi(QString s);
+
 signals:
     void buttonPressed();
 

@@ -30,6 +30,7 @@ QString side::getString() {
 void side::on_one_btn_clicked()
 {
     ss->setClickOne();
+    ss->setString(getString());
 }
 
 void side::on_set_btn_clicked()

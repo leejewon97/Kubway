@@ -41,6 +41,7 @@ bool side_select::getClickOne() {
     return click_one;
 }
 void side_select::setClickOne() {
+    poo->setString(getString());
     poo->show();
     this->close();
 }
