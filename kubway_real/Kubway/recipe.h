@@ -32,6 +32,8 @@ private slots:
 
     void on_pushButton_next_clicked();
 
+    void on_pushButton_next_2_clicked();
+
 private:
     Ui::recipe *ui;
     order_done *od = new order_done;

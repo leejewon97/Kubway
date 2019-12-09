@@ -21,11 +21,6 @@ recipe::~recipe()
     delete ui;
 }
 
-void recipe::on_pushButton_next_clicked()
-{
-    od->show();
-}
-
 
 void recipe::closeAll()
 {
@@ -33,4 +28,12 @@ void recipe::closeAll()
     emit buttonPressed();
 }
 
+void recipe::on_pushButton_next_clicked()
+{
+    od->show();
+}
 
+void recipe::on_pushButton_next_2_clicked()
+{
+    od->show();
+}
