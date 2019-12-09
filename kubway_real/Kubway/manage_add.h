@@ -3,6 +3,7 @@
 
 #include <QDialog>
 #include "manage_back.h"
+#include "sandwich_new.h"
 
 namespace Ui {
 class manage_add;
@@ -21,9 +22,13 @@ private slots:
 
     void on_pushButton_close_clicked();
 
+    void make_button1(QString send_list);
+
 private:
     Ui::manage_add *ui;
     manage_back mb;
+
+    sandwich_new sn;
 
 
 };

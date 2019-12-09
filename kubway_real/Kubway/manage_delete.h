@@ -2,6 +2,7 @@
 #define MANAGE_DELETE_H
 
 #include <QDialog>
+#include "manage_back.h"
 
 namespace Ui {
 class manage_delete;
@@ -22,6 +23,7 @@ private slots:
 
 private:
     Ui::manage_delete *ui;
+    manage_back mb;
 };
 
 #endif // MANAGE_DELETE_H
