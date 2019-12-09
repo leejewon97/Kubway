@@ -12,11 +12,11 @@ vegetable::vegetable(QWidget *parent) :
     for (int i = 0; i < 8; i++) {
         btnFlag[i] = true;
     }
-    on_pushButton_1_clicked();
-    on_pushButton_2_clicked();
-    on_pushButton_3_clicked();
-    on_pushButton_4_clicked();
-    on_pushButton_5_clicked();
+//    on_pushButton_1_clicked();
+//    on_pushButton_2_clicked();
+//    on_pushButton_3_clicked();
+//    on_pushButton_4_clicked();
+//    on_pushButton_5_clicked();
 }
 
 vegetable::~vegetable()
@@ -41,85 +41,85 @@ QString vegetable::getString() {
 
 void vegetable::on_pushButton_1_clicked()
 {
-    if(btnFlag[0]){
+    if(!btnFlag[0]){
         str.append("양상추 ");
         ui->label->setText(getString());
         ui->pushButton_1->setStyleSheet("background-image: url(:/image/vegetable_page/click_on/t_1.png);");
-        btnFlag[0] = false;
+        btnFlag[0] = true;
     } else {
         int index = str.indexOf("양상추 ");
         str.remove(index,4);
         ui->label->setText(getString());
         ui->pushButton_1->setStyleSheet("background-image: url(:/image/vegetable_page/click_off/t_1.png);");
-        btnFlag[0] = true;
+        btnFlag[0] = false;
     }
 
 }
 
 void vegetable::on_pushButton_2_clicked()
 {
-    if(btnFlag[1]){
+    if(!btnFlag[1]){
         str.append("토마토 ");
         ui->label->setText(getString());
         ui->pushButton_2->setStyleSheet("background-image: url(:/image/vegetable_page/click_on/t_2.png);");
-        btnFlag[1] = false;
+        btnFlag[1] = true;
     } else {
         int index = str.indexOf("토마토 ");
         str.remove(index,4);
         ui->label->setText(getString());
         ui->pushButton_2->setStyleSheet("background-image: url(:/image/vegetable_page/click_off/t_2.png);");
-        btnFlag[1] = true;
+        btnFlag[1] = false;
     }
 
 }
 
 void vegetable::on_pushButton_3_clicked()
 {
-    if(btnFlag[2]){
+    if(!btnFlag[2]){
         str.append("오이 ");
         ui->label->setText(getString());
         ui->pushButton_3->setStyleSheet("background-image: url(:/image/vegetable_page/click_on/t_3.png);");
-        btnFlag[2] = false;
+        btnFlag[2] = true;
     } else {
         int index = str.indexOf("오이 ");
         str.remove(index,3);
         ui->label->setText(getString());
         ui->pushButton_3->setStyleSheet("background-image: url(:/image/vegetable_page/click_off/t_3.png);");
-        btnFlag[2] = true;
+        btnFlag[2] = false;
     }
 
 }
 
 void vegetable::on_pushButton_4_clicked()
 {
-    if(btnFlag[3]){
+    if(!btnFlag[3]){
         str.append("피망 ");
         ui->label->setText(getString());
         ui->pushButton_4->setStyleSheet("background-image: url(:/image/vegetable_page/click_on/t_4.png);");
-        btnFlag[3] = false;
+        btnFlag[3] = true;
     } else {
         int index = str.indexOf("피망 ");
         str.remove(index,3);
         ui->label->setText(getString());
         ui->pushButton_4->setStyleSheet("background-image: url(:/image/vegetable_page/click_off/t_4.png);");
-        btnFlag[3] = true;
+        btnFlag[3] = false;
     }
 
 }
 
 void vegetable::on_pushButton_5_clicked()
 {
-    if(btnFlag[4]){
+    if(!btnFlag[4]){
         str.append("양파 ");
         ui->label->setText(getString());
         ui->pushButton_5->setStyleSheet("background-image: url(:/image/vegetable_page/click_on/t_5.png);");
-        btnFlag[4] = false;
+        btnFlag[4] = true;
     } else {
         int index = str.indexOf("양파 ");
         str.remove(index,3);
         ui->label->setText(getString());
         ui->pushButton_5->setStyleSheet("background-image: url(:/image/vegetable_page/click_off/t_5.png);");
-        btnFlag[4] = true;
+        btnFlag[4] = false;
     }
 
 }
@@ -177,11 +177,8 @@ void vegetable::on_pushButton_8_clicked()
 
 void vegetable::on_pushButton_back_clicked()
 {
-    for (int i = 0; i < 5; i++) {
+    for (int i = 0; i < 8; i++) {
         btnFlag[i] = false;
-    }
-    for(int i =5; i < 8; i++) {
-        btnFlag[i] = true;
     }
 
     ui->pushButton_1->setStyleSheet("background-image: url(:/image/vegetable_page/click_on/t_1.png);");
@@ -220,13 +217,9 @@ void vegetable::closeAll()
 
 void vegetable::on_pushButton_home_clicked()
 {
-    for (int i = 0; i < 5; i++) {
-        btnFlag[i] = false;
-    }
-    for(int i =5; i < 8; i++) {
+    for (int i = 0; i < 8; i++) {
         btnFlag[i] = true;
     }
-
     ui->pushButton_1->setStyleSheet("background-image: url(:/image/vegetable_page/click_on/t_1.png);");
     ui->pushButton_2->setStyleSheet("background-image: url(:/image/vegetable_page/click_on/t_2.png);");
     ui->pushButton_3->setStyleSheet("background-image: url(:/image/vegetable_page/click_on/t_3.png);");

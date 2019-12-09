@@ -217,7 +217,7 @@
              </size>
             </property>
             <property name="styleSheet">
-             <string notr="true">background-image: url(:/image/vegetable_page/click_off/t_1.png);</string>
+             <string notr="true">background-image: url(:/image/vegetable_page/click_on/t_1.png);</string>
             </property>
             <property name="text">
              <string/>
@@ -236,7 +236,7 @@
              </size>
             </property>
             <property name="styleSheet">
-             <string notr="true">background-image: url(:/image/vegetable_page/click_off/t_2.png);</string>
+             <string notr="true">background-image: url(:/image/vegetable_page/click_on/t_2.png);</string>
             </property>
             <property name="text">
              <string/>
@@ -255,7 +255,7 @@
              </size>
             </property>
             <property name="styleSheet">
-             <string notr="true">background-image: url(:/image/vegetable_page/click_off/t_3.png);</string>
+             <string notr="true">background-image: url(:/image/vegetable_page/click_on/t_3.png);</string>
             </property>
             <property name="text">
              <string/>
@@ -274,7 +274,7 @@
              </size>
             </property>
             <property name="styleSheet">
-             <string notr="true">background-image: url(:/image/vegetable_page/click_off/t_4.png);</string>
+             <string notr="true">background-image: url(:/image/vegetable_page/click_on/t_4.png);</string>
             </property>
             <property name="text">
              <string/>
@@ -293,7 +293,7 @@
              </size>
             </property>
             <property name="styleSheet">
-             <string notr="true">background-image: url(:/image/vegetable_page/click_off/t_5.png);</string>
+             <string notr="true">background-image: url(:/image/vegetable_page/click_on/t_5.png);</string>
             </property>
             <property name="text">
              <string/>
@@ -548,8 +548,8 @@
             <rect>
              <x>0</x>
              <y>0</y>
-             <width>648</width>
-             <height>158</height>
+             <width>630</width>
+             <height>101</height>
             </rect>
            </property>
            <layout class="QVBoxLayout" name="verticalLayout">

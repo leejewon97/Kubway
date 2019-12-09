@@ -24,6 +24,7 @@ QString size_select::getString() {
 
 void size_select::on_pushButton_15cm_2_clicked()
 {
+    str.remove(11,50);
     str.append("15cm\n");
     s->setString(getString());
     s->show();
@@ -31,6 +32,7 @@ void size_select::on_pushButton_15cm_2_clicked()
 
 void size_select::on_pushButton_30cm_2_clicked()
 {
+    str.remove(11,50);
     str.append("30cm\n");
     s->setString(getString());
     s->show();

@@ -27,6 +27,7 @@ void mainwindow::setString(QString s) {
 }
 void mainwindow::on_pushButton_2_clicked()
 {
+    str.clear();
     str.append("TAKE_OUT \n");
     size->setString(this->getString());
     size->show();
@@ -34,6 +35,7 @@ void mainwindow::on_pushButton_2_clicked()
 
 void mainwindow::on_pushButton_clicked()
 {
+    str.clear();
     str.append("RESTAURANT\n");
     size->setString(this->getString());
     size->show();
