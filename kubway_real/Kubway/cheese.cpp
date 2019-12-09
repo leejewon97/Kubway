@@ -104,6 +104,7 @@ void cheese::on_pushButton_next_clicked()
     if(btnFlag == false) {
         t->setString(getString());
         t->setStringLength(str.length());
+        t->setUi(str);
         t->show();
     }
 }

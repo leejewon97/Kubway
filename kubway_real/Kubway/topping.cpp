@@ -18,6 +18,7 @@ topping::topping(QWidget *parent) :
     buttons[5] = ui->pushButton_6;
     buttons[6] = ui->pushButton_7;
     buttons[7] = ui->pushButton_8;
+
 }
 
 topping::~topping()
@@ -25,6 +26,10 @@ topping::~topping()
     delete ui;
 }
 
+
+void topping::setUi(QString s) {
+    ui->label->setText(s);
+}
 
 void topping::setStringLength(int s) {
     strlen = s;

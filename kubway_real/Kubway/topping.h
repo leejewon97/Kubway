@@ -24,6 +24,8 @@ public:
 
     void setStringLength(int s);
 
+    void setUi(QString s);
+
 signals:
     void buttonPressed();
 
@@ -53,7 +55,6 @@ private slots:
     void enableButtons();
 
     void closeAll();
-
 
     void on_pushButton_home_clicked();
 
