@@ -91,7 +91,7 @@ public:
     void read_Tnode(TnodePointer *temp)
     {
         //QString fileName = QFileDialog::getOpenFileName(this, "Open file", "../kubway", "text (*.txt)");
-        QString  fileName = QApplication::applicationDirPath() + "/savepop.txt";
+        QString  fileName = QApplication::applicationDirPath() + "/extra.txt";
         qDebug() << fileName;
         QFile file(fileName);
         int num;

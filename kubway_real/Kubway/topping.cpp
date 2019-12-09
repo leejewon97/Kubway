@@ -52,7 +52,7 @@ void topping::enableButtons(){
 void topping::on_pushButton_1_clicked()
 {
     tf.read_Tnode(&tf.head);
-    char* search = tf.find_Tnode(tf.head, "더블업");
+    char* search = tf.find_Tnode(tf.head, "더블업15cm");
     if(btnFlag) {
         str.append(search);
         ui->label->setText(getString());
@@ -72,7 +72,7 @@ void topping::on_pushButton_1_clicked()
 void topping::on_pushButton_2_clicked()
 {
     tf.read_Tnode(&tf.head);
-    char* search = tf.find_Tnode(tf.head, "에그마요");
+    char* search = tf.find_Tnode(tf.head, "에그마요15cm");
     if(btnFlag) {
         str.append(search);
         ui->label->setText(getString());
@@ -92,7 +92,7 @@ void topping::on_pushButton_2_clicked()
 void topping::on_pushButton_3_clicked()
 {
     tf.read_Tnode(&tf.head);
-    char* search = tf.find_Tnode(tf.head, "페페로니");
+    char* search = tf.find_Tnode(tf.head, "페퍼로니15cm");
     if(btnFlag) {
         str.append(search);
         ui->label->setText(getString());
@@ -112,7 +112,7 @@ void topping::on_pushButton_3_clicked()
 void topping::on_pushButton_4_clicked()
 {
     tf.read_Tnode(&tf.head);
-    char* search = tf.find_Tnode(tf.head, "베이컨");
+    char* search = tf.find_Tnode(tf.head, "베이컨15cm");
     if(btnFlag) {
         str.append(search);
         ui->label->setText(getString());
@@ -132,7 +132,7 @@ void topping::on_pushButton_4_clicked()
 void topping::on_pushButton_5_clicked()
 {
     tf.read_Tnode(&tf.head);
-    char* search = tf.find_Tnode(tf.head, "더블치즈");
+    char* search = tf.find_Tnode(tf.head, "더블치즈15cm");
     if(btnFlag) {
         str.append(search);
         ui->label->setText(getString());
@@ -152,7 +152,7 @@ void topping::on_pushButton_5_clicked()
 void topping::on_pushButton_6_clicked()
 {
     tf.read_Tnode(&tf.head);
-    char* search = tf.find_Tnode(tf.head, "오믈렛");
+    char* search = tf.find_Tnode(tf.head, "오믈렛15cm");
     if(btnFlag) {
         str.append(search);
         ui->label->setText(getString());
@@ -172,7 +172,7 @@ void topping::on_pushButton_6_clicked()
 void topping::on_pushButton_7_clicked()
 {
     tf.read_Tnode(&tf.head);
-    char* search = tf.find_Tnode(tf.head, "아보카도");
+    char* search = tf.find_Tnode(tf.head, "아보카도15cm");
     if(btnFlag) {
         str.append(search);
         ui->label->setText(getString());
@@ -192,7 +192,7 @@ void topping::on_pushButton_7_clicked()
 void topping::on_pushButton_8_clicked()
 {
     tf.read_Tnode(&tf.head);
-    char* search = tf.find_Tnode(tf.head, "베이컨비츠");
+    char* search = tf.find_Tnode(tf.head, "베이컨비츠15cm");
     if(btnFlag) {
         str.append(search);
         ui->label->setText(getString());

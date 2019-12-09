@@ -72,7 +72,7 @@ void cheese::on_pushButton_2_clicked()
         btnFlag = false;
         disableButtons(ui->pushButton_2);
     } else {
-        str.chop(6);
+        str.chop(7);
         ui->label->setText(getString());
         ui->pushButton_2->setStyleSheet("background-image: url(:/image/cheese_page/click_off/cheese_2.png);");
         btnFlag = true;

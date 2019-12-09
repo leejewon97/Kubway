@@ -226,7 +226,7 @@ void sandwich_premium::on_pushButton_9_clicked()
 void sandwich_premium::on_pushButton_10_clicked()
 {
     fb.read_Node(&fb.head);
-    char* search = fb.find_Node(fb.head, "폴드포크15cm");
+    char* search = fb.find_Node(fb.head, "풀드포크15cm");
     if(btnFlag) {
         str.append(search);
         ui->label->setText(getString());

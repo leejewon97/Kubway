@@ -11,7 +11,7 @@
 
 using namespace std;
 
-#define MAX_NAME 30
+#define MAX_NAME 50
 #define TRUE 1
 
 typedef struct node *NodePointer;
@@ -39,8 +39,8 @@ public:
 
     char *find_Node(NodePointer temp, char* arg)
     {
-        char findname[30];
-        char pvalue[30];
+        char findname[MAX_NAME];
+        char pvalue[MAX_NAME];
         char *ret;
 
         strcpy(findname, arg);
@@ -103,9 +103,9 @@ public:
         int i;
         int save_price;
 
-        char _name[30] = {0,};
-        char _rcsauce1[30] = {0,};
-        char _rcsauce2[30] = {0,};
+        char _name[MAX_NAME] = {0,};
+        char _rcsauce1[MAX_NAME] = {0,};
+        char _rcsauce2[MAX_NAME] = {0,};
 
         QString save_name;
         QString save_rcsauce1;

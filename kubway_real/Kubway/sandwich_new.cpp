@@ -51,7 +51,7 @@ QString sandwich_new::getString() {
 void sandwich_new::on_pushButton_1_clicked()
 {
     fb.read_Node(&fb.head);
-    char* search = fb.find_Node(fb.head, "이탈리안비엘티15cm");
+    char* search = fb.find_Node(fb.head, "스테이크&치즈아보카도랩");
     if(btnFlag) {
         str.append(search);
         ui->label->setText(getString());
@@ -70,7 +70,7 @@ void sandwich_new::on_pushButton_1_clicked()
 void sandwich_new::on_pushButton_2_clicked()
 {
     fb.read_Node(&fb.head);
-    char* search = fb.find_Node(fb.head, "이탈리안비엘티15cm");
+    char* search = fb.find_Node(fb.head, "쉬림프에그마요랩");
     if(btnFlag) {
         str.append(search);
         ui->label->setText(getString());
@@ -89,7 +89,7 @@ void sandwich_new::on_pushButton_2_clicked()
 void sandwich_new::on_pushButton_3_clicked()
 {
     fb.read_Node(&fb.head);
-    char* search = fb.find_Node(fb.head, "이탈리안비엘티15cm");
+    char* search = fb.find_Node(fb.head, "치킨베이컨미니랩");
     if(btnFlag) {
         str.append(search);
         ui->label->setText(getString());
@@ -108,7 +108,7 @@ void sandwich_new::on_pushButton_3_clicked()
 void sandwich_new::on_pushButton_4_clicked()
 {
     fb.read_Node(&fb.head);
-    char* search = fb.find_Node(fb.head, "이탈리안비엘티15cm");
+    char* search = fb.find_Node(fb.head, "베이컨웨지미니랩");
     if(btnFlag) {
         str.append(search);
         ui->label->setText(getString());
@@ -127,7 +127,7 @@ void sandwich_new::on_pushButton_4_clicked()
 void sandwich_new::on_pushButton_5_clicked()
 {
     fb.read_Node(&fb.head);
-    char* search = fb.find_Node(fb.head, "이탈리안비엘티15cm");
+    char* search = fb.find_Node(fb.head, "쉬림프15cm");
     if(btnFlag) {
         str.append(search);
         ui->label->setText(getString());
@@ -146,7 +146,7 @@ void sandwich_new::on_pushButton_5_clicked()
 void sandwich_new::on_pushButton_6_clicked()
 {
     fb.read_Node(&fb.head);
-    char* search = fb.find_Node(fb.head, "이탈리안비엘티15cm");
+    char* search = fb.find_Node(fb.head, "쉬림프아보카도15cm");
     if(btnFlag) {
         str.append(search);
         ui->label->setText(getString());
