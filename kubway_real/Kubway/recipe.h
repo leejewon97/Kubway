@@ -23,6 +23,8 @@ public:
     explicit recipe(QWidget *parent = nullptr);
     ~recipe();
 
+    void setString(QString s);
+
 signals:
     void buttonPressed();
 
@@ -37,6 +39,7 @@ private slots:
 private:
     Ui::recipe *ui;
     order_done *od = new order_done;
+    QString str;
 };
 
 #endif // RECIPE_H

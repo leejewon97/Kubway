@@ -4,6 +4,7 @@
 #include <QWidget>
 #include <QPushButton>
 #include "pay_or_order.h"
+#include <payment.h>
 
 namespace Ui {
 class side_select;
@@ -71,6 +72,7 @@ private:
     QString str;
     QPushButton* buttons[7];
     pay_or_order *poo = new pay_or_order;
+    payment p;
     bool click_one =false;
     int strlen;
 };
