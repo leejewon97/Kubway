@@ -24,6 +24,8 @@ public:
 
     void setStringLength(int s);
 
+    void setUi(QString s);
+
 signals:
     void buttonPressed();
 

@@ -24,6 +24,10 @@ sandwich_classic::~sandwich_classic()
     delete ui;
 }
 
+void sandwich_classic::setUi(QString s) {
+    ui->label->setText(s);
+}
+
 void sandwich_classic::setStringLength(int s) {
     strlen = s;
 }
@@ -167,6 +171,7 @@ void sandwich_classic::on_pushButton_next_clicked()
     if(btnFlag == false) {
             b->setString(getString());
             b->setStringLength(str.length());
+            b->setUi(str);
             b->show();
     }
 }

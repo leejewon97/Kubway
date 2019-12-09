@@ -30,6 +30,7 @@ void sandwich::on_classic_btn_clicked()
 {
     sc->setString(this->getString());
     sc->setStringLength(str.length());
+    sc->setUi(str);
     sc->show();
 }
 
@@ -37,6 +38,7 @@ void sandwich::on_fresh_btn_clicked()
 {
     sf->setString(this->getString());
     sf->setStringLength(str.length());
+    sf->setUi(str);
     sf->show();
 }
 
@@ -44,6 +46,7 @@ void sandwich::on_new_btn_clicked()
 {
     sn->setString(this->getString());
     sn->setStringLength(str.length());
+    sn->setUi(str);
     sn->show();
 }
 
@@ -51,6 +54,7 @@ void sandwich::on_premium_btn_clicked()
 {
     sp->setString(this->getString());
     sp->setStringLength(str.length());
+    sp->setUi(str);
     sp->show();
 }
 
