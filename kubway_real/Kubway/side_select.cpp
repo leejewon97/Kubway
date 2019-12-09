@@ -223,7 +223,6 @@ void side_select::on_pushButton_back_clicked()
 void side_select::on_pushButton_next_clicked()
 {
     if(!(btnFlag[0]||btnFlag[1])){
-        p.setString(getString());
         poo->show();
     }
 }

@@ -5,7 +5,6 @@
 #include <QPushButton>
 #include "bread.h"
 #include "for_back.h"
-#include "sauce.h"
 
 namespace Ui {
 class sandwich_classic;
@@ -58,15 +57,12 @@ private slots:
 private:
     Ui::sandwich_classic *ui;
     bread *b = new bread;
-    sauce sa;
     bool btnFlag;
     QString str;
     QPushButton* buttons[6];
     int strlen;
     int len;
     for_back fb;
-    QString rcsauce1;
-    QString rcsauce2;
 };
 
 #endif // sandwich_classic_H

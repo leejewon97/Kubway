@@ -1,6 +1,5 @@
 #include "sauce.h"
 #include "ui_sauce.h"
-#include <QDebug>
 
 sauce::sauce(QWidget *parent) :
     QWidget(parent),
@@ -21,14 +20,6 @@ sauce::sauce(QWidget *parent) :
 sauce::~sauce()
 {
     delete ui;
-}
-
-void sauce::setRcsacue1(QString s) {
-    rcsauce1 = s;
-}
-
-void sauce::setRcsacue2(QString s) {
-    rcsacue2 = s;
 }
 
 void sauce::setUi(QString s) {
@@ -52,7 +43,6 @@ void sauce::on_pushButton_1_clicked()
         ui->label->setText(getString());
         ui->pushButton_1->setStyleSheet("background-image: url(:/image/sauce_page/click_on/sauce_1.png);");
         btnFlag[0] = false;
-        qDebug() << rcsauce1;
     } else {
         int index = str.indexOf("랜치 드레싱 ");
         str.remove(index,7);

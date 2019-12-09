@@ -59,11 +59,7 @@ void sandwich_classic::on_pushButton_1_clicked()
         len = arr.value(0).toInt();
     fb.read_Node(&fb.head);
     char* search = fb.find_Node(fb.head, "에그마요", len);
-    rcsauce1 = QString(fb.find_Rcsauce1(fb.head, "에그마요"));
-    rcsauce2 = QString(fb.find_Rcsauce2(fb.head, "에그마요"));
     if(btnFlag) {
-        sa.setRcsacue1(rcsauce1);
-        sa.setRcsacue2(rcsauce2);
         str.append(search);
         ui->label->setText(getString());
         ui->pushButton_1->setStyleSheet("background-image: url(:/image/sandwich_page/classic/click_on/t_1.png);");

@@ -17,7 +17,6 @@ public:
     explicit payment(QWidget *parent = nullptr);
     ~payment();
 
-    void setString(QString s);
 signals:
     void buttonPressed();
 
@@ -34,7 +33,6 @@ private slots:
 private:
     Ui::payment *ui;
     recipe *r = new recipe;
-    QString str;
 };
 
 #endif // PAYMENT_H

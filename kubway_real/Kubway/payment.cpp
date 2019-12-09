@@ -14,13 +14,9 @@ payment::~payment()
     delete ui;
 }
 
-void payment::setString(QString s) {
-    str = s;
-}
 void payment::on_pushButton_next_clicked()
 {
     r->show();
-    r->setString(str);
 }
 
 void payment::closeAll()

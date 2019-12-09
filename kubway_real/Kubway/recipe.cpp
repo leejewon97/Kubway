@@ -21,9 +21,6 @@ recipe::~recipe()
     delete ui;
 }
 
-void recipe::setString(QString s) {
-    str = s;
-}
 
 void recipe::closeAll()
 {
