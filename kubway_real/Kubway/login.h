@@ -11,6 +11,7 @@ class login;
 class login : public QWidget
 {
     Q_OBJECT
+
 public:
     explicit login(QWidget *parent = nullptr);
     ~login();

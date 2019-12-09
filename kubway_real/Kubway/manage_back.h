@@ -37,17 +37,16 @@ public:
 
     NodePointer2 head = NULL;
 
-    void save_Node(NodePointer2 *temp, int bool_del)
+    void save_Node(NodePointer2 *temp)
     {
-        QString  fileName = QApplication::applicationDirPath() + "/savepop.txt";
+        QString  fileName = QApplication::applicationDirPath() + "/savepop2.txt";
         NodePointer2 cur = *temp;
         //qDebug() << fileName;
         QFile file(fileName);
-        QFile file1(fileName);
         int num;
         QString num_str;
 
-        if(!file.open(QIODevice::ReadOnly | QIODevice::Text)){
+        if(!file.open(QIODevice::WriteOnly | QIODevice::Text)){
             qDebug() << "not open file";
             return;
         }
@@ -55,91 +54,30 @@ public:
         num_str = stream.readLine();
         num = num_str.toInt();
 
-        file.close();
-
-        if(!file1.open(QIODevice::WriteOnly | QIODevice::Text)){
-            qDebug() << "not open file";
-            return;
-        }
-        QTextStream stream1(&file1);
-
         if (num == 0)
         {
-            stream1 << "0" << "\n";
+            stream << "0" << "\n";
             file.close();
             return;
         }
         else
         {
-            num++;
-            if (bool_del != 1){
-                num = bool_del;
-            }
-            num_str = QVariant(num).toString();
-
-            stream1 << num_str + "\n";
-            for (int i = 0; i < num; i++)
+            stream << num_str + "\n";
+            for (int i = 0; i < num + 1; i++)
             {
                 QString _name = cur->name;
                 QString _price15 = QVariant(cur->price15).toString();
                 QString _price30 = QVariant(cur->price30).toString();
                 QString _rcsauce1 = cur->rcsauce1;
                 QString _rcsauce2 = cur->rcsauce1;
-                stream1 << _name + " " + _price15 + " "+ _price15 + " "+ _rcsauce1 + " "+ _rcsauce2 + "\n";
-
+                stream << _name + " " + _price15 + " "+ _price15 + " "+ _rcsauce1 + " "+ _rcsauce2 + "\n";
+                qDebug() << _name;
                 cur = cur->link;
            }
         }
-        head = NULL;
 
-        file1.close();
-
-    }
-
-    int delete_Node(NodePointer2 *node, char* findname)
-    {
-        QString  fileName = QApplication::applicationDirPath() + "/savepop.txt";
-        NodePointer2 temp = *node;
-        //qDebug() << fileName;
-        QFile file(fileName);
-        QFile file1(fileName);
-        int num;
-        QString num_str;
-        if(!file.open(QIODevice::ReadOnly | QIODevice::Text)){
-            qDebug() << "not open file";
-        }
-        QTextStream stream(&file);
-        num_str = stream.readLine();
-        num = num_str.toInt();
-
-        NodePointer2 item;
-        for (; temp != NULL; temp = temp->link)
-        {
-            if (strcmp(temp->name, findname) == 0)
-            {
-                if (*node == temp)
-                {
-                    *node = NULL;
-                    free(temp);
-                    num--;
-                    break;
-                }
-                else
-                {
-                    item->link = temp->link;
-                    free(temp);
-                    num--;
-                    break;
-                }
-            }
-            item = temp;
-        }
-        if (temp == NULL)
-        {
-            return 0;
-        }
         file.close();
-        return num;
+
     }
 
 
@@ -149,11 +87,14 @@ public:
         bool ret = true;
 
 
+        qDebug() << arg;
         strcpy(findname, arg);
 
         for (; temp != NULL; temp = temp->link)
         {
 
+            qDebug() << temp->name;
+            qDebug() << findname;
             if (strcmp(temp->name, findname) == 0)
             {
 
@@ -203,7 +144,7 @@ public:
     void read_Node(NodePointer2 *temp)
     {
     //QString fileName = QFileDialog::getOpenFileName(this, "Open file", "../kubway", "text (*.txt)");
-        QString  fileName = QApplication::applicationDirPath() + "/savepop.txt";
+        QString  fileName = QApplication::applicationDirPath() + "/savepop2.txt";
         QFile file(fileName);
         int num;
 
