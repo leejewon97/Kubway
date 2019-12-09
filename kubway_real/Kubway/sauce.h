@@ -26,6 +26,10 @@ public:
 
     void setUi(QString s);
 
+    void setRcsacue1(QString s);
+
+    void setRcsacue2(QString s);
+
 signals:
     void buttonPressed();
 
@@ -78,6 +82,8 @@ private:
     side *si = new side;
     side_select *ss = new side_select;
     int strlen;
+    QString rcsauce1;
+    QString rcsacue2;
 };
 
 #endif // sauce_H

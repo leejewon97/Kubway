@@ -17,6 +17,9 @@ public:
     explicit card_or_cash(QWidget *parent = nullptr);
     ~card_or_cash();
 
+    void setString(QString);
+
+    QString getString();
 signals:
     void buttonPressed();
 
@@ -35,6 +38,7 @@ private slots:
 private:
     Ui::card_or_cash *ui;
     payment *p = new payment;
+    QString str;
 };
 
 #endif // CARD_OR_CASH_H

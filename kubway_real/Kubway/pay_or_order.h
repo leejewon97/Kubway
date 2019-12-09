@@ -18,6 +18,10 @@ public:
     explicit pay_or_order(QWidget *parent = nullptr);
     ~pay_or_order();
 
+    void setString(QString s);
+
+    QString getString();
+
 signals:
     void buttonPressed();
 
@@ -36,6 +40,7 @@ private slots:
 private:
     Ui::pay_or_order *ui;
     card_or_cash *coc = new card_or_cash;
+    QString str;
 };
 
 #endif // PAY_OR_ORDER_H

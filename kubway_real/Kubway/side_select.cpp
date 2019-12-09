@@ -1,5 +1,6 @@
 #include "side_select.h"
 #include "ui_side_select.h"
+#include "QtDebug"
 
 side_select::side_select(QWidget *parent) :
     QWidget(parent),
@@ -95,14 +96,14 @@ void side_select::on_pushButton_1_clicked()
 void side_select::on_pushButton_2_clicked()
 {
     if(btnFlag[0]){
-        str.append("초코칩");
+        str.append("초코칩 ");
         ui->label->setText(getString());
         ui->pushButton_2->setStyleSheet("background-image: url(:/image/sideselect_page/click_on/t_2.png);");
         btnFlag[0] = false;
         disableButtons(ui->pushButton_2);
     } else {
-        int index = str.indexOf("초코칩");
-        str.remove(index,3);
+        int index = str.indexOf("초코칩 ");
+        str.remove(index,4);
         ui->label->setText(getString());
         ui->pushButton_2->setStyleSheet("background-image: url(:/image/sideselect_page/click_off/t_2.png);");
         btnFlag[0] = true;
@@ -113,14 +114,14 @@ void side_select::on_pushButton_2_clicked()
 void side_select::on_pushButton_3_clicked()
 {
     if(btnFlag[0]){
-        str.append("오트밀 레이즌");
+        str.append("오트밀 레이즌 ");
         ui->label->setText(getString());
         ui->pushButton_3->setStyleSheet("background-image: url(:/image/sideselect_page/click_on/t_3.png);");
         btnFlag[0] = false;
         disableButtons(ui->pushButton_3);
     } else {
-        int index = str.indexOf("오트밀 레이즌");
-        str.remove(index,7);
+        int index = str.indexOf("오트밀 레이즌 ");
+        str.remove(index,8);
         ui->label->setText(getString());
         ui->pushButton_3->setStyleSheet("background-image: url(:/image/sideselect_page/click_off/t_3.png);");
         btnFlag[0] = true;
@@ -131,14 +132,14 @@ void side_select::on_pushButton_3_clicked()
 void side_select::on_pushButton_4_clicked()
 {
     if(btnFlag[0]){
-        str.append("라즈베리 치즈케익");
+        str.append("라즈베리 치즈케익 ");
         ui->label->setText(getString());
         ui->pushButton_4->setStyleSheet("background-image: url(:/image/sideselect_page/click_on/t_4.png);");
         btnFlag[0] = false;
         disableButtons(ui->pushButton_4);
     } else {
-        int index = str.indexOf("라즈베리 치즈케익");
-        str.remove(index,9);
+        int index = str.indexOf("라즈베리 치즈케익 ");
+        str.remove(index,10);
         ui->label->setText(getString());
         ui->pushButton_4->setStyleSheet("background-image: url(:/image/sideselect_page/click_off/t_4.png);");
         btnFlag[0] = true;
@@ -149,14 +150,14 @@ void side_select::on_pushButton_4_clicked()
 void side_select::on_pushButton_5_clicked()
 {
     if(btnFlag[0]){
-        str.append("화이트 초코 마카다미야");
+        str.append("화이트 초코 마카다미야 ");
         ui->label->setText(getString());
         ui->pushButton_5->setStyleSheet("background-image: url(:/image/sideselect_page/click_on/t_5.png);");
         btnFlag[0] = false;
         disableButtons(ui->pushButton_5);
     } else {
-        int index = str.indexOf("화이트 초코 마카다미야");
-        str.remove(index,4);
+        int index = str.indexOf("화이트 초코 마카다미야 ");
+        str.remove(index,13);
         ui->label->setText(getString());
         ui->pushButton_5->setStyleSheet("background-image: url(:/image/sideselect_page/click_off/t_5.png);");
         btnFlag[0] = true;
@@ -223,6 +224,7 @@ void side_select::on_pushButton_back_clicked()
 void side_select::on_pushButton_next_clicked()
 {
     if(!(btnFlag[0]||btnFlag[1])){
+        poo->setString(getString());
         poo->show();
     }
 }

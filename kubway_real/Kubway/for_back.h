@@ -65,6 +65,42 @@ public:
         return ret;
     }
 
+    char *find_Rcsauce1(NodePointer temp, char* arg)
+       {
+           char findname[MAX_NAME];
+           char *retSauce;
+
+           strcpy(findname, arg);
+
+           for (; temp != NULL; temp = temp->link)
+           {
+               if (strcmp(temp->name, findname) == 0)
+               {
+                   retSauce = temp->rcsauce1;
+                   break;
+               }
+           }
+           return retSauce;
+       }
+
+       char *find_Rcsauce2(NodePointer temp, char* arg)
+       {
+           char findname[MAX_NAME];
+           char *retSauce;
+
+           strcpy(findname, arg);
+
+           for (; temp != NULL; temp = temp->link)
+           {
+               if (strcmp(temp->name, findname) == 0)
+               {
+                   retSauce = temp->rcsauce2;
+                   break;
+               }
+           }
+           return retSauce;
+       }
+
     void make_Node(NodePointer *temp, int _price15, int _price30, char* _name, char* _rcsauce1, char* _rcsauce2)
     {
         NodePointer item;

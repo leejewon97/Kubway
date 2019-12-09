@@ -1,5 +1,6 @@
 #include "pay_or_order.h"
 #include "ui_pay_or_order.h"
+#include <QDebug>
 
 pay_or_order::pay_or_order(QWidget *parent) :
     QWidget(parent),
@@ -15,8 +16,17 @@ pay_or_order::~pay_or_order()
     delete ui;
 }
 
+void pay_or_order::setString(QString s) {
+    str = s;
+}
+
+QString pay_or_order::getString() {
+    return str;
+}
+
 void pay_or_order::on_pay_btn_clicked()
 {
+    coc->setString(getString());
     coc->show();
 }
 

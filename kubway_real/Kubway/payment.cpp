@@ -1,5 +1,6 @@
 #include "payment.h"
 #include "ui_payment.h"
+#include <QDebug>
 
 payment::payment(QWidget *parent) :
     QWidget(parent),
@@ -14,8 +15,15 @@ payment::~payment()
     delete ui;
 }
 
+QString payment::getString() {
+    return str;
+}
+void payment::setString(QString s) {
+    str = s;
+}
 void payment::on_pushButton_next_clicked()
 {
+    r->setString(getString());
     r->show();
 }
 

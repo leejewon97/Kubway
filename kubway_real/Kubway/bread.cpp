@@ -63,7 +63,7 @@ void bread::on_pushButton_1_clicked()
         disableButtons(ui->pushButton_1);
     } else {
         str.chop(5);
-        ui->label->clear();
+        ui->label->setText(getString());
         ui->pushButton_1->setStyleSheet("background-image: url(:/image/bread_page/click_off/bread_1.png);");
         btnFlag = true;
         enableButtons();
