@@ -33,6 +33,8 @@ SOURCES += \
         main.cpp \
         mainwindow.cpp \
         manage.cpp \
+        manage_add.cpp \
+        manage_delete.cpp \
         order_done.cpp \
         pay_or_order.cpp \
         payment.cpp \
@@ -59,6 +61,8 @@ HEADERS += \
         login.h \
         mainwindow.h \
         manage.h \
+        manage_add.h \
+        manage_delete.h \
         order_done.h \
         pay_or_order.h \
         payment.h \
@@ -85,6 +89,8 @@ FORMS += \
         login.ui \
         mainwindow.ui \
         manage.ui \
+        manage_add.ui \
+        manage_delete.ui \
         order_done.ui \
         pay_or_order.ui \
         payment.ui \
@@ -108,9 +114,11 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 RESOURCES += \
+    res.qrc \
     res.qrc
 
 DISTFILES += \
+    extra.txt \
     image/bread_page/bread_page_back.png \
     image/bread_page/click_off/bread_1.png \
     image/bread_page/click_off/bread_2.png \
@@ -126,7 +134,11 @@ DISTFILES += \
     image/bread_page/click_on/bread_6.png \
     image/button/Forward Arrow.png \
     image/button/Forward Arrow.png \
+    image/button/Forward Arrow.png \
+    image/button/add_btn.png \
+    image/button/delete_btn.png \
     image/button/go_back_btn.png \
+    image/button/go_home_btn.png \
     image/button/hot_btn.png \
     image/button/new_btn.png \
     image/button/square_1067.png \
@@ -156,6 +168,7 @@ DISTFILES += \
     image/payment_page_2/back.png \
     image/payment_page_2/money_back.png \
     image/receipt_page/back.png \
+    image/receipt_page/go_next_btn.png \
     image/receipt_page/receipt.png \
     image/sandwich_page/after_btn.png \
     image/sandwich_page/background_sandwich_classic.png \
@@ -312,4 +325,9 @@ DISTFILES += \
     image/vegetable_page/click_on/t_7.png \
     image/vegetable_page/click_on/t_8.png \
     image/vegetable_page/more_variety.png \
-    image/vegetable_page/vegetable_page_back.png
+    image/vegetable_page/vegetable_page_back.png \
+    malgun.ttf \
+    malgunbd.ttf \
+    malgunsl.ttf \
+    savepop.txt \
+    transparent.png
