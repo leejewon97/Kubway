@@ -54,8 +54,11 @@ QString sandwich_fresh::getString() {
 
 void sandwich_fresh::on_pushButton_1_clicked()
 {
+    QString temp = str.section('\n', 1);
+        QStringList arr = temp.split('c');
+        len = arr.value(0).toInt();
     fb.read_Node(&fb.head);
-    char* search = fb.find_Node(fb.head, "로티세리바비큐치킨15cm");
+    char* search = fb.find_Node(fb.head, "로티세리바비큐치킨", len);
     if(btnFlag) {
         str.append(search);
         ui->label->setText(getString());
@@ -73,8 +76,11 @@ void sandwich_fresh::on_pushButton_1_clicked()
 
 void sandwich_fresh::on_pushButton_2_clicked()
 {
+    QString temp = str.section('\n', 1);
+        QStringList arr = temp.split('c');
+        len = arr.value(0).toInt();
     fb.read_Node(&fb.head);
-    char* search = fb.find_Node(fb.head, "로스트치킨15cm");
+    char* search = fb.find_Node(fb.head, "로스트치킨", len);
     if(btnFlag) {
         str.append(search);
         ui->label->setText(getString());
@@ -92,8 +98,11 @@ void sandwich_fresh::on_pushButton_2_clicked()
 
 void sandwich_fresh::on_pushButton_3_clicked()
 {
+    QString temp = str.section('\n', 1);
+        QStringList arr = temp.split('c');
+        len = arr.value(0).toInt();
     fb.read_Node(&fb.head);
-    char* search = fb.find_Node(fb.head, "로스트비프15cm");
+    char* search = fb.find_Node(fb.head, "로스트비프", len);
     if(btnFlag) {
         str.append(search);
         ui->label->setText(getString());
@@ -111,8 +120,11 @@ void sandwich_fresh::on_pushButton_3_clicked()
 
 void sandwich_fresh::on_pushButton_4_clicked()
 {
+    QString temp = str.section('\n', 1);
+        QStringList arr = temp.split('c');
+        len = arr.value(0).toInt();
     fb.read_Node(&fb.head);
-    char* search = fb.find_Node(fb.head, "서브웨이클럽15cm");
+    char* search = fb.find_Node(fb.head, "서브웨이클럽", len);
     if(btnFlag) {
         str.append(search);
         ui->label->setText(getString());
@@ -130,8 +142,11 @@ void sandwich_fresh::on_pushButton_4_clicked()
 
 void sandwich_fresh::on_pushButton_5_clicked()
 {
+    QString temp = str.section('\n', 1);
+        QStringList arr = temp.split('c');
+        len = arr.value(0).toInt();
     fb.read_Node(&fb.head);
-    char* search = fb.find_Node(fb.head, "터키15cm");
+    char* search = fb.find_Node(fb.head, "터키", len);
     if(btnFlag) {
         str.append(search);
         ui->label->setText(getString());
@@ -149,8 +164,11 @@ void sandwich_fresh::on_pushButton_5_clicked()
 
 void sandwich_fresh::on_pushButton_6_clicked()
 {
+    QString temp = str.section('\n', 1);
+        QStringList arr = temp.split('c');
+        len = arr.value(0).toInt();
     fb.read_Node(&fb.head);
-    char* search = fb.find_Node(fb.head, "베지15cm");
+    char* search = fb.find_Node(fb.head, "베지", len);
     if(btnFlag) {
         str.append(search);
         ui->label->setText(getString());

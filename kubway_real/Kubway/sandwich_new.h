@@ -62,6 +62,7 @@ private:
     QPushButton* buttons[6];
     for_back fb;
     int strlen;
+    int len;
 };
 
 #endif // sandwich_new_H

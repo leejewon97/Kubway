@@ -70,6 +70,7 @@ private:
     QPushButton* buttons[10];
     for_back fb;
     int strlen;
+    int len;
 };
 
 #endif // sandwich_premium_H

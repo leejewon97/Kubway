@@ -16,7 +16,8 @@ using namespace std;
 
 typedef struct node *NodePointer;
 typedef struct node {
-    int price;
+    int price15;
+    int price30;
     char name[MAX_NAME];
     char rcsauce1[MAX_NAME];
     char rcsauce2[MAX_NAME];
@@ -37,7 +38,7 @@ public:
 
     NodePointer head = NULL;
 
-    char *find_Node(NodePointer temp, char* arg)
+    char *find_Node(NodePointer temp, char* arg, int size)
     {
         char findname[MAX_NAME];
         char pvalue[MAX_NAME];
@@ -49,7 +50,11 @@ public:
         {
             if (strcmp(temp->name, findname) == 0)
             {
-                sprintf(pvalue, "\t%d 원\n", temp->price);
+                if (size == 15) {
+                sprintf(pvalue, "\t%d 원\n", temp->price15);
+                } else if (size == 30){
+                sprintf(pvalue, "\t%d 원\n", temp->price30);
+                }
                 ret = temp->name;
                 strcat(ret, pvalue);
                 break;
@@ -60,12 +65,13 @@ public:
         return ret;
     }
 
-    void make_Node(NodePointer *temp, int _age, char* _name, char* _rcsauce1, char* _rcsauce2)
+    void make_Node(NodePointer *temp, int _price15, int _price30, char* _name, char* _rcsauce1, char* _rcsauce2)
     {
         NodePointer item;
         NodePointer cur = *temp;
         item = (NodePointer)malloc(sizeof(Node));
-        item->price = _age;
+        item->price15 = _price15;
+        item->price30 = _price30;
 
         strcpy(item->name, _name);
         strcpy(item->rcsauce1, _rcsauce1);
@@ -101,7 +107,8 @@ public:
 
         //FILE *fl;
         int i;
-        int save_price;
+        int save_price15;
+        int save_price30;
 
         char _name[MAX_NAME] = {0,};
         char _rcsauce1[MAX_NAME] = {0,};
@@ -125,20 +132,21 @@ public:
              //qDebug() << stream.readAll();
              for (i = 0; i < num; i++)
              {
-                 //fscanf(file, "%s  %d  %s  %s", save_name, &save_price, save_rcsauce1, save_rcsauce2);
-                 //make_Node(temp, save_price, save_name, save_rcsauce1, save_rcsauce2);
+                 //fscanf(file, "%s  %d  %d  %s  %s", save_name, &save_price15, &save_price30, save_rcsauce1, save_rcsauce2);
+                 //make_Node(temp, save_price15, save_price30, save_name, save_rcsauce1, save_rcsauce2);
                  QString tmp = stream.readLine();
                  QStringList arr = tmp.split(' ');
                  save_name = arr.value(0);
-                 save_price = arr.value(1).toInt();
-                 save_rcsauce1 = arr.value(2);
-                 save_rcsauce2 = arr.value(3);
+                 save_price15 = arr.value(1).toInt();
+                 save_price30 = arr.value(2).toInt();
+                 save_rcsauce1 = arr.value(3);
+                 save_rcsauce2 = arr.value(4);
 
                  qsnprintf(_name, sizeof(_name), "%s", save_name.toUtf8().constData());
                  qsnprintf(_rcsauce1, sizeof(_name), "%s", save_rcsauce1.toUtf8().constData());
                  qsnprintf(_rcsauce2, sizeof(_name), "%s", save_rcsauce2.toUtf8().constData());
 
-                 make_Node(temp, save_price, _name, _rcsauce1, _rcsauce2);
+                 make_Node(temp, save_price15, save_price30, _name, _rcsauce1, _rcsauce2);
              }
          }
 

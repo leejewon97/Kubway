@@ -61,6 +61,7 @@ private:
     QString str;
     QPushButton* buttons[6];
     int strlen;
+    int len;
     for_back fb;
 };
 
