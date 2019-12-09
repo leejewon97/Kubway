@@ -34,6 +34,7 @@ SOURCES += \
         mainwindow.cpp \
         manage.cpp \
         manage_add.cpp \
+        manage_back.cpp \
         manage_delete.cpp \
         order_done.cpp \
         pay_or_order.cpp \
@@ -62,6 +63,7 @@ HEADERS += \
         mainwindow.h \
         manage.h \
         manage_add.h \
+        manage_back.h \
         manage_delete.h \
         order_done.h \
         pay_or_order.h \
@@ -90,6 +92,7 @@ FORMS += \
         mainwindow.ui \
         manage.ui \
         manage_add.ui \
+        manage_back.ui \
         manage_delete.ui \
         order_done.ui \
         pay_or_order.ui \
@@ -330,4 +333,5 @@ DISTFILES += \
     malgunbd.ttf \
     malgunsl.ttf \
     savepop.txt \
+    savepop2.txt \
     transparent.png

@@ -39,14 +39,14 @@
        </widget>
       </item>
       <item>
-       <widget class="QLineEdit" name="name_add"/>
+       <widget class="QLineEdit" name="name_delete"/>
       </item>
      </layout>
     </item>
     <item>
      <widget class="QLabel" name="delete_info">
       <property name="text">
-       <string>TextLabel</string>
+       <string/>
       </property>
      </widget>
     </item>

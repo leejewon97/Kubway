@@ -2,6 +2,7 @@
 #define MANAGE_ADD_H
 
 #include <QDialog>
+#include "manage_back.h"
 
 namespace Ui {
 class manage_add;
@@ -22,6 +23,9 @@ private slots:
 
 private:
     Ui::manage_add *ui;
+    manage_back mb;
+
+
 };
 
 #endif // MANAGE_ADD_H
