@@ -1,6 +1,7 @@
 #include "manage.h"
 #include "ui_manage.h"
 
+
 manage::manage(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::manage)
@@ -16,4 +17,14 @@ manage::~manage()
 void manage::on_pushButton_back_clicked()
 {
     this->hide();
+}
+
+void manage::on_pushButton_add_clicked()
+{
+    ad->show();
+}
+
+void manage::on_pushButton_delete_clicked()
+{
+    dl->show();
 }
