@@ -10,7 +10,6 @@ recipe::recipe(QWidget *parent) :
     connect(od, SIGNAL(buttonPressed()), this, SLOT(closeAll()));
     ui->setupUi(this);
 
-    QString time;
     QDateTime local(QDateTime::currentDateTime());
     time = local.toString("yyyy-MM-dd  HH:mm:ss");
 
@@ -40,9 +39,12 @@ void recipe::on_pushButton_next_clicked()
 {
     QString  fileName = QApplication::applicationDirPath() + "/recipe.txt";
     QFile file(fileName);
-    file.open(QIODevice::WriteOnly | QIODevice::Text);
+    file.open(QIODevice::ReadWrite | QIODevice::Append);
     QTextStream stream(&file);
-    stream << "영수증";
+    stream << time + "\n" + str + "\n----------------------------\n";
+    qDebug() << str;
+
+    od->show();
 }
 
 void recipe::on_pushButton_next_2_clicked()

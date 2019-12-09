@@ -169,14 +169,14 @@ void side_select::on_pushButton_5_clicked()
 void side_select::on_pushButton_6_clicked()
 {
     if(btnFlag[1]){
-        str.append("탄산");
+        str.append("탄산 ");
         ui->label->setText(getString());
         ui->pushButton_6->setStyleSheet("background-image: url(:/image/sideselect_page/click_on/t_7.png);");
         btnFlag[1] = false;
         disableButtons2(ui->pushButton_6);
     } else {
-        int index = str.indexOf("탄산");
-        str.remove(index,4);
+        int index = str.indexOf("탄산 ");
+        str.remove(index,3);
         ui->label->setText(getString());
         ui->pushButton_6->setStyleSheet("background-image: url(:/image/sideselect_page/click_off/t_7.png);");
         btnFlag[1] = true;
@@ -187,14 +187,14 @@ void side_select::on_pushButton_6_clicked()
 void side_select::on_pushButton_7_clicked()
 {
     if(btnFlag[1]){
-        str.append("커피");
+        str.append("커피 ");
         ui->label->setText(getString());
         ui->pushButton_7->setStyleSheet("background-image: url(:/image/sideselect_page/click_on/t_8.png);");
         btnFlag[1] = false;
         disableButtons2(ui->pushButton_7);
     } else {
-        int index = str.indexOf("커피");
-        str.remove(index,2);
+        int index = str.indexOf("커피 ");
+        str.remove(index,3);
         ui->label->setText(getString());
         ui->pushButton_7->setStyleSheet("background-image: url(:/image/sideselect_page/click_off/t_8.png);");
         btnFlag[1] = true;

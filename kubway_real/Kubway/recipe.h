@@ -42,6 +42,7 @@ private:
     Ui::recipe *ui;
     order_done *od = new order_done;
     QString str;
+    QString time;
 };
 
 #endif // RECIPE_H
