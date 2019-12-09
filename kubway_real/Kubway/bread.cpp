@@ -26,6 +26,10 @@ bread::~bread()
     delete ui;
 }
 
+void bread::setUi(QString s) {
+    ui->label->setText(s);
+}
+
 void bread::setStringLength(int s) {
     strlen = s;
 }
@@ -163,6 +167,7 @@ void bread::on_pushButton_next_clicked()
     if(btnFlag == false) {
         c->setString(getString());
         c->setStringLength(str.length());
+        c->setUi(str);
         c->show();
     }
 }

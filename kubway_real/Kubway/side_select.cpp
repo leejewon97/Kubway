@@ -28,6 +28,10 @@ side_select::~side_select()
     delete ui;
 }
 
+void side_select::setUi(QString s) {
+    ui->label->setText(s);
+}
+
 void side_select::setStringLength(int s) {
     strlen = s;
 }

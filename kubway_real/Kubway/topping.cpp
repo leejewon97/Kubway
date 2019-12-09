@@ -219,6 +219,7 @@ void topping::on_pushButton_next_clicked()
     if(btnFlag == false) {
         v->setString(getString());
         v->setStringLength(str.length());
+        v->setUi(str);
         v->show();
     }
 }

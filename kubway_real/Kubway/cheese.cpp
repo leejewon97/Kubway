@@ -22,6 +22,10 @@ cheese::~cheese()
     delete ui;
 }
 
+void cheese::setUi(QString s) {
+    ui->label->setText(s);
+}
+
 void cheese::setStringLength(int s) {
     strlen = s;
 }
