@@ -10,7 +10,7 @@ mainwindow::mainwindow(QWidget *parent) :
     ui->setupUi(this);
 
 
-    connect(s, SIGNAL(buttonPressed()), this, SLOT(closeAll()));
+    connect(size, SIGNAL(buttonPressed()), this, SLOT(closeAll()));
 }
 
 mainwindow::~mainwindow()
@@ -27,22 +27,22 @@ void mainwindow::setString(QString s) {
 }
 void mainwindow::on_pushButton_2_clicked()
 {
-    str.append("HOME\n");
-    s->setString(this->getString());
-    s->show();
+    str.append("TAKE_OUT \n");
+    size->setString(this->getString());
+    size->show();
 }
 
 void mainwindow::on_pushButton_clicked()
 {
     str.append("RESTAURANT\n");
-    s->setString(this->getString());
-    s->show();
+    size->setString(this->getString());
+    size->show();
 }
 
 void mainwindow::closeAll()
 {
 
-    s->hide();
+    size->hide();
 }
 
 void mainwindow::on_super_btn_clicked()

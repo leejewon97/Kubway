@@ -45,6 +45,7 @@ SOURCES += \
         sauce.cpp \
         side.cpp \
         side_select.cpp \
+        size_select.cpp \
         topping.cpp \
         topping_forback.cpp \
         vegetable.cpp
@@ -71,6 +72,7 @@ HEADERS += \
         sauce.h \
         side.h \
         side_select.h \
+        size_select.h \
         topping.h \
         topping_forback.h \
         vegetable.h
@@ -95,6 +97,7 @@ FORMS += \
         sauce.ui \
         side.ui \
         side_select.ui \
+        size_select.ui \
         topping.ui \
         topping_forback.ui \
         vegetable.ui

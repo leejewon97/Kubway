@@ -56,7 +56,7 @@ void sandwich::on_premium_btn_clicked()
 
 void sandwich::on_pushButton_back_clicked()
 {
-    str.clear();
+    str.remove(16, 50);
     this->hide();
 }
 

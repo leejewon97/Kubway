@@ -3,7 +3,7 @@
 
 #include <QWidget>
 #include <QPushButton>
-#include "sandwich.h"
+#include "size_select.h"
 #include "login.h"
 
 namespace Ui {
@@ -35,8 +35,7 @@ private slots:
 
 private:
     Ui::mainwindow *ui;
-    sandwich *s = new sandwich();
-    bread b;
+    size_select *size = new size_select();
     login l;
     QString str;
 };
