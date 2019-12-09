@@ -65,6 +65,7 @@ private:
     QString str;
     QPushButton* buttons[8];
     int strlen;
+    int len;
     topping_forback tf;
 };
 

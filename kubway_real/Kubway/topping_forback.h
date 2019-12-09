@@ -16,7 +16,8 @@ using namespace std;
 
 typedef struct tnode *TnodePointer;
 typedef struct tnode {
-    int price;
+    int price15;
+    int price30;
     char name[MAX_NAME];
 
     TnodePointer link;
@@ -36,7 +37,7 @@ public:
 
     TnodePointer head = NULL;
 
-    char *find_Tnode(TnodePointer temp, char* arg)
+    char *find_Tnode(TnodePointer temp, char* arg, int size)
     {
         char findname[30];
         char pvalue[30];
@@ -48,7 +49,11 @@ public:
         {
             if (strcmp(temp->name, findname) == 0)
             {
-                sprintf(pvalue, "\t%d 원\n", temp->price);
+                if (size == 15) {
+                sprintf(pvalue, "\t%d 원\n", temp->price15);
+                } else if (size == 30){
+                sprintf(pvalue, "\t%d 원\n", temp->price30);
+                }
                 ret = temp->name;
                 strcat(ret, pvalue);
                 break;
@@ -59,12 +64,13 @@ public:
         return ret;
     }
 
-    void make_Tnode(TnodePointer *temp, int _age, char* _name)
+    void make_Tnode(TnodePointer *temp, int _price15, int _price30, char* _name)
     {
         TnodePointer item;
         TnodePointer cur = *temp;
         item = (TnodePointer)malloc(sizeof(Tnode));
-        item->price = _age;
+        item->price15 = _price15;
+        item->price30 = _price30;
 
         strcpy(item->name, _name);
 
@@ -97,7 +103,8 @@ public:
         int num;
 
         int i;
-        int save_price;
+        int save_price15;
+        int save_price30;
 
         char _name[30] = {0,};
 
@@ -122,11 +129,12 @@ public:
                  QString tmp = stream.readLine();
                  QStringList arr = tmp.split(' ');
                  save_name = arr.value(0);
-                 save_price = arr.value(1).toInt();
+                 save_price15 = arr.value(1).toInt();
+                 save_price30 = arr.value(1).toInt();
 
                  qsnprintf(_name, sizeof(_name), "%s", save_name.toUtf8().constData());
 
-                 make_Tnode(temp, save_price, _name);
+                 make_Tnode(temp, save_price15, save_price30, _name);
              }
          }
 
