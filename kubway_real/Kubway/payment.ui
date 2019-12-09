@@ -222,6 +222,9 @@
              <property name="styleSheet">
               <string notr="true">background-image: url(:/transparent.png);</string>
              </property>
+             <property name="frameShape">
+              <enum>QFrame::NoFrame</enum>
+             </property>
             </widget>
            </item>
            <item>

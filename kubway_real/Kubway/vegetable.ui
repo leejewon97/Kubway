@@ -528,7 +528,13 @@
           <property name="minimumSize">
            <size>
             <width>630</width>
-            <height>0</height>
+            <height>140</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>140</height>
            </size>
           </property>
           <property name="styleSheet">
@@ -549,7 +555,7 @@
              <x>0</x>
              <y>0</y>
              <width>630</width>
-             <height>101</height>
+             <height>140</height>
             </rect>
            </property>
            <layout class="QVBoxLayout" name="verticalLayout">
