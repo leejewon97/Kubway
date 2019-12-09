@@ -12,7 +12,13 @@
   </property>
   <property name="minimumSize">
    <size>
-    <width>1045</width>
+    <width>630</width>
+    <height>1392</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
     <height>1392</height>
    </size>
   </property>
@@ -558,7 +564,7 @@
          </spacer>
         </item>
         <item>
-         <widget class="QLabel" name="label">
+         <widget class="QScrollArea" name="scrollArea">
           <property name="minimumSize">
            <size>
             <width>630</width>
@@ -568,9 +574,37 @@
           <property name="styleSheet">
            <string notr="true">background-image: url(:/transparent.png);</string>
           </property>
-          <property name="text">
-           <string>TextLabel</string>
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
           </property>
+          <property name="horizontalScrollBarPolicy">
+           <enum>Qt::ScrollBarAlwaysOff</enum>
+          </property>
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>648</width>
+             <height>158</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_2">
+            <item>
+             <widget class="QLabel" name="label">
+              <property name="styleSheet">
+               <string notr="true">background-image: url(:/transparent.png);</string>
+              </property>
+              <property name="text">
+               <string>TextLabel</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
          </widget>
         </item>
         <item>
