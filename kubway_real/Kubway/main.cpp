@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
     QTextCodec *codec = QTextCodec::codecForName("UTF-8");
     QFont font;
     font.setFamily(codec->toUnicode("맑은 고딕"));
-    font.setPointSize(14);
+    font.setPointSize(8);
     font.setBold(true);
     a.setFont(font);
 
@@ -28,6 +28,8 @@ int main(int argc, char *argv[])
 
     m.show();
 
+    recipe r;
+    r.show();
     return a.exec();
 
 

@@ -22,7 +22,7 @@ void accounts::on_pushButton_back_clicked()
 }
 
 void accounts::text_set(){
-    QString  fileName = QApplication::applicationDirPath() + "/recipe.txt";
+    QString  fileName = QApplication::applicationDirPath() + "/../../kubway/recipe.txt";
     QFile file(fileName);
     if(!file.open(QIODevice::ReadOnly | QIODevice::Text)){
         qDebug() << "not open file";

@@ -40,13 +40,13 @@ void recipe::closeAll()
 
 void recipe::on_pushButton_next_clicked()
 {
-    QString  fileName = QApplication::applicationDirPath() + "/recipe.txt";
+    QString  fileName = QApplication::applicationDirPath() + "/../../kubway/recipe.txt";
     QFile file(fileName);
     file.open(QIODevice::ReadWrite | QIODevice::Append);
     QTextStream stream(&file);
 
     QString pri =QString::number(price);
-    stream << time + "\n" + str + "\n" + pri + "원\n----------------------------\n";
+    stream << time + "\n" + str + "\n" + pri + "원\n--------------------------------------------------\n";
 
     od->show();
 }

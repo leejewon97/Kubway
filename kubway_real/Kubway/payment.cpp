@@ -1,6 +1,7 @@
 #include "payment.h"
 #include "ui_payment.h"
 #include <QDebug>
+#include <QMessageBox>
 
 payment::payment(QWidget *parent) :
     QWidget(parent),
@@ -61,6 +62,8 @@ void payment::on_pushButton_next_clicked()
         r->show();
         r->setUi(getString());
         qDebug() << getString();
+    } else {
+        QMessageBox::warning(this, "부족", "금액이 부족합니다!");
     }
 }
 
