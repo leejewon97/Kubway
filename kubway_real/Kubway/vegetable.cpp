@@ -200,12 +200,11 @@ void vegetable::on_pushButton_next_clicked()
     for (int i = 0; i < 8; i++) {
         flag = flag && btnFlag[i];
     }
-    if( !flag ){
         sa->setString(getString() +'\n');
         sa->setStringLength(str.length());
         sa->setUi(str);
         sa->show();
-    }
+
 
 }
 
