@@ -23,6 +23,9 @@ void payment::setString(QString s) {
 }
 void payment::on_pushButton_next_clicked()
 {
+    price = ui->textEdit->toPlainText().toInt();
+
+    r->setPrice(price);
     r->setString(getString());
     r->show();
     r->setUi(getString());
