@@ -26,8 +26,10 @@ int main(int argc, char *argv[])
 
     mainwindow m;
     recipe r;
+    payment p;
 
     m.show();
+
     //r.show();
 
 

@@ -36,9 +36,22 @@ int payment::calcPrice(int inPrice){
 void payment::on_pushButton_next_clicked()
 {
     inPrice = ui->textEdit->toPlainText().toInt();
+    qDebug() << "in : " << inPrice;
     outPrice = calcPrice(inPrice);
-    if(price != -1){
+    qDebug() << "out : " << outPrice;
+    if(outPrice != -1){
         r->setPrice(outPrice);
+
+
+
+        QString pri =QString::number(price);
+        QString out =QString::number(outPrice);
+        QString in =QString::number(inPrice);
+
+        str.append("\n\n금액 : "+pri+" 원\n");
+        str.append("\n받은 돈 : "+in+" 원");
+        str.append("\n거스름 돈 : "+out+" 원");
+
         r->setString(getString());
         r->show();
         r->setUi(getString());

@@ -45,9 +45,7 @@ void recipe::on_pushButton_next_clicked()
     file.open(QIODevice::ReadWrite | QIODevice::Append);
     QTextStream stream(&file);
 
-    qDebug() << price;
     stream << time + "\n" + str + "\n" + price + "원\n----------------------------\n";
-    qDebug() << str;
 
     od->show();
 }
