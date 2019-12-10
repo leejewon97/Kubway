@@ -25,6 +25,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
+        accounts.cpp \
         bread.cpp \
         card_or_cash.cpp \
         cheese.cpp \
@@ -54,6 +55,7 @@ SOURCES += \
         vegetable.cpp
 
 HEADERS += \
+        accounts.h \
         bread.h \
         card_or_cash.h \
         cheese.h \
@@ -84,6 +86,7 @@ HEADERS += \
         vegetable.h
 
 FORMS += \
+        accounts.ui \
         bread.ui \
         card_or_cash.ui \
         cheese.ui \
