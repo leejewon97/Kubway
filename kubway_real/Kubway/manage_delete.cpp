@@ -21,19 +21,15 @@ void manage_delete::on_pushButton_delete_clicked()
     name = ui->name_delete->text();
 
     char _name[MAX_NAME] = {0,};
-    int del;
+    bool del;
     //delete기능
     qsnprintf(_name, sizeof(_name), "%s", name.toUtf8().constData());
 
     mb.read_Node(&mb.head);
     del = mb.delete_Node(&mb.head, _name);
-    if(del == 0){
-        ui->delete_info->setText("그 메뉴는 없습니다.");
+    if(del == false){
+        ui->delete_info->setText("no menu");
     }
-    else{
-
-    }
-    mb.save_Node(&mb.head, del);
     ui->name_delete->setText("");
 }
 

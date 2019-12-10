@@ -96,14 +96,14 @@ public:
 
     }
 
-    int delete_Node(NodePointer2 *node, char* findname)
+    bool delete_Node(NodePointer2 *node, char* findname)
     {
         QString  fileName = QApplication::applicationDirPath() + "/savepop.txt";
         NodePointer2 temp = *node;
         //qDebug() << fileName;
         QFile file(fileName);
-        QFile file1(fileName);
         int num;
+        bool ret =true;
         QString num_str;
         if(!file.open(QIODevice::ReadOnly | QIODevice::Text)){
             qDebug() << "not open file";
@@ -136,10 +136,13 @@ public:
         }
         if (temp == NULL)
         {
-            return 0;
+            ret = false;
         }
         file.close();
-        return num;
+
+        save_Node(&head, num);
+
+        return ret;
     }
 
 
