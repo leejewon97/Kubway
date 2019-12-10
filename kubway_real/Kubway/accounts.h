@@ -15,6 +15,9 @@ public:
     explicit accounts(QWidget *parent = nullptr);
     ~accounts();
 
+private slots:
+    void on_pushButton_back_clicked();
+
 private:
     Ui::accounts *ui;
 };

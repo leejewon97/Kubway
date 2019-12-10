@@ -84,8 +84,8 @@ public:
                 QString _price15 = QVariant(cur->price15).toString();
                 QString _price30 = QVariant(cur->price30).toString();
                 QString _rcsauce1 = cur->rcsauce1;
-                QString _rcsauce2 = cur->rcsauce1;
-                stream1 << _name + " " + _price15 + " "+ _price15 + " "+ _rcsauce1 + " "+ _rcsauce2 + "\n";
+                QString _rcsauce2 = cur->rcsauce2;
+                stream1 << _name + " " + _price15 + " "+ _price30 + " "+ _rcsauce1 + " "+ _rcsauce2 + "\n";
 
                 cur = cur->link;
            }

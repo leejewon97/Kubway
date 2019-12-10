@@ -29,6 +29,9 @@ void manage_add::on_pushButton_add_clicked()
     rcsauce1 = ui->rcsauce1_add->text();
     rcsauce2 = ui->rcsauce2_add->text();
 
+    qDebug() << price30;
+    qDebug() << rcsauce2;
+
     char _name[MAX_NAME] = {0,};
     char _rcsauce1[MAX_NAME] = {0,};
     char _rcsauce2[MAX_NAME] = {0,};

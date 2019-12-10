@@ -121,6 +121,7 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 RESOURCES += \
     res.qrc \
+    res.qrc \
     res.qrc
 
 DISTFILES += \
@@ -141,12 +142,16 @@ DISTFILES += \
     image/button/Forward Arrow.png \
     image/button/Forward Arrow.png \
     image/button/Forward Arrow.png \
+    image/button/Forward Arrow.png \
     image/button/add_btn.png \
     image/button/delete_btn.png \
     image/button/go_back_btn.png \
     image/button/go_home_btn.png \
     image/button/hot_btn.png \
+    image/button/manage_back.png \
+    image/button/money_btn.png \
     image/button/new_btn.png \
+    image/button/path12.png \
     image/button/square_1067.png \
     image/cheese_page/cheese_page_back.png \
     image/cheese_page/click_off/cheese_1.png \

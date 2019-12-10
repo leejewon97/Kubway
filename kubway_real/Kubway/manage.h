@@ -10,6 +10,7 @@
 
 #include "manage_add.h"
 #include "manage_delete.h"
+#include "accounts.h"
 
 
 namespace Ui {
@@ -31,6 +32,8 @@ private slots:
 
     void on_pushButton_delete_clicked();
 
+    void on_pushButton_clicked();
+
 private:
     Ui::manage *ui;
     sandwich_classic *sc = new sandwich_classic;
@@ -40,6 +43,7 @@ private:
 
     manage_add *ad = new manage_add;
     manage_delete *dl = new manage_delete;
+    accounts ac;
 
 };
 

@@ -28,3 +28,8 @@ void manage::on_pushButton_delete_clicked()
 {
     dl->show();
 }
+
+void manage::on_pushButton_clicked()
+{
+    ac.show();
+}
