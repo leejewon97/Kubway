@@ -23,6 +23,11 @@ void payment::setString(QString s) {
 }
 
 int payment::calcPrice(int inPrice){
+    QStringList tmp = str.split("원"); //원 으로 스트링 쪼갬
+    QString sandwich_price = tmp[0].right(6);
+    QString topping_price = tmp[1].right(5);
+
+    price = sandwich_price.toInt() + topping_price.toInt() + 1900;
     int temp = inPrice - price;
     if(temp >= 0){
         qDebug() << price;
@@ -42,12 +47,14 @@ void payment::on_pushButton_next_clicked()
     if(outPrice != -1){
         r->setPrice(outPrice);
 
+        QString out = QString::number(outPrice);
+        QString in = QString::number(inPrice);
+        QString pri = QString::number(price);
 
 
-        QString out =QString::number(outPrice);
-        QString in =QString::number(inPrice);
-
+        str.append("\n세트 1900원");
         str.append("\n\n받은 돈 : "+in+" 원");
+        str.append("\n가격 : "+pri+" 원");
         str.append("\n거스름 돈 : "+out+" 원");
 
         r->setString(getString());

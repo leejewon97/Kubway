@@ -45,6 +45,7 @@ private:
     order_done *od = new order_done;
     QString str;
     QString time;
+
     int price;
 };
 

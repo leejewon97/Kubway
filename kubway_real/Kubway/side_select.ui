@@ -167,7 +167,7 @@
         <property name="sizeHint" stdset="0">
          <size>
           <width>20</width>
-          <height>90</height>
+          <height>100</height>
          </size>
         </property>
        </spacer>
@@ -178,7 +178,7 @@
          <enum>Qt::Vertical</enum>
         </property>
         <property name="sizeType">
-         <enum>QSizePolicy::Fixed</enum>
+         <enum>QSizePolicy::Expanding</enum>
         </property>
         <property name="sizeHint" stdset="0">
          <size>
@@ -513,7 +513,7 @@
          <enum>Qt::Vertical</enum>
         </property>
         <property name="sizeType">
-         <enum>QSizePolicy::Fixed</enum>
+         <enum>QSizePolicy::Expanding</enum>
         </property>
         <property name="sizeHint" stdset="0">
          <size>
@@ -534,7 +534,7 @@
         <property name="sizeHint" stdset="0">
          <size>
           <width>20</width>
-          <height>40</height>
+          <height>60</height>
          </size>
         </property>
        </spacer>
@@ -560,6 +560,12 @@
         <item>
          <widget class="QScrollArea" name="scrollArea">
           <property name="minimumSize">
+           <size>
+            <width>630</width>
+            <height>140</height>
+           </size>
+          </property>
+          <property name="maximumSize">
            <size>
             <width>630</width>
             <height>140</height>
