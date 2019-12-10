@@ -21,15 +21,29 @@ QString payment::getString() {
 void payment::setString(QString s) {
     str = s;
 }
+
+int payment::calcPrice(int inPrice){
+    int temp = inPrice - price;
+    if(temp >= 0){
+        qDebug() << price;
+        return temp;
+    } else {
+       qDebug() << "처리안함";
+       return -1;
+    }
+}
+
 void payment::on_pushButton_next_clicked()
 {
-    price = ui->textEdit->toPlainText().toInt();
-
-    r->setPrice(price);
-    r->setString(getString());
-    r->show();
-    r->setUi(getString());
-    qDebug() << getString();
+    inPrice = ui->textEdit->toPlainText().toInt();
+    outPrice = calcPrice(inPrice);
+    if(price != -1){
+        r->setPrice(outPrice);
+        r->setString(getString());
+        r->show();
+        r->setUi(getString());
+        qDebug() << getString();
+    }
 }
 
 void payment::closeAll()

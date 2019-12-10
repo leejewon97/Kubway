@@ -29,8 +29,6 @@ public:
 
     void setPrice(int price);
 
-    void calcPrice(int inPrice);
-
 signals:
     void buttonPressed();
 
@@ -47,9 +45,7 @@ private:
     order_done *od = new order_done;
     QString str;
     QString time;
-    int inPrice;
-    int price = 800;
-    int outPrice;
+    int price;
 };
 
 #endif // RECIPE_H

@@ -22,7 +22,7 @@ recipe::~recipe()
 }
 
 void recipe::setPrice(int price){
-    this->inPrice = price;
+    this->price = price;
 }
 void recipe::setUi(QString s) {
     ui->label_inform->setText(s);
@@ -38,18 +38,6 @@ void recipe::closeAll()
     emit buttonPressed();
 }
 
-void recipe::calcPrice(int inPrice){
-    int temp = inPrice - price;
-    if(temp){
-        outPrice = temp;
-        qDebug() << outPrice;
-    } else {
-       qDebug() << "처리안함";
-       QString err = "ERROR";
-       outPrice = err.toInt();
-    }
-}
-
 void recipe::on_pushButton_next_clicked()
 {
     QString  fileName = QApplication::applicationDirPath() + "/recipe.txt";
@@ -57,10 +45,8 @@ void recipe::on_pushButton_next_clicked()
     file.open(QIODevice::ReadWrite | QIODevice::Append);
     QTextStream stream(&file);
 
-    calcPrice(inPrice);
-    QString out = ""+outPrice;
-    qDebug() << outPrice;
-    stream << time + "\n" + str + "\n" + out + "원\n----------------------------\n";
+    qDebug() << price;
+    stream << time + "\n" + str + "\n" + price + "원\n----------------------------\n";
     qDebug() << str;
 
     od->show();

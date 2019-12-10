@@ -29,8 +29,8 @@ void manage_delete::on_pushButton_delete_clicked()
     del = mb.delete_Node(&mb.head, _name);
     if(del == false){
         ui->delete_info->setText("no menu");
-    }
-    ui->name_delete->setText("");
+    } else
+        ui->delete_info->clear();
 }
 
 void manage_delete::on_pushButton_close_clicked()

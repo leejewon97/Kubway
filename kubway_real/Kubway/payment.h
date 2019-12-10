@@ -28,16 +28,19 @@ private slots:
 
     void closeAll();
 
-
     void on_pushButton_home_clicked();
 
     void on_pushButton_back_clicked();
+
+    int calcPrice(int inPrice);
 
 private:
     Ui::payment *ui;
     recipe *r = new recipe;
     QString str;
-    int price;
+    int price = 800;
+    int inPrice;
+    int outPrice;
 };
 
 #endif // PAYMENT_H
