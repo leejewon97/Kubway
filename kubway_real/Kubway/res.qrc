@@ -208,5 +208,8 @@
         <file>image/receipt_page/go_next_btn.png</file>
         <file>image/button/add_btn.png</file>
         <file>image/button/delete_btn.png</file>
+        <file>image/button/manage_back.png</file>
+        <file>image/button/money_btn.png</file>
+        <file>image/button/path12.png</file>
     </qresource>
 </RCC>

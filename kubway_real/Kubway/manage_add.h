@@ -22,8 +22,6 @@ private slots:
 
     void on_pushButton_close_clicked();
 
-    void make_button1(QString send_list);
-
 private:
     Ui::manage_add *ui;
     manage_back mb;

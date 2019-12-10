@@ -46,9 +46,6 @@ void manage_add::on_pushButton_add_clicked()
 
     name.append("\n\n15cm ¿ø" + price15+"\n30cm ¿ø"+price30);
 
-    make_button1(name);
-
-
     ui->name_add->setText("");
     ui->size15_price_add->setText("");
     ui->size30_price_add->setText("");
@@ -69,7 +66,3 @@ void manage_add::on_pushButton_close_clicked()
     this->hide();
 }
 
-void manage_add::make_button1(QString send_list)
-{
-    sn.set_btn(send_list);
-}
