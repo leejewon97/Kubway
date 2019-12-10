@@ -31,5 +31,7 @@ void manage::on_pushButton_delete_clicked()
 
 void manage::on_pushButton_clicked()
 {
+    ac.text_set();
     ac.show();
+
 }

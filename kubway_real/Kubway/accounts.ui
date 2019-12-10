@@ -29,7 +29,7 @@
       </size>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-image: url(:/image/main_page/back.png);</string>
+      <string notr="true">background-image: url(:/image/button/manage_back.png);</string>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout_2">
       <property name="spacing">
