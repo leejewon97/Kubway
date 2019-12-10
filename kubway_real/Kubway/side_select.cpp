@@ -22,6 +22,7 @@ side_select::side_select(QWidget *parent) :
     buttons[4] = ui->pushButton_5;
     buttons[5] = ui->pushButton_6;
     buttons[6] = ui->pushButton_7;
+    ui->pushButton->setEnabled(false);
 }
 
 side_select::~side_select()
