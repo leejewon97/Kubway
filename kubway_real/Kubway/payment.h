@@ -37,6 +37,7 @@ private:
     Ui::payment *ui;
     recipe *r = new recipe;
     QString str;
+    int price;
 };
 
 #endif // PAYMENT_H
